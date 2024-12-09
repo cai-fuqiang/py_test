@@ -1,0 +1,2043 @@
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Registering <qemu.qmp.events.EventListener object at 0x7f055e796a50>.
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Transitioning from 'Runstate.IDLE' to 'Runstate.CONNECTING'.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Awaiting connection on /var/tmp/qemu-src-385513-monitor.sock ...
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Server listening on /var/tmp/qemu-src-385513-monitor.sock
+DEBUG:qemu.machine.machine:VM launch command: 'qemu-system-x86_64 -display none -vga none -chardev socket,id=mon,path=/var/tmp/qemu-src-385513-monitor.sock -mon chardev=mon,mode=control -cpu host -m 328192 -smp 16 -name wang_mg_test,debug-threads=on -kernel ./vmlinuz -initrd build/tests/migration/initrd-stress.img -append noapic edd=off printk.time=1 noreplace-smp cgroup_disable=memory pci=noearly console=ttyS0 debug ramsize=320 init=/sbin/init mm_dirty -m 30G -r 900 -accel kvm,dirty-ring-size=65536 --display none -chardev stdio,id=cdev0 -device isa-serial,chardev=cdev0 -machine graphics=off -msg timestamp=on -trace events=/traces.txt -monitor tcp:localhost:9999,server,nowait'
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Incoming connection from 
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Stopping server.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Server stopped.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Connection accepted.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Awaiting greeting ...
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "QMP": {
+    "version": {
+      "qemu": {
+        "nano": 66,
+        "micro": 0,
+        "minor": 2,
+        "major": 6
+      },
+      "package": ""
+    },
+    "capabilities": [
+      "oob"
+    ]
+  }
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Negotiating capabilities ...
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "qmp_capabilities",
+  "arguments": {
+    "enable": [
+      "oob"
+    ]
+  }
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {}
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Transitioning from 'Runstate.CONNECTING' to 'Runstate.RUNNING'.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Registering <qemu.qmp.events.EventListener object at 0x7f055e798450>.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Transitioning from 'Runstate.IDLE' to 'Runstate.CONNECTING'.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Awaiting connection on ('localhost', 9001) ...
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Server listening on ('localhost', 9001)
+DEBUG:qemu.machine.machine:VM launch command: 'ssh -R 9001:localhost:9001 -p 222 11.180.118.13 qemu-system-x86_64 -display none -vga none -chardev socket,id=mon,host=localhost,port=9001 -mon chardev=mon,mode=control -cpu host -m 328192 -smp 16 -name wang_mg_test,debug-threads=on -accel kvm,dirty-ring-size=65536 --display none -chardev stdio,id=cdev0 -device isa-serial,chardev=cdev0 -machine graphics=off -incoming tcp:11.180.118.13:9000'
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Incoming connection from ('::1', 44356, 0, 0)
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Stopping server.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Server stopped.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Connection accepted.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Awaiting greeting ...
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:<-- {
+  "QMP": {
+    "version": {
+      "qemu": {
+        "nano": 66,
+        "micro": 0,
+        "minor": 2,
+        "major": 6
+      },
+      "package": ""
+    },
+    "capabilities": [
+      "oob"
+    ]
+  }
+}
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Negotiating capabilities ...
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:--> {
+  "execute": "qmp_capabilities",
+  "arguments": {
+    "enable": [
+      "oob"
+    ]
+  }
+}
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:<-- {
+  "return": {}
+}
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Transitioning from 'Runstate.CONNECTING' to 'Runstate.RUNNING'.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-cpus-fast",
+  "arguments": {},
+  "id": "__qmp#00000"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": [
+    {
+      "thread-id": 385520,
+      "props": {
+        "core-id": 0,
+        "thread-id": 0,
+        "socket-id": 0
+      },
+      "qom-path": "/machine/unattached/device[0]",
+      "cpu-index": 0,
+      "target": "x86_64"
+    },
+    {
+      "thread-id": 385521,
+      "props": {
+        "core-id": 1,
+        "thread-id": 0,
+        "socket-id": 0
+      },
+      "qom-path": "/machine/unattached/device[2]",
+      "cpu-index": 1,
+      "target": "x86_64"
+    },
+    {
+      "thread-id": 385522,
+      "props": {
+        "core-id": 2,
+        "thread-id": 0,
+        "socket-id": 0
+      },
+      "qom-path": "/machine/unattached/device[3]",
+      "cpu-index": 2,
+      "target": "x86_64"
+    },
+    {
+      "thread-id": 385523,
+      "props": {
+        "core-id": 3,
+        "thread-id": 0,
+        "socket-id": 0
+      },
+      "qom-path": "/machine/unattached/device[4]",
+      "cpu-index": 3,
+      "target": "x86_64"
+    },
+    {
+      "thread-id": 385524,
+      "props": {
+        "core-id": 4,
+        "thread-id": 0,
+        "socket-id": 0
+      },
+      "qom-path": "/machine/unattached/device[5]",
+      "cpu-index": 4,
+      "target": "x86_64"
+    },
+    {
+      "thread-id": 385525,
+      "props": {
+        "core-id": 5,
+        "thread-id": 0,
+        "socket-id": 0
+      },
+      "qom-path": "/machine/unattached/device[6]",
+      "cpu-index": 5,
+      "target": "x86_64"
+    },
+    {
+      "thread-id": 385526,
+      "props": {
+        "core-id": 6,
+        "thread-id": 0,
+        "socket-id": 0
+      },
+      "qom-path": "/machine/unattached/device[7]",
+      "cpu-index": 6,
+      "target": "x86_64"
+    },
+    {
+      "thread-id": 385527,
+      "props": {
+        "core-id": 7,
+        "thread-id": 0,
+        "socket-id": 0
+      },
+      "qom-path": "/machine/unattached/device[8]",
+      "cpu-index": 7,
+      "target": "x86_64"
+    },
+    {
+      "thread-id": 385528,
+      "props": {
+        "core-id": 8,
+        "thread-id": 0,
+        "socket-id": 0
+      },
+      "qom-path": "/machine/unattached/device[9]",
+      "cpu-index": 8,
+      "target": "x86_64"
+    },
+    {
+      "thread-id": 385529,
+      "props": {
+        "core-id": 9,
+        "thread-id": 0,
+        "socket-id": 0
+      },
+      "qom-path": "/machine/unattached/device[10]",
+      "cpu-index": 9,
+      "target": "x86_64"
+    },
+    {
+      "thread-id": 385530,
+      "props": {
+        "core-id": 10,
+        "thread-id": 0,
+        "socket-id": 0
+      },
+      "qom-path": "/machine/unattached/device[11]",
+      "cpu-index": 10,
+      "target": "x86_64"
+    },
+    {
+      "thread-id": 385531,
+      "props": {
+        "core-id": 11,
+        "thread-id": 0,
+        "socket-id": 0
+      },
+      "qom-path": "/machine/unattached/device[12]",
+      "cpu-index": 11,
+      "target": "x86_64"
+    },
+    {
+      "thread-id": 385532,
+      "props": {
+        "core-id": 12,
+        "thread-id": 0,
+        "socket-id": 0
+      },
+      "qom-path": "/machine/unattached/device[13]",
+      "cpu-index": 12,
+      "target": "x86_64"
+    },
+    {
+      "thread-id": 385533,
+      "props": {
+        "core-id": 13,
+        "thread-id": 0,
+        "socket-id": 0
+      },
+      "qom-path": "/machine/unattached/device[14]",
+      "cpu-index": 13,
+      "target": "x86_64"
+    },
+    {
+      "thread-id": 385534,
+      "props": {
+        "core-id": 14,
+        "thread-id": 0,
+        "socket-id": 0
+      },
+      "qom-path": "/machine/unattached/device[15]",
+      "cpu-index": 14,
+      "target": "x86_64"
+    },
+    {
+      "thread-id": 385535,
+      "props": {
+        "core-id": 15,
+        "thread-id": 0,
+        "socket-id": 0
+      },
+      "qom-path": "/machine/unattached/device[16]",
+      "cpu-index": 15,
+      "target": "x86_64"
+    }
+  ],
+  "id": "__qmp#00000"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "migrate-set-parameters",
+  "arguments": {
+    "max-bandwidth": 0
+  },
+  "id": "__qmp#00001"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {},
+  "id": "__qmp#00001"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "migrate-set-parameters",
+  "arguments": {
+    "downtime-limit": 300
+  },
+  "id": "__qmp#00002"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {},
+  "id": "__qmp#00002"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "migrate-set-capabilities",
+  "arguments": {
+    "capabilities": [
+      {
+        "capability": "multifd",
+        "state": true
+      }
+    ]
+  },
+  "id": "__qmp#00003"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {},
+  "id": "__qmp#00003"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "migrate-set-parameters",
+  "arguments": {
+    "multifd-channels": 10
+  },
+  "id": "__qmp#00004"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {},
+  "id": "__qmp#00004"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:--> {
+  "execute": "migrate-set-capabilities",
+  "arguments": {
+    "capabilities": [
+      {
+        "capability": "multifd",
+        "state": true
+      }
+    ]
+  },
+  "id": "__qmp#00000"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:<-- {
+  "return": {},
+  "id": "__qmp#00000"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:--> {
+  "execute": "migrate-set-parameters",
+  "arguments": {
+    "multifd-channels": 10
+  },
+  "id": "__qmp#00001"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:<-- {
+  "return": {},
+  "id": "__qmp#00001"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "migrate",
+  "arguments": {
+    "uri": "tcp:11.180.118.13:9000"
+  },
+  "id": "__qmp#00005"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {},
+  "id": "__qmp#00005"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00006"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "timestamp": {
+    "seconds": 1733732196,
+    "microseconds": 226056
+  },
+  "event": "MIGRATION_PID",
+  "data": {
+    "pid": 385558
+  }
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "timestamp": {
+    "seconds": 1733732196,
+    "microseconds": 226118
+  },
+  "event": "MIGRATION_MULTIFD_PID",
+  "data": {
+    "pid": 385559
+  }
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "timestamp": {
+    "seconds": 1733732196,
+    "microseconds": 226176
+  },
+  "event": "MIGRATION_MULTIFD_PID",
+  "data": {
+    "pid": 385560
+  }
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "timestamp": {
+    "seconds": 1733732196,
+    "microseconds": 226239
+  },
+  "event": "MIGRATION_MULTIFD_PID",
+  "data": {
+    "pid": 385561
+  }
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00006"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "timestamp": {
+    "seconds": 1733732198,
+    "microseconds": 333604
+  },
+  "event": "MIGRATION_MULTIFD_PID",
+  "data": {
+    "pid": 385562
+  }
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00007"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "timestamp": {
+    "seconds": 1733732198,
+    "microseconds": 333626
+  },
+  "event": "MIGRATION_MULTIFD_PID",
+  "data": {
+    "pid": 385563
+  }
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "timestamp": {
+    "seconds": 1733732198,
+    "microseconds": 333655
+  },
+  "event": "MIGRATION_MULTIFD_PID",
+  "data": {
+    "pid": 385564
+  }
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "timestamp": {
+    "seconds": 1733732198,
+    "microseconds": 333688
+  },
+  "event": "MIGRATION_MULTIFD_PID",
+  "data": {
+    "pid": 385565
+  }
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "timestamp": {
+    "seconds": 1733732198,
+    "microseconds": 333718
+  },
+  "event": "MIGRATION_MULTIFD_PID",
+  "data": {
+    "pid": 385566
+  }
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "timestamp": {
+    "seconds": 1733732198,
+    "microseconds": 333754
+  },
+  "event": "MIGRATION_MULTIFD_PID",
+  "data": {
+    "pid": 385567
+  }
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00007"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00008"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00008"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00009"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00009"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00010"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00010"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00011"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00011"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00012"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00012"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00013"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00013"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00014"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00014"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00015"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00015"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00016"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00016"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00017"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00017"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00018"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00018"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00019"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00019"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00020"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00020"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00021"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00021"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00022"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00022"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00023"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00023"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00024"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00024"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00025"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "setup"
+  },
+  "id": "__qmp#00025"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "query-migrate",
+  "arguments": {},
+  "id": "__qmp#00026"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {
+    "status": "failed",
+    "error-desc": "Failed to connect to '11.180.118.13:9000': Connection timed out"
+  },
+  "id": "__qmp#00026"
+}
+DEBUG:qemu.machine.machine:Shutting down VM appliance; timeout=30
+DEBUG:qemu.machine.machine:Attempting graceful termination
+DEBUG:qemu.machine.machine:Politely asking QEMU to terminate
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:--> {
+  "execute": "quit"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "return": {}
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:<-- {
+  "timestamp": {
+    "seconds": 1733732201,
+    "microseconds": 35103
+  },
+  "event": "SHUTDOWN",
+  "data": {
+    "guest": false,
+    "reason": "host-qmp-quit"
+  }
+}
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:disconnect() called.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Transitioning from 'Runstate.RUNNING' to 'Runstate.DISCONNECTING'.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Scheduling disconnect.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Draining the outbound queue ...
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Flushing the StreamWriter ...
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Cancelling writer task.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Cancelling reader task.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Waiting for tasks to complete ...
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Task.Writer: cancelled.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Task.Writer: exiting.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Task.Reader: cancelled.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Task.Reader: exiting.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Closing StreamWriter.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Waiting for StreamWriter to close ...
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:StreamWriter closed.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Disconnected.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:QMP Disconnected.
+DEBUG:qemu.qmp.qmp_client.qemu-src-385513:Transitioning from 'Runstate.DISCONNECTING' to 'Runstate.IDLE'.
+DEBUG:qemu.machine.machine:Waiting (timeout=30) for QEMU process (pid=385515) to terminate
+DEBUG:qemu.machine.machine:Cleaning up after VM process
+DEBUG:qemu.machine.machine:Shutting down VM appliance; timeout=30
+DEBUG:qemu.machine.machine:Attempting graceful termination
+DEBUG:qemu.machine.machine:Politely asking QEMU to terminate
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:--> {
+  "execute": "quit"
+}
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:<-- {
+  "return": {}
+}
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:<-- {
+  "timestamp": {
+    "seconds": 1733732201,
+    "microseconds": 800627
+  },
+  "event": "SHUTDOWN",
+  "data": {
+    "guest": false,
+    "reason": "host-qmp-quit"
+  }
+}
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:disconnect() called.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Transitioning from 'Runstate.RUNNING' to 'Runstate.DISCONNECTING'.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Scheduling disconnect.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Draining the outbound queue ...
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Flushing the StreamWriter ...
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Cancelling writer task.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Cancelling reader task.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Waiting for tasks to complete ...
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Task.Reader: cancelled.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Task.Reader: exiting.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Task.Writer: cancelled.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Task.Writer: exiting.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Closing StreamWriter.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Waiting for StreamWriter to close ...
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:StreamWriter closed.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Disconnected.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:QMP Disconnected.
+DEBUG:qemu.qmp.qmp_client.qemu-dst-385513:Transitioning from 'Runstate.DISCONNECTING' to 'Runstate.IDLE'.
+DEBUG:qemu.machine.machine:Waiting (timeout=30) for QEMU process (pid=385538) to terminate
+DEBUG:qemu.machine.machine:Cleaning up after VM process
+['init=/sbin/init mm_dirty -m 30G -r 900']
+['init=/sbin/init mm_dirty -m 30G -r 900']
+['noapic', 'edd=off', 'printk.time=1', 'noreplace-smp', 'cgroup_disable=memory', 'pci=noearly', 'console=ttyS0', 'debug', 'ramsize=320', 'init=/sbin/init mm_dirty -m 30G -r 900']
+['init=/sbin/init mm_dirty -m 30G -r 900']
+['init=/sbin/init mm_dirty -m 30G -r 900']
+['noapic', 'edd=off', 'printk.time=1', 'noreplace-smp', 'cgroup_disable=memory', 'pci=noearly', 'console=ttyS0', 'debug', 'ramsize=320', 'init=/sbin/init mm_dirty -m 30G -r 900']
+Sleeping 15 seconds for initial guest workload run
+Starting migration
+Iter 0: remain     0MB of     0MB (total     0MB @     0Mb/sec)
+Finished migration
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+2024-12-09T08:16:21.830735Z qemu-system-x86_64:/traces.txt:3: warning: trace event 'migrate bandwith' does not exist
+2024-12-09T08:16:21.831240Z qemu-system-x86_64:/traces.txt:5: warning: trace event 'qemu_savevm_state_pending' does not exist
+2024-12-09T08:16:21.831512Z qemu-system-x86_64:/traces.txt:6: warning: trace event 'migrate_pending_exact' does not exist
+2024-12-09T08:16:21.831976Z qemu-system-x86_64:/traces.txt:8: warning: trace event 'migrate_pending_estimate' does not exist
+385515@[2024-12-09 08:16:21.835150] qio_channel_socket_newSocket new ioc=0x56399db3ef10
+385515@[2024-12-09 08:16:21.835164] qio_channel_socket_connect_syncSocket connect sync ioc=0x56399db3ef10 addr=0x56399db3f830
+385515@[2024-12-09 08:16:21.835182] qio_channel_socket_connect_completeSocket connect complete ioc=0x56399db3ef10 fd=3
+385515@[2024-12-09 08:16:21.835348] qio_channel_socket_newSocket new ioc=0x56399db40fc0
+385515@[2024-12-09 08:16:21.835351] qio_channel_socket_listen_syncSocket listen sync ioc=0x56399db40fc0 addr=0x56399db40f40 num=1
+385515@[2024-12-09 08:16:21.835367] qio_channel_socket_listen_completeSocket listen complete ioc=0x56399db40fc0 fd=8
+385515@[2024-12-09 08:16:21.835372] qio_channel_socket_newSocket new ioc=0x56399db41370
+385515@[2024-12-09 08:16:21.835375] qio_channel_socket_listen_syncSocket listen sync ioc=0x56399db41370 addr=0x56399db40f70 num=1
+385515@[2024-12-09 08:16:21.835383] qio_channel_socket_listen_completeSocket listen complete ioc=0x56399db41370 fd=9
+configure accelerator pc-i440fx-6.2 start
+machine init start
+385519@[2024-12-09 08:16:21.849363] handle_qmp_commandmon 0x56399db48080 req: {"execute": "qmp_capabilities", "arguments": {"enable": ["oob"]}}
+385515@[2024-12-09 08:16:21.866920] memory_region_add_subregion_commonname is io, subregion name is kvmvapic
+385515@[2024-12-09 08:16:21.867004] memory_region_add_subregion_commonname is system, subregion name is kvm-apic-msi
+385515@[2024-12-09 08:16:21.874427] memory_region_add_subregion_commonname is system, subregion name is ram-below-4g
+385515@[2024-12-09 08:16:21.874729] memory_region_add_subregion_commonname is system, subregion name is ram-above-4g
+385515@[2024-12-09 08:16:21.896840] memory_region_add_subregion_commonname is pci, subregion name is isa-bios
+385515@[2024-12-09 08:16:21.896976] memory_region_add_subregion_commonname is pci, subregion name is pc.bios
+385515@[2024-12-09 08:16:21.897137] memory_region_add_subregion_commonname is pci, subregion name is pc.rom
+385515@[2024-12-09 08:16:21.897278] memory_region_add_subregion_commonname is io, subregion name is fwcfg
+385515@[2024-12-09 08:16:21.897343] memory_region_add_subregion_commonname is io, subregion name is fwcfg.dma
+385515@[2024-12-09 08:16:21.900814] memory_region_add_subregion_commonname is io, subregion name is pci-conf-idx
+385515@[2024-12-09 08:16:21.900888] memory_region_add_subregion_commonname is io, subregion name is pci-conf-data
+385515@[2024-12-09 08:16:21.901004] memory_region_add_subregion_commonname is system, subregion name is pci
+385515@[2024-12-09 08:16:21.901102] memory_region_add_subregion_commonname is system, subregion name is smram-region
+385515@[2024-12-09 08:16:21.901183] memory_region_add_subregion_commonname is smram, subregion name is smram-low
+385515@[2024-12-09 08:16:21.901325] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.901328] memory_region_add_subregion_commonname is system, subregion name is pam-rom
+385515@[2024-12-09 08:16:21.901330] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.901332] memory_region_add_subregion_commonname is system, subregion name is pam-ram
+385515@[2024-12-09 08:16:21.901605] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.901607] memory_region_add_subregion_commonname is system, subregion name is pam-rom
+385515@[2024-12-09 08:16:21.901609] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.901611] memory_region_add_subregion_commonname is system, subregion name is pam-ram
+385515@[2024-12-09 08:16:21.901767] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.901769] memory_region_add_subregion_commonname is system, subregion name is pam-rom
+385515@[2024-12-09 08:16:21.901771] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.901773] memory_region_add_subregion_commonname is system, subregion name is pam-ram
+385515@[2024-12-09 08:16:21.901931] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.901934] memory_region_add_subregion_commonname is system, subregion name is pam-rom
+385515@[2024-12-09 08:16:21.901936] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.901938] memory_region_add_subregion_commonname is system, subregion name is pam-ram
+385515@[2024-12-09 08:16:21.902085] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.902087] memory_region_add_subregion_commonname is system, subregion name is pam-rom
+385515@[2024-12-09 08:16:21.902089] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.902091] memory_region_add_subregion_commonname is system, subregion name is pam-ram
+385515@[2024-12-09 08:16:21.902237] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.902239] memory_region_add_subregion_commonname is system, subregion name is pam-rom
+385515@[2024-12-09 08:16:21.902241] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.902243] memory_region_add_subregion_commonname is system, subregion name is pam-ram
+385515@[2024-12-09 08:16:21.902405] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.902407] memory_region_add_subregion_commonname is system, subregion name is pam-rom
+385515@[2024-12-09 08:16:21.902409] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.902411] memory_region_add_subregion_commonname is system, subregion name is pam-ram
+385515@[2024-12-09 08:16:21.902568] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.902571] memory_region_add_subregion_commonname is system, subregion name is pam-rom
+385515@[2024-12-09 08:16:21.902573] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.902575] memory_region_add_subregion_commonname is system, subregion name is pam-ram
+385515@[2024-12-09 08:16:21.902742] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.902745] memory_region_add_subregion_commonname is system, subregion name is pam-rom
+385515@[2024-12-09 08:16:21.902747] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.902749] memory_region_add_subregion_commonname is system, subregion name is pam-ram
+385515@[2024-12-09 08:16:21.902903] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.902906] memory_region_add_subregion_commonname is system, subregion name is pam-rom
+385515@[2024-12-09 08:16:21.902907] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.902910] memory_region_add_subregion_commonname is system, subregion name is pam-ram
+385515@[2024-12-09 08:16:21.903077] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.903079] memory_region_add_subregion_commonname is system, subregion name is pam-rom
+385515@[2024-12-09 08:16:21.903081] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.903084] memory_region_add_subregion_commonname is system, subregion name is pam-ram
+385515@[2024-12-09 08:16:21.903251] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.903254] memory_region_add_subregion_commonname is system, subregion name is pam-rom
+385515@[2024-12-09 08:16:21.903256] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.903258] memory_region_add_subregion_commonname is system, subregion name is pam-ram
+385515@[2024-12-09 08:16:21.903427] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.903430] memory_region_add_subregion_commonname is system, subregion name is pam-rom
+385515@[2024-12-09 08:16:21.903432] memory_region_add_subregion_commonname is system, subregion name is pam-pci
+385515@[2024-12-09 08:16:21.903434] memory_region_add_subregion_commonname is system, subregion name is pam-ram
+385515@[2024-12-09 08:16:21.903939] memory_region_add_subregion_commonname is io, subregion name is piix3-reset-control
+385515@[2024-12-09 08:16:21.904087] memory_region_add_subregion_commonname is io, subregion name is kvm-pic
+385515@[2024-12-09 08:16:21.904175] memory_region_add_subregion_commonname is io, subregion name is kvm-elcr
+385515@[2024-12-09 08:16:21.904283] memory_region_add_subregion_commonname is io, subregion name is kvm-pic
+385515@[2024-12-09 08:16:21.904376] memory_region_add_subregion_commonname is io, subregion name is kvm-elcr
+385515@[2024-12-09 08:16:21.904583] memory_region_add_subregion_commonname is system, subregion name is kvm-ioapic
+385515@[2024-12-09 08:16:21.904684] memory_region_add_subregion_commonname is io, subregion name is ioport80
+385515@[2024-12-09 08:16:21.904785] memory_region_add_subregion_commonname is io, subregion name is ioportF0
+385515@[2024-12-09 08:16:21.904918] memory_region_add_subregion_commonname is system, subregion name is hpet
+385515@[2024-12-09 08:16:21.905159] memory_region_add_subregion_commonname is io, subregion name is rtc
+385515@[2024-12-09 08:16:21.905254] memory_region_add_subregion_commonname is rtc, subregion name is rtc-index
+385515@[2024-12-09 08:16:21.905453] memory_region_add_subregion_commonname is io, subregion name is kvm-pit
+385515@[2024-12-09 08:16:21.905565] memory_region_add_subregion_commonname is io, subregion name is pcspk
+385515@[2024-12-09 08:16:21.905695] memory_region_add_subregion_commonname is io, subregion name is dma-chan
+385515@[2024-12-09 08:16:21.905801] memory_region_add_subregion_commonname is io, subregion name is dma-page
+385515@[2024-12-09 08:16:21.905911] memory_region_add_subregion_commonname is io, subregion name is dma-page
+385515@[2024-12-09 08:16:21.906012] memory_region_add_subregion_commonname is io, subregion name is dma-cont
+385515@[2024-12-09 08:16:21.906119] memory_region_add_subregion_commonname is io, subregion name is dma-chan
+385515@[2024-12-09 08:16:21.906227] memory_region_add_subregion_commonname is io, subregion name is dma-page
+385515@[2024-12-09 08:16:21.906330] memory_region_add_subregion_commonname is io, subregion name is dma-page
+385515@[2024-12-09 08:16:21.906435] memory_region_add_subregion_commonname is io, subregion name is dma-cont
+385515@[2024-12-09 08:16:21.906557] memory_region_add_subregion_commonname is io, subregion name is parallel
+385515@[2024-12-09 08:16:21.906686] memory_region_add_subregion_commonname is io, subregion name is fdc
+385515@[2024-12-09 08:16:21.906801] memory_region_add_subregion_commonname is io, subregion name is fdc
+385515@[2024-12-09 08:16:21.906957] memory_region_add_subregion_commonname is io, subregion name is i8042-data
+385515@[2024-12-09 08:16:21.907066] memory_region_add_subregion_commonname is io, subregion name is i8042-cmd
+385515@[2024-12-09 08:16:21.907191] memory_region_add_subregion_commonname is io, subregion name is vmport
+385515@[2024-12-09 08:16:21.907408] memory_region_add_subregion_commonname is io, subregion name is port92
+add rom file: e1000.rom
+385515@[2024-12-09 08:16:21.910310] memory_region_add_subregion_commonname is piix-bmdma-container, subregion name is piix-bmdma
+385515@[2024-12-09 08:16:21.910457] memory_region_add_subregion_commonname is piix-bmdma-container, subregion name is bmdma
+385515@[2024-12-09 08:16:21.910578] memory_region_add_subregion_commonname is piix-bmdma-container, subregion name is piix-bmdma
+385515@[2024-12-09 08:16:21.910706] memory_region_add_subregion_commonname is piix-bmdma-container, subregion name is bmdma
+385515@[2024-12-09 08:16:21.910830] memory_region_add_subregion_commonname is io, subregion name is ide
+385515@[2024-12-09 08:16:21.910955] memory_region_add_subregion_commonname is io, subregion name is ide
+385515@[2024-12-09 08:16:21.911178] memory_region_add_subregion_commonname is io, subregion name is ide
+385515@[2024-12-09 08:16:21.911309] memory_region_add_subregion_commonname is io, subregion name is ide
+385515@[2024-12-09 08:16:21.911578] memory_region_add_subregion_commonname is io, subregion name is apm-io
+385515@[2024-12-09 08:16:21.911717] memory_region_add_subregion_commonname is io, subregion name is pm-smbus
+385515@[2024-12-09 08:16:21.912001] memory_region_add_subregion_commonname is io, subregion name is piix4-pm
+385515@[2024-12-09 08:16:21.912006] memory_region_add_subregion_commonname is piix4-pm, subregion name is acpi-tmr
+385515@[2024-12-09 08:16:21.912010] memory_region_add_subregion_commonname is piix4-pm, subregion name is acpi-evt
+385515@[2024-12-09 08:16:21.912017] memory_region_add_subregion_commonname is piix4-pm, subregion name is acpi-cnt
+385515@[2024-12-09 08:16:21.912115] memory_region_add_subregion_commonname is io, subregion name is acpi-gpe0
+385515@[2024-12-09 08:16:21.912270] memory_region_add_subregion_commonname is io, subregion name is acpi-pci-hotplug
+385515@[2024-12-09 08:16:21.912425] memory_region_add_subregion_commonname is io, subregion name is acpi-cpu-hotplug
+device init start
+add qdev isa-serial:none success
+385515@[2024-12-09 08:16:21.912835] memory_region_add_subregion_commonname is io, subregion name is serial
+add qdev isa-serial:none success
+385515@[2024-12-09 08:16:21.914470] memory_region_add_subregion_commonname is bus master container, subregion name is bus master
+385515@[2024-12-09 08:16:21.914601] memory_region_add_subregion_commonname is bus master container, subregion name is bus master
+385515@[2024-12-09 08:16:21.914742] memory_region_add_subregion_commonname is bus master container, subregion name is bus master
+385515@[2024-12-09 08:16:21.914896] memory_region_add_subregion_commonname is bus master container, subregion name is bus master
+385515@[2024-12-09 08:16:21.915031] memory_region_add_subregion_commonname is bus master container, subregion name is bus master
+385515@[2024-12-09 08:16:21.916836] memory_region_add_subregion_commonname is mem-container-smram, subregion name is mem-smram
+385515@[2024-12-09 08:16:21.916980] memory_region_add_subregion_commonname is mem-container-smram, subregion name is smram
+reset all devices
+qmp cont is received and vm is started
+385515@[2024-12-09 08:16:21.941931] runstate_setcurrent_run_state 6 (prelaunch) new_state 9 (running)
+385515@[2024-12-09 08:16:21.941939] vm_state_notifyrunning 1 reason 9 (running)
+qemu enter main_loop
+qmp_cmd_name: qmp_capabilities, arguments: {"enable": ["oob"]}
+385520@[2024-12-09 08:16:21.948097] pci_update_mappings_addd=0x56399e542b60 00:01.1 4,0xc040+0x10
+385520@[2024-12-09 08:16:21.948119] memory_region_add_subregion_commonname is io, subregion name is piix-bmdma-container
+385520@[2024-12-09 08:16:21.948339] memory_region_del_subregionname is io, subregion name is piix4-pm
+385520@[2024-12-09 08:16:21.948522] memory_region_del_subregionname is io, subregion name is pm-smbus
+385520@[2024-12-09 08:16:21.948739] pci_update_mappings_addd=0x56399e50fd60 00:02.0 0,0xfebc0000+0x20000
+385520@[2024-12-09 08:16:21.948743] memory_region_add_subregion_commonname is pci, subregion name is e1000-mmio
+385520@[2024-12-09 08:16:21.948965] pci_update_mappings_addd=0x56399e50fd60 00:02.0 1,0xc000+0x40
+385520@[2024-12-09 08:16:21.948968] memory_region_add_subregion_commonname is io, subregion name is e1000-io
+c[?7l[2J[0mSeaBIOS (version rel-1.15.0-0-g2dd4b9b3f840-prebuilt.qemu.org385520@[2024-12-09 08:16:21.956206] pci_update_mappings_addd=0x56399e50fd60 00:02.0 6,0xfeb80000+0x40000
+385520@[2024-12-09 08:16:21.956217] memory_region_add_subregion_commonname is pci, subregion name is e1000.rom
+385520@[2024-12-09 08:16:21.956773] pci_update_mappings_deld=0x56399e50fd60 00:02.0 6,0xfeb80000+0x40000
+385520@[2024-12-09 08:16:21.956778] memory_region_del_subregionname is pci, subregion name is e1000.rom
+)
+
+
+iPXE (http://ipxe.org) 00:02.0 C000 PCI2.10 PnP PMM+BFF912D0+BFEF12D0 C000
+Press Ctrl-B to configure iPXE (PCI 00:02.0)...
+                                                                              385520@[2024-12-09 08:16:21.959202] memory_region_add_subregion_commonname is system, subregion name is kvmvapic-rom
+ 
+
+
+Booting from ROM...
+early console in setup codc[?7l[2J385519@[2024-12-09 08:16:22.215719] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-cpus-fast", "arguments": {}, "id": "__qmp#00000"}
+qmp_cmd_name: query-cpus-fast, arguments: {}
+[    0.000000][    T0] Linux version 6.6.0-28.0.0.34.oe2403.x86_64 (root@dc-64g.compass-ci) (gcc_old (GCC) 12.3.1 (openEuler 12.3.1-30.oe2403), GNU ld (GNU Binutils) 2.41) #1 SMP Mon May 27 22:22:46 CST 2024
+[    0.000000][    T0] Command line: noapic edd=off printk.time=1 noreplace-smp cgroup_disable=memory pci=noearly console=ttyS0 debug ramsize=320 init=/sbin/init mm_dirty -m 30G -r 900
+[    0.000000][    T0] x86/split lock detection: #DB: warning on user-space bus_locks
+[    0.000000][    T0] BIOS-provided physical RAM map:
+[    0.000000][    T0] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000][    T0] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+[    0.000000][    T0] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000][    T0] BIOS-e820: [mem 0x0000000000100000-0x00000000bffdefff] usable
+[    0.000000][    T0] BIOS-e820: [mem 0x00000000bffdf000-0x00000000bfffffff] reserved
+[    0.000000][    T0] BIOS-e820: [mem 0x00000000feffc000-0x00000000feffffff] reserved
+[    0.000000][    T0] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+[    0.000000][    T0] BIOS-e820: [mem 0x0000000100000000-0x000000505fffffff] usable
+[    0.000000][    T0] NX (Execute Disable) protection: active
+[    0.000000][    T0] APIC: Static calls initialized
+[    0.000000][    T0] SMBIOS 2.8 present.
+[    0.000000][    T0] DMI: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.15.0-0-g2dd4b9b3f840-prebuilt.qemu.org 04/01/2014
+[    0.000000][    T0] Hypervisor detected: KVM
+[    0.000000][    T0] kvm-clock: Using msrs 4b564d01 and 4b564d00
+[    0.000000][    T0] kvm-clock: using sched offset of 240326644 cycles
+[    0.000001][    T0] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+[    0.000004][    T0] tsc: Detected 2600.000 MHz processor
+[    0.000317][    T0] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000319][    T0] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000322][    T0] last_pfn = 0x5060000 max_arch_pfn = 0x10000000000
+[    0.000356][    T0] MTRR map: 4 entries (3 fixed + 1 variable; max 19), built from 8 variable MTRRs
+[    0.000359][    T0] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.000399][    T0] last_pfn = 0xbffdf max_arch_pfn = 0x10000000000
+[    0.003935][    T0] found SMP MP-table at [mem 0x000f5ba0-0x000f5baf]
+[    0.003946][    T0] Using GB pages for direct mapping
+[    0.004054][    T0] RAMDISK: [mem 0xbff6a000-0xbffcffff]
+[    0.004056][    T0] ACPI: Early table checksum verification disabled
+[    0.004058][    T0] ACPI: RSDP 0x00000000000F5B60 000014 (v00 BOCHS )
+[    0.004061][    T0] ACPI: RSDT 0x00000000BFFE188A 000034 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.004065][    T0] ACPI: FACP 0x00000000BFFE16C6 000074 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.004068][    T0] ACPI: DSDT 0x00000000BFFDFA40 001C86 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.004071][    T0] ACPI: FACS 0x00000000BFFDFA00 000040
+[    0.004073][    T0] ACPI: APIC 0x00000000BFFE173A 0000F0 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.004075][    T0] ACPI: HPET 0x00000000BFFE182A 000038 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.004076][    T0] ACPI: WAET 0x00000000BFFE1862 000028 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.004078][    T0] ACPI: Reserving FACP table memory at [mem 0xbffe16c6-0xbffe1739]
+[    0.004079][    T0] ACPI: Reserving DSDT table memory at [mem 0xbffdfa40-0xbffe16c5]
+[    0.004080][    T0] ACPI: Reserving FACS table memory at [mem 0xbffdfa00-0xbffdfa3f]
+[    0.004080][    T0] ACPI: Reserving APIC table memory at [mem 0xbffe173a-0xbffe1829]
+[    0.004081][    T0] ACPI: Reserving HPET table memory at [mem 0xbffe182a-0xbffe1861]
+[    0.004081][    T0] ACPI: Reserving WAET table memory at [mem 0xbffe1862-0xbffe1889]
+[    0.004105][    T0] No NUMA configuration found
+[    0.004106][    T0] Faking a node at [mem 0x0000000000000000-0x000000505fffffff]
+[    0.004108][    T0] NODE_DATA(0) allocated [mem 0x505fff3000-0x505fffffff]
+[    0.004609][    T0] Zone ranges:
+[    0.004610][    T0]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.004612][    T0]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.004613][    T0]   Normal   [mem 0x0000000100000000-0x000000505fffffff]
+[    0.004614][    T0]   Device   empty
+[    0.004614][    T0] Movable zone start for each node
+[    0.004615][    T0] Early memory node ranges
+[    0.004616][    T0]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.004617][    T0]   node   0: [mem 0x0000000000100000-0x00000000bffdefff]
+[    0.004618][    T0]   node   0: [mem 0x0000000100000000-0x000000505fffffff]
+[    0.004633][    T0] Initmem setup node 0 [mem 0x0000000000001000-0x000000505fffffff]
+[    0.004902][    T0] On node 0, zone DMA: 1 pages in unavailable ranges
+[    0.004912][    T0] On node 0, zone DMA: 97 pages in unavailable ranges
+[    0.013758][    T0] On node 0, zone Normal: 33 pages in unavailable ranges
+[    0.013761][    T0] ACPI: PM-Timer IO Port: 0x608
+[    0.013770][    T0] ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+[    0.013771][    T0] ACPI: Skipping IOAPIC probe due to 'noapic' option.
+[    0.013772][    T0] ACPI: Using ACPI for processor (LAPIC) configuration information
+[    0.013773][    T0] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.013775][    T0] Intel MultiProcessor Specification v1.4
+[    0.013777][    T0] MPTABLE: OEM ID: BOCHSCPU
+[    0.013777][    T0] MPTABLE: Product ID: 0.1         
+[    0.013778][    T0] MPTABLE: APIC at: 0xFEE00000
+[    0.013810][    T0] IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+[    0.013812][    T0] Processors: 16
+[    0.013813][    T0] TSC deadline timer available
+[    0.013814][    T0] smpboot: Allowing 16 CPUs, 0 hotplug CPUs
+[    0.013828][    T0] kvm-guest: APIC: eoi() replaced with kvm_guest_apic_eoi_write()
+[    0.013837][    T0] kvm-guest: KVM setup pv remote TLB flush
+[    0.013840][    T0] kvm-guest: setup PV sched yield
+[    0.013845][    T0] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.013846][    T0] PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[    0.013847][    T0] PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[    0.013847][    T0] PM: hibernation: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+[    0.013848][    T0] PM: hibernation: Registered nosave memory: [mem 0xbffdf000-0xbfffffff]
+[    0.013849][    T0] PM: hibernation: Registered nosave memory: [mem 0xc0000000-0xfeffbfff]
+[    0.013849][    T0] PM: hibernation: Registered nosave memory: [mem 0xfeffc000-0xfeffffff]
+[    0.013850][    T0] PM: hibernation: Registered nosave memory: [mem 0xff000000-0xfffbffff]
+[    0.013850][    T0] PM: hibernation: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+[    0.013851][    T0] [mem 0xc0000000-0xfeffbfff] available for PCI devices
+[    0.013852][    T0] Booting paravirtualized kernel on KVM
+[    0.013853][    T0] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+[    0.018510][    T0] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:16 nr_cpu_ids:16 nr_node_ids:1
+[    0.020339][    T0] percpu: Embedded 65 pages/cpu s229376 r8192 d28672 u524288
+[    0.020343][    T0] pcpu-alloc: s229376 r8192 d28672 u524288 alloc=1*2097152
+[    0.020345][    T0] pcpu-alloc: [0] 00 01 02 03 [0] 04 05 06 07 
+[    0.020349][    T0] pcpu-alloc: [0] 08 09 10 11 [0] 12 13 14 15 
+[    0.020375][    T0] kvm-guest: PV spinlocks enabled
+[    0.020377][    T0] PV qspinlock hash table entries: 256 (order: 0, 4096 bytes, linear)
+[    0.020380][    T0] Kernel command line: noapic edd=off printk.time=1 noreplace-smp cgroup_disable=memory pci=noearly console=ttyS0 debug ramsize=320 init=/sbin/init mm_dirty -m 30G -r 900
+[    0.020476][    T0] cgroup: Disabling memory control group subsystem
+[    0.020577][    T0] Unknown kernel command line parameters "mm_dirty -m 30G -r 900 edd=off ramsize=320", will be passed to user space.
+[    0.020584][    T0] random: crng init done
+[    0.042955][    T0] Dentry cache hash table entries: 16777216 (order: 15, 134217728 bytes, linear)
+[    0.053758][    T0] Inode-cache hash table entries: 8388608 (order: 14, 67108864 bytes, linear)
+[    0.053955][    T0] Fallback order for Node 0: 0 
+[    0.053958][    T0] Built 1 zonelists, mobility grouping on.  Total pages: 82704095
+[    0.053959][    T0] Policy zone: Normal
+[    0.053960][    T0] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.053962][    T0] software IO TLB: area num 16.
+[    0.124902][    T0] Memory: 3209496K/336068084K available (16384K kernel code, 5606K rwdata, 11428K rodata, 3624K init, 6260K bss, 5569844K reserved, 0K cma-reserved)
+[    0.125033][    T0] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=16, Nodes=1
+[    0.125055][    T0] ftrace: allocating 48674 entries in 191 pages
+[    0.133157][    T0] ftrace: allocated 191 pages with 7 groups
+[    0.133585][    T0] rcu: Hierarchical RCU implementation.
+[    0.133585][    T0] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=16.
+[    0.133586][    T0] 	Rude variant of Tasks RCU enabled.
+[    0.133587][    T0] 	Tracing variant of Tasks RCU enabled.
+[    0.133587][    T0] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[    0.133588][    T0] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=16
+[    0.135965][    T0] NR_IRQS: 524544, nr_irqs: 552, preallocated irqs: 16
+[    0.136180][    T0] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.136301][    T0] Console: colour *CGA 80x25
+[    0.136335][    T0] printk: console [ttyS0] enabled
+[    0.212556][    T0] ACPI: Core revision 20230628
+[    0.212989][    T0] ACPI: setting ELCR to 0200 (from 0c00)
+[    0.213559][    T0] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+[    0.214498][    T0] APIC: Switch to symmetric I/O mode setup
+[    0.214999][    T0] Not enabling interrupt remapping due to skipped IO-APIC setup
+[    0.215685][    T0] APIC: Switched APIC routing to: physical flat
+[    0.216226][    T0] kvm-guest: APIC: send_IPI_mask() replaced with kvm_send_ipi_mask()
+[    0.216927][    T0] kvm-guest: APIC: send_IPI_mask_allbutself() replaced with kvm_send_ipi_mask_allbutself()
+[    0.217804][    T0] kvm-guest: setup PV IPIs
+[    0.218211][    T0] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x257a3c3232d, max_idle_ns: 440795236700 ns
+[    0.219204][    T0] Calibrating delay loop (skipped) preset value.. 5200.00 BogoMIPS (lpj=2600000)
+[    0.220326][    T0] x86/cpu: User Mode Instruction Prevention (UMIP) activated
+[    0.221270][    T0] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+[    0.221804][    T0] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+[    0.222213][    T0] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.223205][    T0] Spectre V2 : WARNING: Unprivileged eBPF is enabled with eIBRS on, data leaks possible via Spectre v2 BHB attacks!
+[    0.224206][    T0] Spectre V2 : Spectre BHI mitigation: SW BHB clearing on vm exit
+[    0.225204][    T0] Spectre V2 : Spectre BHI mitigation: SW BHB clearing on syscall
+[    0.225883][    T0] Spectre V2 : Mitigation: Enhanced / Automatic IBRS
+[    0.226204][    T0] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.227204][    T0] Spectre V2 : Spectre v2 / PBRSB-eIBRS: Retire a single CALL on VMEXIT
+[    0.227929][    T0] Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[    0.228205][    T0] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+[    0.229204][    T0] TAA: Mitigation: TSX disabled
+[    0.229627][    T0] MMIO Stale Data: Unknown: No mitigations
+[    0.230251][    T0] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.231204][    T0] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.231832][    T0] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.232204][    T0] x86/fpu: Supporting XSAVE feature 0x020: 'AVX-512 opmask'
+[    0.233204][    T0] x86/fpu: Supporting XSAVE feature 0x040: 'AVX-512 Hi256'
+[    0.233832][    T0] x86/fpu: Supporting XSAVE feature 0x080: 'AVX-512 ZMM_Hi256'
+[    0.234204][    T0] x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+[    0.235204][    T0] x86/fpu: Supporting XSAVE feature 0x20000: 'AMX Tile config'
+[    0.235862][    T0] x86/fpu: Supporting XSAVE feature 0x40000: 'AMX Tile data'
+[    0.236204][    T0] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.237204][    T0] x86/fpu: xstate_offset[5]:  832, xstate_sizes[5]:   64
+[    0.237816][    T0] x86/fpu: xstate_offset[6]:  896, xstate_sizes[6]:  512
+[    0.238204][    T0] x86/fpu: xstate_offset[7]: 1408, xstate_sizes[7]: 1024
+[    0.238815][    T0] x86/fpu: xstate_offset[9]: 2432, xstate_sizes[9]:    8
+[    0.239204][    T0] x86/fpu: xstate_offset[17]: 2496, xstate_sizes[17]:   64
+[    0.240204][    T0] x86/fpu: xstate_offset[18]: 2560, xstate_sizes[18]: 8192
+[    0.240830][    T0] x86/fpu: Enabled xstate features 0x602e7, context size is 10752 bytes, using 'compacted' format.
+[    0.256567][    T0] Freeing SMP alternatives memory: 40K
+[    0.257055][    T0] pid_max: default: 32768 minimum: 301
+[    0.257235][    T0] LSM: initializing lsm=lockdown,capability,yama,selinux,bpf,integrity
+[    0.258223][    T0] Yama: becoming mindful.
+[    0.258599][    T0] SELinux:  Initializing.
+[    0.258994][    T0] LSM support for eBPF active
+[    0.259610][    T0] Mount-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.260568][    T0] Mountpoint-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.261455][    T1] smpboot: CPU0: Intel(R) Xeon(R) Platinum 8438C (family: 0x6, model: 0x8f, stepping: 0x8)
+[    0.262202][    T1] RCU Tasks Rude: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1.
+[    0.262221][    T1] RCU Tasks Trace: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1.
+[    0.262963][    T1] Performance Events: PEBS fmt0-, Sapphire Rapids events, full-width counters, Intel PMU driver.
+[    0.263206][    T1] ... version:                2
+[    0.263629][    T1] ... bit width:              48
+[    0.264056][    T1] ... generic registers:      8
+[    0.264204][    T1] ... value mask:             0000ffffffffffff
+[    0.264738][    T1] ... max period:             00007fffffffffff
+[    0.265204][    T1] ... fixed-purpose events:   3
+[    0.265630][    T1] ... event mask:             00000007000000ff
+[    0.266253][    T1] signal: max sigframe size: 11952
+[    0.266714][    T1] rcu: Hierarchical SRCU implementation.
+[    0.267204][    T1] rcu: 	Max phase no-delay instances is 400.
+[    0.268470][    T1] smp: Bringing up secondary CPUs ...
+[    0.269038][    T1] smpboot: x86: Booting SMP configuration:
+[    0.269205][    T1] .... node  #0, CPUs:        #1  #2  #3  #4  #5  #6  #7  #8  #9 #10 #11 #12 #13 #14 #15
+[    0.276275][    T1] smp: Brought up 1 node, 16 CPUs
+[    0.277644][    T1] smpboot: Max logical packages: 1
+[    0.278088][    T1] smpboot: Total of 16 processors activated (83200.00 BogoMIPS)
+[    0.375951][  T110] node 0 deferred pages initialised in 97ms
+[    0.385208][    T1] devtmpfs: initialized
+[    0.385656][    T1] x86/mm: Memory block size: 512MB
+[    0.390291][    T1] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.391209][    T1] futex hash table entries: 4096 (order: 6, 262144 bytes, linear)
+[    0.391992][    T1] pinctrl core: initialized pinctrl subsystem
+[    0.392783][    T1] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.393317][    T1] DMA: preallocated 4096 KiB GFP_KERNEL pool for atomic allocations
+[    0.394016][    T1] DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.394206][    T1] DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.394984][    T1] audit: initializing netlink subsys (disabled)
+[    0.395217][  T128] audit: type=2000 audit(1733732182.460:1): state=initialized audit_enabled=0 res=1
+[    0.395302][    T1] thermal_sys: Registered thermal governor 'fair_share'
+[    0.396074][    T1] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.396204][    T1] thermal_sys: Registered thermal governor 'step_wise'
+[    0.396798][    T1] thermal_sys: Registered thermal governor 'user_space'
+[    0.397215][    T1] cpuidle: using governor menu
+[    0.398410][    T1] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.399116][    T1] PCI: Using configuration type 1 for base access
+[    0.399306][    T1] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    0.400254][    T1] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.400947][    T1] HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.400947][    T1] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.402204][    T1] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.424960][    T1] cryptd: max_cpu_qlen set to 1000
+[    0.425263][    T1] ACPI: Added _OSI(Module Device)
+[    0.425746][    T1] ACPI: Added _OSI(Processor Device)
+[    0.426204][    T1] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.426731][    T1] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.427775][    T1] ACPI: 1 ACPI AML tables successfully acquired and loaded
+385532@[2024-12-09 08:16:22.599036] memory_region_del_subregionname is io, subregion name is acpi-cpu-hotplug
+385532@[2024-12-09 08:16:22.599379] memory_region_add_subregion_commonname is io, subregion name is acpi-cpu-hotplug
+[    0.430226][    T1] ACPI: _OSC evaluation for CPUs failed, trying _PDC
+[    0.431228][    T1] ACPI: Interpreter enabled
+[    0.431659][    T1] ACPI: PM: (supports S0 S3 S4 S5)
+[    0.432145][    T1] ACPI: Using PIC for interrupt routing
+[    0.432212][    T1] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.433157][    T1] PCI: Using E820 reservations for host bridge windows
+[    0.434274][    T1] ACPI: Enabled 2 GPEs in block 00 to 0F
+[    0.436612][    T1] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.437206][    T1] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI EDR HPX-Type3]
+[    0.438052][    T1] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+[    0.439209][    T1] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+[    0.440418][    T1] acpiphp: Slot [2] registered
+[    0.440882][    T1] acpiphp: Slot [3] registered
+[    0.441214][    T1] acpiphp: Slot [4] registered
+[    0.441675][    T1] acpiphp: Slot [5] registered
+[    0.442138][    T1] acpiphp: Slot [6] registered
+[    0.442213][    T1] acpiphp: Slot [7] registered
+[    0.442683][    T1] acpiphp: Slot [8] registered
+[    0.443144][    T1] acpiphp: Slot [9] registered
+[    0.444214][    T1] acpiphp: Slot [10] registered
+[    0.444680][    T1] acpiphp: Slot [11] registered
+[    0.445151][    T1] acpiphp: Slot [12] registered
+[    0.445214][    T1] acpiphp: Slot [13] registered
+[    0.445682][    T1] acpiphp: Slot [14] registered
+[    0.446148][    T1] acpiphp: Slot [15] registered
+[    0.446213][    T1] acpiphp: Slot [16] registered
+[    0.446679][    T1] acpiphp: Slot [17] registered
+[    0.447148][    T1] acpiphp: Slot [18] registered
+[    0.448215][    T1] acpiphp: Slot [19] registered
+[    0.448682][    T1] acpiphp: Slot [20] registered
+[    0.449151][    T1] acpiphp: Slot [21] registered
+[    0.449213][    T1] acpiphp: Slot [22] registered
+[    0.449683][    T1] acpiphp: Slot [23] registered
+[    0.450150][    T1] acpiphp: Slot [24] registered
+[    0.451213][    T1] acpiphp: Slot [25] registered
+[    0.451682][    T1] acpiphp: Slot [26] registered
+[    0.452152][    T1] acpiphp: Slot [27] registered
+[    0.452213][    T1] acpiphp: Slot [28] registered
+[    0.452684][    T1] acpiphp: Slot [29] registered
+[    0.453148][    T1] acpiphp: Slot [30] registered
+[    0.453213][    T1] acpiphp: Slot [31] registered
+[    0.453677][    T1] PCI host bridge to bus 0000:00
+[    0.454143][    T1] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.455204][    T1] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.455926][    T1] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.457204][    T1] pci_bus 0000:00: root bus resource [mem 0xc0000000-0xfebfffff window]
+[    0.457991][    T1] pci_bus 0000:00: root bus resource [mem 0x5080000000-0x50ffffffff window]
+[    0.458204][    T1] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.458835][    T1] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+[    0.459803][    T1] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+[    0.461643][    T1] pci 0000:00:01.1: [8086:7010] type 00 class 0x010180
+385532@[2024-12-09 08:16:22.632218] pci_update_mappings_deld=0x56399e542b60 00:01.1 4,0xc040+0x10
+385532@[2024-12-09 08:16:22.632228] memory_region_del_subregionname is io, subregion name is piix-bmdma-container
+385532@[2024-12-09 08:16:22.632524] pci_update_mappings_addd=0x56399e542b60 00:01.1 4,0xc040+0x10
+385532@[2024-12-09 08:16:22.632528] memory_region_add_subregion_commonname is io, subregion name is piix-bmdma-container
+385532@[2024-12-09 08:16:22.632790] pci_update_mappings_deld=0x56399e542b60 00:01.1 4,0xc040+0x10
+385532@[2024-12-09 08:16:22.632794] memory_region_del_subregionname is io, subregion name is piix-bmdma-container
+385532@[2024-12-09 08:16:22.633080] pci_update_mappings_addd=0x56399e542b60 00:01.1 4,0xc040+0x10
+385532@[2024-12-09 08:16:22.633084] memory_region_add_subregion_commonname is io, subregion name is piix-bmdma-container
+385532@[2024-12-09 08:16:22.633345] pci_update_mappings_deld=0x56399e542b60 00:01.1 4,0xc040+0x10
+385532@[2024-12-09 08:16:22.633348] memory_region_del_subregionname is io, subregion name is piix-bmdma-container
+385532@[2024-12-09 08:16:22.633617] pci_update_mappings_addd=0x56399e542b60 00:01.1 4,0xc040+0x10
+385532@[2024-12-09 08:16:22.633621] memory_region_add_subregion_commonname is io, subregion name is piix-bmdma-container
+385532@[2024-12-09 08:16:22.633876] pci_update_mappings_deld=0x56399e542b60 00:01.1 4,0xc040+0x10
+385532@[2024-12-09 08:16:22.633879] memory_region_del_subregionname is io, subregion name is piix-bmdma-container
+385532@[2024-12-09 08:16:22.634148] pci_update_mappings_addd=0x56399e542b60 00:01.1 4,0xc040+0x10
+385532@[2024-12-09 08:16:22.634150] memory_region_add_subregion_commonname is io, subregion name is piix-bmdma-container
+385532@[2024-12-09 08:16:22.634412] pci_update_mappings_deld=0x56399e542b60 00:01.1 4,0xc040+0x10
+385532@[2024-12-09 08:16:22.634415] memory_region_del_subregionname is io, subregion name is piix-bmdma-container
+385532@[2024-12-09 08:16:22.634690] pci_update_mappings_addd=0x56399e542b60 00:01.1 4,0xc040+0x10
+385532@[2024-12-09 08:16:22.634698] memory_region_add_subregion_commonname is io, subregion name is piix-bmdma-container
+[    0.464792][    T1] pci 0000:00:01.1: reg 0x20: [io  0xc040-0xc04f]
+385532@[2024-12-09 08:16:22.635620] pci_update_mappings_deld=0x56399e542b60 00:01.1 4,0xc040+0x10
+385532@[2024-12-09 08:16:22.635624] memory_region_del_subregionname is io, subregion name is piix-bmdma-container
+385532@[2024-12-09 08:16:22.635898] pci_update_mappings_addd=0x56399e542b60 00:01.1 4,0xc040+0x10
+385532@[2024-12-09 08:16:22.635901] memory_region_add_subregion_commonname is io, subregion name is piix-bmdma-container
+385532@[2024-12-09 08:16:22.636158] pci_update_mappings_deld=0x56399e542b60 00:01.1 4,0xc040+0x10
+385532@[2024-12-09 08:16:22.636162] memory_region_del_subregionname is io, subregion name is piix-bmdma-container
+385532@[2024-12-09 08:16:22.636430] pci_update_mappings_addd=0x56399e542b60 00:01.1 4,0xc040+0x10
+385532@[2024-12-09 08:16:22.636433] memory_region_add_subregion_commonname is io, subregion name is piix-bmdma-container
+[    0.466221][    T1] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[    0.466977][    T1] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[    0.468204][    T1] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[    0.468958][    T1] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[    0.469329][    T1] pci 0000:00:01.3: [8086:7113] type 00 class 0x068000
+[    0.470331][    T1] pci 0000:00:01.3: quirk: [io  0x0600-0x063f] claimed by PIIX4 ACPI
+[    0.471103][    T1] pci 0000:00:01.3: quirk: [io  0x0700-0x070f] claimed by PIIX4 SMB
+[    0.472354][    T1] pci 0000:00:02.0: [8086:100e] type 00 class 0x020000
+385532@[2024-12-09 08:16:22.643365] pci_update_mappings_deld=0x56399e50fd60 00:02.0 0,0xfebc0000+0x20000
+385532@[2024-12-09 08:16:22.643369] memory_region_del_subregionname is pci, subregion name is e1000-mmio
+385532@[2024-12-09 08:16:22.643639] pci_update_mappings_deld=0x56399e50fd60 00:02.0 1,0xc000+0x40
+385532@[2024-12-09 08:16:22.643642] memory_region_del_subregionname is io, subregion name is e1000-io
+385532@[2024-12-09 08:16:22.643855] pci_update_mappings_addd=0x56399e50fd60 00:02.0 0,0xfebc0000+0x20000
+385532@[2024-12-09 08:16:22.643858] memory_region_add_subregion_commonname is pci, subregion name is e1000-mmio
+385532@[2024-12-09 08:16:22.644116] pci_update_mappings_addd=0x56399e50fd60 00:02.0 1,0xc000+0x40
+385532@[2024-12-09 08:16:22.644119] memory_region_add_subregion_commonname is io, subregion name is e1000-io
+[    0.473677][    T1] pci 0000:00:02.0: reg 0x10: [mem 0xfebc0000-0xfebdffff]
+385532@[2024-12-09 08:16:22.644992] pci_update_mappings_deld=0x56399e50fd60 00:02.0 0,0xfebc0000+0x20000
+385532@[2024-12-09 08:16:22.644995] memory_region_del_subregionname is pci, subregion name is e1000-mmio
+385532@[2024-12-09 08:16:22.645226] pci_update_mappings_deld=0x56399e50fd60 00:02.0 1,0xc000+0x40
+385532@[2024-12-09 08:16:22.645228] memory_region_del_subregionname is io, subregion name is e1000-io
+385532@[2024-12-09 08:16:22.645446] pci_update_mappings_addd=0x56399e50fd60 00:02.0 0,0xfebc0000+0x20000
+385532@[2024-12-09 08:16:22.645450] memory_region_add_subregion_commonname is pci, subregion name is e1000-mmio
+385532@[2024-12-09 08:16:22.645690] pci_update_mappings_addd=0x56399e50fd60 00:02.0 1,0xc000+0x40
+385532@[2024-12-09 08:16:22.645693] memory_region_add_subregion_commonname is io, subregion name is e1000-io
+[    0.476102][    T1] pci 0000:00:02.0: reg 0x14: [io  0xc000-0xc03f]
+385532@[2024-12-09 08:16:22.646504] pci_update_mappings_deld=0x56399e50fd60 00:02.0 0,0xfebc0000+0x20000
+385532@[2024-12-09 08:16:22.646507] memory_region_del_subregionname is pci, subregion name is e1000-mmio
+385532@[2024-12-09 08:16:22.646763] pci_update_mappings_deld=0x56399e50fd60 00:02.0 1,0xc000+0x40
+385532@[2024-12-09 08:16:22.646766] memory_region_del_subregionname is io, subregion name is e1000-io
+385532@[2024-12-09 08:16:22.646971] pci_update_mappings_addd=0x56399e50fd60 00:02.0 0,0xfebc0000+0x20000
+385532@[2024-12-09 08:16:22.646978] memory_region_add_subregion_commonname is pci, subregion name is e1000-mmio
+385532@[2024-12-09 08:16:22.647248] pci_update_mappings_addd=0x56399e50fd60 00:02.0 1,0xc000+0x40
+385532@[2024-12-09 08:16:22.647250] memory_region_add_subregion_commonname is io, subregion name is e1000-io
+385532@[2024-12-09 08:16:22.647460] pci_update_mappings_deld=0x56399e50fd60 00:02.0 0,0xfebc0000+0x20000
+385532@[2024-12-09 08:16:22.647463] memory_region_del_subregionname is pci, subregion name is e1000-mmio
+385532@[2024-12-09 08:16:22.647703] pci_update_mappings_deld=0x56399e50fd60 00:02.0 1,0xc000+0x40
+385532@[2024-12-09 08:16:22.647706] memory_region_del_subregionname is io, subregion name is e1000-io
+385532@[2024-12-09 08:16:22.647924] pci_update_mappings_addd=0x56399e50fd60 00:02.0 0,0xfebc0000+0x20000
+385532@[2024-12-09 08:16:22.647927] memory_region_add_subregion_commonname is pci, subregion name is e1000-mmio
+385532@[2024-12-09 08:16:22.648233] pci_update_mappings_addd=0x56399e50fd60 00:02.0 1,0xc000+0x40
+385532@[2024-12-09 08:16:22.648236] memory_region_add_subregion_commonname is io, subregion name is e1000-io
+385532@[2024-12-09 08:16:22.648495] pci_update_mappings_deld=0x56399e50fd60 00:02.0 0,0xfebc0000+0x20000
+385532@[2024-12-09 08:16:22.648498] memory_region_del_subregionname is pci, subregion name is e1000-mmio
+385532@[2024-12-09 08:16:22.648790] pci_update_mappings_deld=0x56399e50fd60 00:02.0 1,0xc000+0x40
+385532@[2024-12-09 08:16:22.648793] memory_region_del_subregionname is io, subregion name is e1000-io
+385532@[2024-12-09 08:16:22.649064] pci_update_mappings_addd=0x56399e50fd60 00:02.0 0,0xfebc0000+0x20000
+385532@[2024-12-09 08:16:22.649067] memory_region_add_subregion_commonname is pci, subregion name is e1000-mmio
+385532@[2024-12-09 08:16:22.649487] pci_update_mappings_addd=0x56399e50fd60 00:02.0 1,0xc000+0x40
+385532@[2024-12-09 08:16:22.649489] memory_region_add_subregion_commonname is io, subregion name is e1000-io
+385532@[2024-12-09 08:16:22.649754] pci_update_mappings_deld=0x56399e50fd60 00:02.0 0,0xfebc0000+0x20000
+385532@[2024-12-09 08:16:22.649758] memory_region_del_subregionname is pci, subregion name is e1000-mmio
+385532@[2024-12-09 08:16:22.650051] pci_update_mappings_deld=0x56399e50fd60 00:02.0 1,0xc000+0x40
+385532@[2024-12-09 08:16:22.650053] memory_region_del_subregionname is io, subregion name is e1000-io
+385532@[2024-12-09 08:16:22.650542] pci_update_mappings_addd=0x56399e50fd60 00:02.0 0,0xfebc0000+0x20000
+385532@[2024-12-09 08:16:22.650546] memory_region_add_subregion_commonname is pci, subregion name is e1000-mmio
+385532@[2024-12-09 08:16:22.650807] pci_update_mappings_addd=0x56399e50fd60 00:02.0 1,0xc000+0x40
+385532@[2024-12-09 08:16:22.650810] memory_region_add_subregion_commonname is io, subregion name is e1000-io
+385532@[2024-12-09 08:16:22.651007] pci_update_mappings_deld=0x56399e50fd60 00:02.0 0,0xfebc0000+0x20000
+385532@[2024-12-09 08:16:22.651010] memory_region_del_subregionname is pci, subregion name is e1000-mmio
+385532@[2024-12-09 08:16:22.651214] pci_update_mappings_deld=0x56399e50fd60 00:02.0 1,0xc000+0x40
+385532@[2024-12-09 08:16:22.651216] memory_region_del_subregionname is io, subregion name is e1000-io
+385532@[2024-12-09 08:16:22.651428] pci_update_mappings_addd=0x56399e50fd60 00:02.0 0,0xfebc0000+0x20000
+385532@[2024-12-09 08:16:22.651431] memory_region_add_subregion_commonname is pci, subregion name is e1000-mmio
+385532@[2024-12-09 08:16:22.651673] pci_update_mappings_addd=0x56399e50fd60 00:02.0 1,0xc000+0x40
+385532@[2024-12-09 08:16:22.651676] memory_region_add_subregion_commonname is io, subregion name is e1000-io
+[    0.481677][    T1] pci 0000:00:02.0: reg 0x30: [mem 0xfeb80000-0xfebbffff pref]
+[    0.482948][    T1] ACPI: PCI: Interrupt link LNKA configured for IRQ 10
+[    0.484291][    T1] ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+[    0.485010][    T1] ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+[    0.485272][    T1] ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+[    0.485963][    T1] ACPI: PCI: Interrupt link LNKS configured for IRQ 9
+[    0.486283][    T1] cpu cpu0: ACPI companion already set
+[    0.488212][    T1] iommu: Default domain type: Passthrough
+[    0.489281][    T1] SCSI subsystem initialized
+[    0.489729][    T1] ACPI: bus type USB registered
+[    0.490197][    T1] usbcore: registered new interface driver usbfs
+[    0.490209][    T1] usbcore: registered new interface driver hub
+[    0.490796][    T1] usbcore: registered new device driver usb
+[    0.491213][    T1] pps_core: LinuxPPS API ver. 1 registered
+[    0.491761][    T1] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.493205][    T1] PTP clock support registered
+[    0.493672][    T1] EDAC MC: Ver: 3.0.0
+[    0.494404][    T1] NetLabel: Initializing
+[    0.494808][    T1] NetLabel:  domain hash size = 128
+[    0.495205][    T1] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.495836][    T1] NetLabel:  unlabeled traffic allowed by default
+[    0.496204][    T1] PCI: Using ACPI for IRQ routing
+[    0.496678][    T1] PCI: pci_cache_line_size set to 64 bytes
+[    0.497265][    T1] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+[    0.497911][    T1] e820: reserve RAM buffer [mem 0xbffdf000-0xbfffffff]
+[    0.499240][    T1] vgaarb: loaded
+[    0.499548][    T1] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[    0.500204][    T1] hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+[    0.505263][    T1] clocksource: Switched to clocksource kvm-clock
+[    0.506584][    T1] VFS: Disk quotas dquot_6.6.0
+[    0.507072][    T1] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.507846][    T1] pnp: PnP ACPI init
+[    0.508289][    T1] pnp 00:03: [dma 2]
+[    0.508812][    T1] pnp: PnP ACPI: found 6 devices
+[    0.515588][    T1] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.516595][    T1] NET: Registered PF_INET protocol family
+[    0.517526][    T1] IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.520279][    T1] tcp_listen_portaddr_hash hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+[    0.521518][    T1] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.522361][    T1] TCP established hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.524072][    T1] TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+[    0.525277][    T1] TCP: Hash tables configured (established 524288 bind 65536)
+[    0.526448][    T1] MPTCP token hash table entries: 65536 (order: 8, 1572864 bytes, linear)
+[    0.527407][    T1] UDP hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+[    0.528549][    T1] UDP-Lite hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+[    0.529796][    T1] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.530519][    T1] NET: Registered PF_XDP protocol family
+[    0.531064][    T1] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.531729][    T1] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.532402][    T1] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.533142][    T1] pci_bus 0000:00: resource 7 [mem 0xc0000000-0xfebfffff window]
+[    0.533871][    T1] pci_bus 0000:00: resource 8 [mem 0x5080000000-0x50ffffffff window]
+[    0.534675][    T1] pci 0000:00:01.0: PIIX3: Enabling Passive Release
+[    0.535317][    T1] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    0.535996][    T1] PCI: CLS 0 bytes, default 64
+[    0.536458][    T1] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.536523][   T11] Trying to unpack rootfs image as initramfs...
+[    0.537159][    T1] software IO TLB: mapped [mem 0x00000000bbf6a000-0x00000000bff6a000] (64MB)
+[    0.537218][    T1] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x257a3c3232d, max_idle_ns: 440795236700 ns
+[    0.543022][   T11] Freeing initrd memory: 408K
+[    0.546350][    T1] Initialise system trusted keyrings
+[    0.546889][    T1] Key type blacklist registered
+[    0.547399][    T1] workingset: timestamp_bits=38 max_order=27 bucket_order=0
+[    0.548104][    T1] zbud: loaded
+[    0.549080][    T1] integrity: Platform Keyring initialized
+[    0.554026][    T1] NET: Registered PF_ALG protocol family
+[    0.554569][    T1] Key type asymmetric registered
+[    0.555040][    T1] Asymmetric key parser 'x509' registered
+[    0.555579][    T1] Asymmetric key parser 'pgp' registered
+[    0.556134][    T1] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 247)
+[    0.556981][    T1] io scheduler mq-deadline registered
+[    0.557496][    T1] io scheduler kyber registered
+[    0.557962][    T1] io scheduler bfq registered
+[    0.559446][    T1] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    0.560237][    T1] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[    0.561087][    T1] ACPI: button: Power Button [PWRF]
+[    0.561979][    T1] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.562768][    T1] 00:00: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    0.563906][    T1] Non-volatile memory driver v1.3
+[    0.565540][    T1] rdac: device handler registered
+[    0.566064][    T1] hp_sw: device handler registered
+[    0.566547][    T1] emc: device handler registered
+[    0.567066][    T1] alua: device handler registered
+[    0.567686][    T1] i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+[    0.569024][    T1] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    0.569578][    T1] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    0.570192][    T1] mousedev: PS/2 mouse device common for all mice
+[    0.570889][    T1] rtc_cmos 00:05: RTC can wake from S4
+[    0.571777][    T1] rtc_cmos 00:05: registered as rtc0
+[    0.572095][  T140] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+[    0.572531][    T1] rtc_cmos 00:05: setting system clock to 2024-12-09T08:16:21 UTC (1733732181)
+[    0.574048][  T140] input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input4
+[    0.574538][    T1] rtc_cmos 00:05: alarms up to one day, y3k, 242 bytes nvram, hpet irqs
+[    0.575667][  T140] input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input3
+[    0.576251][    T1] intel_pstate: CPU model not supported
+[    0.578007][    T1] hid: raw HID events driver (C) Jiri Kosina
+[    0.578595][    T1] usbcore: registered new interface driver usbhid
+[    0.579208][    T1] usbhid: USB HID core driver
+[    0.579664][    T1] drop_monitor: Initializing network drop monitor service
+[    0.589437][    T1] Initializing XFRM netlink socket
+[    0.589960][    T1] NET: Registered PF_INET6 protocol family
+[    0.590747][    T1] Segment Routing with IPv6
+[    0.591192][    T1] In-situ OAM (IOAM) with IPv6
+[    0.591656][    T1] NET: Registered PF_PACKET protocol family
+[    0.592270][    T1] mpls_gso: MPLS GSO support
+[    0.593853][    T1] IPI shorthand broadcast: enabled
+[    0.594352][    T1] AVX2 version of gcm_enc/dec engaged.
+[    0.595002][    T1] AES CTR mode by8 optimization enabled
+[    0.597002][    T1] sched_clock: Marking stable (518002723, 78016405)->(623298938, -27279810)
+[    0.597977][    T1] registered taskstats version 1
+[    0.599117][    T1] Loading compiled-in X.509 certificates
+[    0.600079][    T1] Loaded X.509 cert 'openEuler kernel ICA 1: 90bb67eb4b57eb62bf6f867e4f56bd4e19e7d041'
+[    0.600992][    T1] Load PGP public keys
+[    0.603343][    T1] Key type encrypted registered
+[    0.603807][    T1] ima: No TPM chip found, activating TPM-bypass!
+[    0.604426][    T1] Loading compiled-in module X.509 certificates
+[    0.605036][    T1] ima: Allocated hash algorithm: sha256
+[    0.605565][    T1] ima: No architecture policies found
+[    0.606097][    T1] evm: Initialising EVM extended attributes:
+[    0.606661][    T1] evm: security.selinux
+[    0.607059][    T1] evm: security.SMACK64 (disabled)
+[    0.607539][    T1] evm: security.SMACK64EXEC (disabled)
+[    0.608071][    T1] evm: security.SMACK64TRANSMUTE (disabled)
+[    0.608624][    T1] evm: security.SMACK64MMAP (disabled)
+[    0.609148][    T1] evm: security.apparmor
+[    0.609548][    T1] evm: security.ima
+[    0.609908][    T1] evm: security.capability
+[    0.610327][    T1] evm: HMAC attrs: 0x1
+[    0.635587][    T1] clk: Disabling unused clocks
+[    0.636267][    T1] integrity: Unable to open file: /etc/keys/x509_ima.der (-2)
+[    0.636270][    T1] integrity: Unable to open file: /etc/keys/x509_evm.der (-2)
+[    0.640410][    T1] Freeing unused decrypted memory: 2028K
+[    0.641947][    T1] Freeing unused kernel image (initmem) memory: 3624K
+[    0.642412][    T1] Write protecting the kernel read-only data: 28672k
+[    0.643254][    T1] Freeing unused kernel image (rodata/data gap) memory: 860K
+[    0.643748][    T1] Run /init as init process
+[    0.644057][    T1]   with arguments:
+[    0.644311][    T1]     /init
+[    0.644521][    T1]     mm_dirty
+[    0.644746][    T1]     -m
+[    0.644940][    T1]     30G
+[    0.645139][    T1]     -r
+[    0.645329][    T1]     900
+[    0.645526][    T1]   with environment:
+[    0.645791][    T1]     HOME=/
+[    0.646009][    T1]     TERM=linux
+[    0.646253][    T1]     edd=off
+[    0.646474][    T1]     ramsize=320
+This is the parent process. PID: 1, Child PID: 285
+This is the child process. PID: 285
+This is the parent process. PID: 1, Child PID: 286
+This is the child process. PID: 286
+Binary version: 	v0.2.4-dirty
+This is the parent process. PID: 1, Child PID: 287
+Test memory size: 	30720 (MB)
+Binary version: 	v0.2.4-dirty
+Backend page size: 	4096 (Bytes)
+This is the parent process. PID: 1, Child PID: 288
+This is the child process. PID: 288
+Test memory size: 	30720 (MB)
+Dirty step size: 	4096 (Bytes)
+This is the parent process. PID: 1, Child PID: 289
+This is the child process. PID: 289
+Backend page size: 	4096 (Bytes)
+Binary version: 	v0.2.4-dirty
+Dirty memory rate: 	900 (MB/s)
+This is the parent process. PID: 1, Child PID: 290
+This is the child process. PID: 290
+Dirty step size: 	4096 (Bytes)
+Binary version: 	v0.2.4-dirty
+Test memory size: 	30720 (MB)
+Dirty pattern: 		sequential
+This is the parent process. PID: 1, Child PID: 291
+This is the child process. PID: 291
+Binary version: 	v0.2.4-dirty
+Dirty memory rate: 	900 (MB/s)
+Test memory size: 	30720 (MB)
+Backend page size: 	4096 (Bytes)
+Recording latencies: 	no
+This is the parent process. PID: 1, Child PID: 292
+This is the child process. PID: 292
+Test memory size: 	30720 (MB)
+Binary version: 	v0.2.4-dirty
+Dirty pattern: 		sequential
+Backend page size: 	4096 (Bytes)
+Dirty step size: 	4096 (Bytes)
++------------------------+
+This is the parent process. PID: 1, Child PID: 293
+This is the child process. PID: 293
+Backend page size: 	4096 (Bytes)
+Binary version: 	v0.2.4-dirty
+Test memory size: 	30720 (MB)
+Recording latencies: 	no
+Dirty step size: 	4096 (Bytes)
+Dirty memory rate: 	900 (MB/s)
+|   Prefault Memory      |
+Binary version: 	v0.2.4-dirty
+Binary version: 	v0.2.4-dirty
+Dirty step size: 	4096 (Bytes)
+Test memory size: 	30720 (MB)
+Backend page size: 	4096 (Bytes)
++------------------------+
+Dirty memory rate: 	900 (MB/s)
+Dirty pattern: 		sequential
++------------------------+
+Test memory size: 	30720 (MB)
+Test memory size: 	30720 (MB)
+Dirty memory rate: 	900 (MB/s)
+Backend page size: 	4096 (Bytes)
+Dirty step size: 	4096 (Bytes)
+Dirty pattern: 		sequential
+Recording latencies: 	no
+Backend page size: 	4096 (Bytes)
+Dirty pattern: 		sequential
+Backend page size: 	4096 (Bytes)
+Dirty step size: 	4096 (Bytes)
+Dirty memory rate: 	900 (MB/s)
+Recording latencies: 	no
++------------------------+
+Dirty step size: 	4096 (Bytes)
+Dirty step size: 	4096 (Bytes)
+Dirty memory rate: 	900 (MB/s)
+Dirty pattern: 		sequential
+Dirty memory rate: 	900 (MB/s)
+Dirty memory rate: 	900 (MB/s)
+Dirty pattern: 		sequential
+Recording latencies: 	no
+Dirty pattern: 		sequential
+Dirty pattern: 		sequential
+Recording latencies: 	no
++------------------------+
+Recording latencies: 	no
+Recording latencies: 	no
++------------------------+
+|   Prefault Memory      |
++------------------------+
+|   Prefault Memory      |
++------------------------+
+|   Prefault Memory      |
++------------------------+
++------------------------+
+|   Prefault Memory      |
++------------------------+
+|   Prefault Memory      |
+|   Prefault Memory      |
++------------------------+
++------------------------+
+Recording latencies: 	no
++------------------------+
+|   Prefault Memory      |
++------------------------+
++------------------------+
+|   Prefault Memory      |
++------------------------+
+This is the child process. PID: 287
+Binary version: 	v0.2.4-dirty
+Test memory size: 	30720 (MB)
+Backend page size: 	4096 (Bytes)
+Dirty step size: 	4096 (Bytes)
+Dirty memory rate: 	900 (MB/s)
+Dirty pattern: 		sequential
+Recording latencies: 	no
++------------------------+
+|   Prefault Memory      |
++------------------------+
++------------------------+
+................................................................................................................................................................done
++------------------------+
+|   Start Dirty Memory   |
++------------------------+
+init (00291): INFO: 1733732186645ms copied 1 GB in 05066ms
+done
++------------------------+
+|   Start Dirty Memory   |
++------------------------+
+init (00285): INFO: 1733732186649ms copied 1 GB in 05074ms
+done
++------------------------+
+|   Start Dirty Memory   |
++------------------------+
+init (00001): INFO: 1733732186659ms copied 1 GB in 05081ms
+done
++------------------------+
+|   Start Dirty Memory   |
++------------------------+
+init (00287): INFO: 1733732186660ms copied 1 GB in 05065ms
+done
++------------------------+
+|   Start Dirty Memory   |
++------------------------+
+init (00290): INFO: 1733732186661ms copied 1 GB in 05078ms
+done
++------------------------+
+|   Start Dirty Memory   |
++------------------------+
+init (00293): INFO: 1733732186663ms copied 1 GB in 05085ms
+done
++------------------------+
+|   Start Dirty Memory   |
++------------------------+
+init (00288): INFO: 1733732186664ms copied 1 GB in 05087ms
+done
++------------------------+
+|   Start Dirty Memory   |
++------------------------+
+init (00289): INFO: 1733732186665ms copied 1 GB in 05088ms
+done
++------------------------+
+|   Start Dirty Memory   |
++------------------------+
+init (00292): INFO: 1733732186666ms copied 1 GB in 05088ms
+done
++------------------------+
+|   Start Dirty Memory   |
++------------------------+
+init (00286): INFO: 1733732186668ms copied 1 GB in 05092ms
+init (00291): INFO: 1733732187645ms copied 1 GB in 00012ms
+init (00285): INFO: 1733732187650ms copied 1 GB in 00012ms
+init (00001): INFO: 1733732187659ms copied 1 GB in 00007ms
+init (00287): INFO: 1733732187661ms copied 1 GB in 00007ms
+init (00290): INFO: 1733732187661ms copied 1 GB in 00008ms
+init (00293): INFO: 1733732187664ms copied 1 GB in 00006ms
+init (00288): INFO: 1733732187665ms copied 1 GB in 00005ms
+init (00289): INFO: 1733732187665ms copied 1 GB in 00008ms
+init (00292): INFO: 1733732187667ms copied 1 GB in 00005ms
+init (00286): INFO: 1733732187669ms copied 1 GB in 00006ms
+init (00291): INFO: 1733732188646ms copied 1 GB in 00006ms
+init (00285): INFO: 1733732188649ms copied 1 GB in 00011ms
+init (00001): INFO: 1733732188660ms copied 1 GB in 00011ms
+init (00287): INFO: 1733732188660ms copied 1 GB in 00011ms
+init (00290): INFO: 1733732188661ms copied 1 GB in 00011ms
+init (00293): INFO: 1733732188664ms copied 1 GB in 00008ms
+init (00288): INFO: 1733732188664ms copied 1 GB in 00011ms
+init (00289): INFO: 1733732188665ms copied 1 GB in 00009ms
+init (00292): INFO: 1733732188666ms copied 1 GB in 00007ms
+init (00286): INFO: 1733732188669ms copied 1 GB in 00010ms
+init (00291): INFO: 1733732189646ms copied 1 GB in 00007ms
+init (00285): INFO: 1733732189649ms copied 1 GB in 00013ms
+init (00001): INFO: 1733732189660ms copied 1 GB in 00007ms
+init (00287): INFO: 1733732189660ms copied 1 GB in 00007ms
+init (00290): INFO: 1733732189661ms copied 1 GB in 00007ms
+init (00288): INFO: 1733732189665ms copied 1 GB in 00009ms
+init (00293): INFO: 1733732189665ms copied 1 GB in 00006ms
+init (00289): INFO: 1733732189666ms copied 1 GB in 00013ms
+init (00292): INFO: 1733732189667ms copied 1 GB in 00006ms
+init (00286): INFO: 1733732189669ms copied 1 GB in 00007ms
+init (00291): INFO: 1733732190646ms copied 1 GB in 00010ms
+init (00285): INFO: 1733732190649ms copied 1 GB in 00010ms
+init (00290): INFO: 1733732190660ms copied 1 GB in 00007ms
+init (00287): INFO: 1733732190661ms copied 1 GB in 00006ms
+init (00001): INFO: 1733732190661ms copied 1 GB in 00006ms
+init (00293): INFO: 1733732190664ms copied 1 GB in 00007ms
+init (00288): INFO: 1733732190664ms copied 1 GB in 00010ms
+init (00289): INFO: 1733732190666ms copied 1 GB in 00010ms
+init (00292): INFO: 1733732190667ms copied 1 GB in 00007ms
+init (00286): INFO: 1733732190669ms copied 1 GB in 00007ms
+init (00291): INFO: 1733732191646ms copied 1 GB in 00006ms
+init (00285): INFO: 1733732191649ms copied 1 GB in 00016ms
+init (00001): INFO: 1733732191660ms copied 1 GB in 00008ms
+init (00290): INFO: 1733732191661ms copied 1 GB in 00006ms
+init (00287): INFO: 1733732191661ms copied 1 GB in 00007ms
+init (00293): INFO: 1733732191665ms copied 1 GB in 00006ms
+init (00288): INFO: 1733732191665ms copied 1 GB in 00007ms
+init (00289): INFO: 1733732191667ms copied 1 GB in 00012ms
+init (00292): INFO: 1733732191667ms copied 1 GB in 00007ms
+init (00286): INFO: 1733732191670ms copied 1 GB in 00007ms
+init (00291): INFO: 1733732192646ms copied 1 GB in 00010ms
+init (00285): INFO: 1733732192650ms copied 1 GB in 00006ms
+init (00001): INFO: 1733732192660ms copied 1 GB in 00010ms
+init (00290): INFO: 1733732192661ms copied 1 GB in 00007ms
+init (00287): INFO: 1733732192661ms copied 1 GB in 00006ms
+init (00288): INFO: 1733732192664ms copied 1 GB in 00007ms
+init (00293): INFO: 1733732192665ms copied 1 GB in 00007ms
+init (00289): INFO: 1733732192666ms copied 1 GB in 00011ms
+init (00292): INFO: 1733732192668ms copied 1 GB in 00006ms
+init (00286): INFO: 1733732192670ms copied 1 GB in 00006ms
+init (00291): INFO: 1733732193646ms copied 1 GB in 00010ms
+init (00285): INFO: 1733732193649ms copied 1 GB in 00007ms
+init (00001): INFO: 1733732193660ms copied 1 GB in 00008ms
+init (00290): INFO: 1733732193661ms copied 1 GB in 00008ms
+init (00287): INFO: 1733732193662ms copied 1 GB in 00006ms
+init (00288): INFO: 1733732193665ms copied 1 GB in 00007ms
+init (00293): INFO: 1733732193666ms copied 1 GB in 00006ms
+init (00289): INFO: 1733732193666ms copied 1 GB in 00013ms
+init (00292): INFO: 1733732193667ms copied 1 GB in 00007ms
+init (00286): INFO: 1733732193671ms copied 1 GB in 00008ms
+init (00291): INFO: 1733732194647ms copied 1 GB in 00010ms
+init (00285): INFO: 1733732194650ms copied 1 GB in 00006ms
+init (00290): INFO: 1733732194660ms copied 1 GB in 00007ms
+init (00001): INFO: 1733732194661ms copied 1 GB in 00007ms
+init (00287): INFO: 1733732194662ms copied 1 GB in 00006ms
+init (00288): INFO: 1733732194664ms copied 1 GB in 00007ms
+init (00293): INFO: 1733732194666ms copied 1 GB in 00006ms
+init (00289): INFO: 1733732194667ms copied 1 GB in 00010ms
+init (00292): INFO: 1733732194668ms copied 1 GB in 00006ms
+init (00286): INFO: 1733732194670ms copied 1 GB in 00010ms
+385519@[2024-12-09 08:16:36.220706] handle_qmp_commandmon 0x56399db48080 req: {"execute": "migrate-set-parameters", "arguments": {"max-bandwidth": 0}, "id": "__qmp#00001"}
+qmp_cmd_name: migrate-set-parameters, arguments: {"max-bandwidth": 0}
+385519@[2024-12-09 08:16:36.221497] handle_qmp_commandmon 0x56399db48080 req: {"execute": "migrate-set-parameters", "arguments": {"downtime-limit": 300}, "id": "__qmp#00002"}
+qmp_cmd_name: migrate-set-parameters, arguments: {"downtime-limit": 300}
+385519@[2024-12-09 08:16:36.222224] handle_qmp_commandmon 0x56399db48080 req: {"execute": "migrate-set-capabilities", "arguments": {"capabilities": [{"state": true, "capability": "multifd"}]}, "id": "__qmp#00003"}
+qmp_cmd_name: migrate-set-capabilities, arguments: {"capabilities": [{"state": true, "capability": "multifd"}]}
+385519@[2024-12-09 08:16:36.222734] handle_qmp_commandmon 0x56399db48080 req: {"execute": "migrate-set-parameters", "arguments": {"multifd-channels": 10}, "id": "__qmp#00004"}
+qmp_cmd_name: migrate-set-parameters, arguments: {"multifd-channels": 10}
+385519@[2024-12-09 08:16:36.224471] handle_qmp_commandmon 0x56399db48080 req: {"execute": "migrate", "arguments": {"uri": "tcp:11.180.118.13:9000"}, "id": "__qmp#00005"}
+qmp_cmd_name: migrate, arguments: {"uri": "tcp:11.180.118.13:9000"}
+385515@[2024-12-09 08:16:36.224546] migrate_set_statenew state setup
+385515@[2024-12-09 08:16:36.224591] qio_channel_socket_newSocket new ioc=0x56399e50e470
+385515@[2024-12-09 08:16:36.224603] qio_channel_socket_connect_asyncSocket connect async ioc=0x56399e50e470 addr=0x56399e8005c0
+385547@[2024-12-09 08:16:36.224766] qio_channel_socket_connect_syncSocket connect sync ioc=0x56399e50e470 addr=0x56399db685f0
+385547@[2024-12-09 08:16:36.224926] qio_channel_socket_connect_completeSocket connect complete ioc=0x56399e50e470 fd=30
+385515@[2024-12-09 08:16:36.224955] migration_socket_outgoing_connectedhostname=11.180.118.13
+385515@[2024-12-09 08:16:36.224961] migration_set_outgoing_channelioc=0x56399e50e470 ioctype=qio-channel-socket hostname=11.180.118.13 err=(nil)
+385515@[2024-12-09 08:16:36.224995] qio_channel_socket_newSocket new ioc=0x56399e649c40
+385515@[2024-12-09 08:16:36.224999] qio_channel_socket_connect_asyncSocket connect async ioc=0x56399e649c40 addr=0x56399e8005c0
+385515@[2024-12-09 08:16:36.225034] qio_channel_socket_newSocket new ioc=0x56399e7b2280
+385515@[2024-12-09 08:16:36.225037] qio_channel_socket_connect_asyncSocket connect async ioc=0x56399e7b2280 addr=0x56399e8005c0
+385548@[2024-12-09 08:16:36.225045] qio_channel_socket_connect_syncSocket connect sync ioc=0x56399e649c40 addr=0x56399ded5620
+385515@[2024-12-09 08:16:36.225092] qio_channel_socket_newSocket new ioc=0x56399db40d10
+385515@[2024-12-09 08:16:36.225097] qio_channel_socket_connect_asyncSocket connect async ioc=0x56399db40d10 addr=0x56399e8005c0
+385549@[2024-12-09 08:16:36.225134] qio_channel_socket_connect_syncSocket connect sync ioc=0x56399e7b2280 addr=0x56399e7ffc00
+385515@[2024-12-09 08:16:36.225137] qio_channel_socket_newSocket new ioc=0x56399db68260
+385515@[2024-12-09 08:16:36.225165] qio_channel_socket_connect_asyncSocket connect async ioc=0x56399db68260 addr=0x56399e8005c0
+385550@[2024-12-09 08:16:36.225181] qio_channel_socket_connect_syncSocket connect sync ioc=0x56399db40d10 addr=0x56399e7b1fa0
+385548@[2024-12-09 08:16:36.225192] qio_channel_socket_connect_completeSocket connect complete ioc=0x56399e649c40 fd=31
+385515@[2024-12-09 08:16:36.225214] qio_channel_socket_newSocket new ioc=0x56399e7f9a90
+385515@[2024-12-09 08:16:36.225219] qio_channel_socket_connect_asyncSocket connect async ioc=0x56399e7f9a90 addr=0x56399e8005c0
+385549@[2024-12-09 08:16:36.225269] qio_channel_socket_connect_completeSocket connect complete ioc=0x56399e7b2280 fd=32
+385515@[2024-12-09 08:16:36.225273] qio_channel_socket_newSocket new ioc=0x56399dc7ea10
+385551@[2024-12-09 08:16:36.225279] qio_channel_socket_connect_syncSocket connect sync ioc=0x56399db68260 addr=0x56399d92f3d0
+385552@[2024-12-09 08:16:36.225289] qio_channel_socket_connect_syncSocket connect sync ioc=0x56399e7f9a90 addr=0x56399de45ae0
+385515@[2024-12-09 08:16:36.225284] qio_channel_socket_connect_asyncSocket connect async ioc=0x56399dc7ea10 addr=0x56399e8005c0
+385551@[2024-12-09 08:16:36.225397] qio_channel_socket_connect_completeSocket connect complete ioc=0x56399db68260 fd=34
+385515@[2024-12-09 08:16:36.225695] qio_channel_socket_newSocket new ioc=0x56399e71c4b0
+385553@[2024-12-09 08:16:36.225698] qio_channel_socket_connect_syncSocket connect sync ioc=0x56399dc7ea10 addr=0x56399dcc9810
+385515@[2024-12-09 08:16:36.225700] qio_channel_socket_connect_asyncSocket connect async ioc=0x56399e71c4b0 addr=0x56399e8005c0
+385515@[2024-12-09 08:16:36.225743] qio_channel_socket_newSocket new ioc=0x56399db79de0
+385554@[2024-12-09 08:16:36.225749] qio_channel_socket_connect_syncSocket connect sync ioc=0x56399e71c4b0 addr=0x56399e71c800
+385515@[2024-12-09 08:16:36.225755] qio_channel_socket_connect_asyncSocket connect async ioc=0x56399db79de0 addr=0x56399e8005c0
+385515@[2024-12-09 08:16:36.225801] qio_channel_socket_newSocket new ioc=0x56399db6bc90
+385515@[2024-12-09 08:16:36.225805] qio_channel_socket_connect_asyncSocket connect async ioc=0x56399db6bc90 addr=0x56399e8005c0
+385555@[2024-12-09 08:16:36.225852] qio_channel_socket_connect_syncSocket connect sync ioc=0x56399db79de0 addr=0x56399db7a070
+385515@[2024-12-09 08:16:36.225866] qio_channel_socket_newSocket new ioc=0x56399db6d370
+385515@[2024-12-09 08:16:36.225882] qio_channel_socket_connect_asyncSocket connect async ioc=0x56399db6d370 addr=0x56399e8005c0
+385556@[2024-12-09 08:16:36.225918] qio_channel_socket_connect_syncSocket connect sync ioc=0x56399db6bc90 addr=0x56399db6bf90
+385557@[2024-12-09 08:16:36.225999] qio_channel_socket_connect_syncSocket connect sync ioc=0x56399db6d370 addr=0x56399db6d670
+{"timestamp": {"seconds": 1733732196, "microseconds": 226056}, "event": "MIGRATION_PID", "data": {"pid": 385558}}
+385558@[2024-12-09 08:16:36.226129] savevm_state_header
+385558@[2024-12-09 08:16:36.226162] savevm_state_setup
+{"timestamp": {"seconds": 1733732196, "microseconds": 226118}, "event": "MIGRATION_MULTIFD_PID", "data": {"pid": 385559}}
+{"timestamp": {"seconds": 1733732196, "microseconds": 226176}, "event": "MIGRATION_MULTIFD_PID", "data": {"pid": 385560}}
+{"timestamp": {"seconds": 1733732196, "microseconds": 226239}, "event": "MIGRATION_MULTIFD_PID", "data": {"pid": 385561}}
+385519@[2024-12-09 08:16:36.275132] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00006"}
+385553@[2024-12-09 08:16:37.255660] qio_channel_socket_connect_completeSocket connect complete ioc=0x56399dc7ea10 fd=36
+385556@[2024-12-09 08:16:37.255668] qio_channel_socket_connect_completeSocket connect complete ioc=0x56399db6bc90 fd=39
+385550@[2024-12-09 08:16:37.255671] qio_channel_socket_connect_completeSocket connect complete ioc=0x56399db40d10 fd=33
+385554@[2024-12-09 08:16:37.255665] qio_channel_socket_connect_completeSocket connect complete ioc=0x56399e71c4b0 fd=37
+385552@[2024-12-09 08:16:37.255672] qio_channel_socket_connect_completeSocket connect complete ioc=0x56399e7f9a90 fd=35
+385557@[2024-12-09 08:16:37.255668] qio_channel_socket_connect_completeSocket connect complete ioc=0x56399db6d370 fd=40
+385558@[2024-12-09 08:16:38.333299] migration_bitmap_sync_start
+{"timestamp": {"seconds": 1733732198, "microseconds": 333604}, "event": "MIGRATION_MULTIFD_PID", "data": {"pid": 385562}}
+{"timestamp": {"seconds": 1733732198, "microseconds": 333626}, "event": "MIGRATION_MULTIFD_PID", "data": {"pid": 385563}}
+{"timestamp": {"seconds": 1733732198, "microseconds": 333655}, "event": "MIGRATION_MULTIFD_PID", "data": {"pid": 385564}}
+{"timestamp": {"seconds": 1733732198, "microseconds": 333688}, "event": "MIGRATION_MULTIFD_PID", "data": {"pid": 385565}}
+{"timestamp": {"seconds": 1733732198, "microseconds": 333718}, "event": "MIGRATION_MULTIFD_PID", "data": {"pid": 385566}}
+{"timestamp": {"seconds": 1733732198, "microseconds": 333754}, "event": "MIGRATION_MULTIFD_PID", "data": {"pid": 385567}}
+init (00285): INFO: 1733732195649ms copied 1 GB in 00007ms
+init385519@[2024-12-09 08:16:38.384062] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00007"}
+385558@[2024-12-09 08:16:38.385567] migration_bitmap_sync_enddirty_pages 0
+ (00289): INFO: 1733732197090ms copied 1 GB in 01440ms
+init (00290): INFO: 1733732195660ms copied 1 GB in 00008ms
+init (00291): INFO: 1733732197090ms copied 1 GB in 01455ms
+init (00285): INFO: 1733732197090ms copied 1 GB in 01441ms
+init (00001): INFO: 1733732195662ms copied 1 GB in 00006ms
+init (00288): INFO: 1733732195665ms copied 1 GB in 00006ms
+init (00001): INFO: 1733732197109ms copied 1 GB in 01447ms
+init (00293): INFO: 1733732195666ms copied 1 GB in 00007ms
+init (00288): INFO: 1733732197150ms copied 1 GB in 01485ms
+init (00292): INFO: 1733732195667ms copied 1 GB in 00007ms
+init (00293): INFO: 1733732197150ms copied 1 GB in 01484ms
+init (00286): INFO: 1733732195671ms copied 1 GB in 00008ms
+init (00292): INFO: 1733732197150ms copied 1 GB in 01482ms
+init (00287): INFO: 1733732195661ms copied 1 GB in 00008ms
+init (00286): INFO: 1733732197150ms copied 1 GB in 01480ms
+init (00290): INFO: 1733732197091ms copied 1 GB in 01430ms
+init (00287): INFO: 1733732197150ms copied 1 GB in 01489ms
+385519@[2024-12-09 08:16:38.442590] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00008"}
+385519@[2024-12-09 08:16:38.493018] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00009"}
+385519@[2024-12-09 08:16:38.543424] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00010"}
+385519@[2024-12-09 08:16:38.593835] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00011"}
+385519@[2024-12-09 08:16:38.644233] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00012"}
+385519@[2024-12-09 08:16:38.694656] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00013"}
+385519@[2024-12-09 08:16:38.745075] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00014"}
+385519@[2024-12-09 08:16:38.795488] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00015"}
+385519@[2024-12-09 08:16:38.845901] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00016"}
+385519@[2024-12-09 08:16:38.896385] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00017"}
+385519@[2024-12-09 08:16:38.946823] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00018"}
+385519@[2024-12-09 08:16:38.997234] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00019"}
+385519@[2024-12-09 08:16:39.047653] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00020"}
+385519@[2024-12-09 08:16:39.098062] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00021"}
+385519@[2024-12-09 08:16:39.148474] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00022"}
+385519@[2024-12-09 08:16:39.198880] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00023"}
+385519@[2024-12-09 08:16:39.249290] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00024"}
+385519@[2024-12-09 08:16:39.299710] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00025"}
+385555@[2024-12-09 08:16:39.303672] qio_channel_socket_connect_failSocket connect fail ioc=0x56399db79de0
+385558@[2024-12-09 08:16:39.303773] migrate_set_statenew state active
+385558@[2024-12-09 08:16:39.303780] migration_thread_setup_complete
+385558@[2024-12-09 08:16:39.303785] migrate_pendingpending size 344135049216 max 0 (pre = 344135049216 compat=0 post=0)
+385558@[2024-12-09 08:16:39.303789] savevm_state_iterate
+385558@[2024-12-09 08:16:39.303792] savevm_section_startram, section_id 2
+385558@[2024-12-09 08:16:39.303800] migration_bitmap_clear_dirtyrb pc.ram start 0x0 size 0x40000000 page 0x0
+385564@[2024-12-09 08:16:39.304094] migrate_set_statenew state failed
+385558@[2024-12-09 08:16:39.304108] savevm_section_endram, section_id 2 -> 0
+385558@[2024-12-09 08:16:39.304113] migrate_set_statenew state failed
+385558@[2024-12-09 08:16:39.304116] migration_thread_file_err
+385558@[2024-12-09 08:16:39.304119] migration_thread_after_loop
+385515@[2024-12-09 08:16:39.304171] savevm_state_cleanup
+385519@[2024-12-09 08:16:39.350667] handle_qmp_commandmon 0x56399db48080 req: {"execute": "query-migrate", "arguments": {}, "id": "__qmp#00026"}
+385515@[2024-12-09 08:16:41.030957] migrate_fd_cleanup
+2024-12-09T08:16:41.031081Z qemu-system-x86_64: Failed to connect to '11.180.118.13:9000': Connection timed out
+385519@[2024-12-09 08:16:41.032355] handle_qmp_commandmon 0x56399db48080 req: {"execute": "quit"}
+qmp_cmd_name: quit, arguments: {}
+385515@[2024-12-09 08:16:41.035075] qemu_system_shutdown_requestreason=2
+{"timestamp": {"seconds": 1733732201, "microseconds": 35103}, "event": "SHUTDOWN", "data": {"guest": false, "reason": "host-qmp-quit"}}
+385515@[2024-12-09 08:16:41.035141] main_loop_should_exit_quitguest system shutdown reason:2,(vmm shutdown) vmm will exit too
+385515@[2024-12-09 08:16:41.035145] migrate_fd_cancel
+385515@[2024-12-09 08:16:41.035171] runstate_setcurrent_run_state 9 (running) new_state 11 (shutdown)
+385515@[2024-12-09 08:16:41.035448] vm_state_notifyrunning 0 reason 11 (shutdown)
+
+qio_channel_socket_new Socket new ioc=0x55f0df84b710
+qio_channel_socket_connect_sync Socket connect sync ioc=0x55f0df84b710 addr=0x55f0df84bfd0
+qio_channel_socket_connect_complete Socket connect complete ioc=0x55f0df84b710 fd=3
+configure accelerator pc-i440fx-6.2 start
+machine init start
+handle_qmp_command mon 0x55f0df643020 req: {"execute": "qmp_capabilities", "arguments": {"enable": ["oob"]}}
+memory_region_add_subregion_common name is io, subregion name is kvmvapic
+memory_region_add_subregion_common name is system, subregion name is kvm-apic-msi
+memory_region_add_subregion_common name is system, subregion name is ram-below-4g
+memory_region_add_subregion_common name is system, subregion name is ram-above-4g
+memory_region_add_subregion_common name is pci, subregion name is isa-bios
+memory_region_add_subregion_common name is pci, subregion name is pc.bios
+memory_region_add_subregion_common name is pci, subregion name is pc.rom
+memory_region_add_subregion_common name is io, subregion name is fwcfg
+memory_region_add_subregion_common name is io, subregion name is fwcfg.dma
+memory_region_add_subregion_common name is io, subregion name is pci-conf-idx
+memory_region_add_subregion_common name is io, subregion name is pci-conf-data
+memory_region_add_subregion_common name is system, subregion name is pci
+memory_region_add_subregion_common name is system, subregion name is smram-region
+memory_region_add_subregion_common name is smram, subregion name is smram-low
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-rom
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-ram
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-rom
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-ram
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-rom
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-ram
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-rom
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-ram
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-rom
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-ram
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-rom
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-ram
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-rom
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-ram
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-rom
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-ram
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-rom
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-ram
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-rom
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-ram
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-rom
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-ram
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-rom
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-ram
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-rom
+memory_region_add_subregion_common name is system, subregion name is pam-pci
+memory_region_add_subregion_common name is system, subregion name is pam-ram
+memory_region_add_subregion_common name is io, subregion name is piix3-reset-control
+memory_region_add_subregion_common name is io, subregion name is kvm-pic
+memory_region_add_subregion_common name is io, subregion name is kvm-elcr
+memory_region_add_subregion_common name is io, subregion name is kvm-pic
+memory_region_add_subregion_common name is io, subregion name is kvm-elcr
+memory_region_add_subregion_common name is system, subregion name is kvm-ioapic
+memory_region_add_subregion_common name is io, subregion name is ioport80
+memory_region_add_subregion_common name is io, subregion name is ioportF0
+memory_region_add_subregion_common name is system, subregion name is hpet
+memory_region_add_subregion_common name is io, subregion name is rtc
+memory_region_add_subregion_common name is rtc, subregion name is rtc-index
+memory_region_add_subregion_common name is io, subregion name is kvm-pit
+memory_region_add_subregion_common name is io, subregion name is pcspk
+memory_region_add_subregion_common name is io, subregion name is dma-chan
+memory_region_add_subregion_common name is io, subregion name is dma-page
+memory_region_add_subregion_common name is io, subregion name is dma-page
+memory_region_add_subregion_common name is io, subregion name is dma-cont
+memory_region_add_subregion_common name is io, subregion name is dma-chan
+memory_region_add_subregion_common name is io, subregion name is dma-page
+memory_region_add_subregion_common name is io, subregion name is dma-page
+memory_region_add_subregion_common name is io, subregion name is dma-cont
+memory_region_add_subregion_common name is io, subregion name is parallel
+memory_region_add_subregion_common name is io, subregion name is fdc
+memory_region_add_subregion_common name is io, subregion name is fdc
+memory_region_add_subregion_common name is io, subregion name is i8042-data
+memory_region_add_subregion_common name is io, subregion name is i8042-cmd
+memory_region_add_subregion_common name is io, subregion name is vmport
+memory_region_add_subregion_common name is io, subregion name is port92
+add rom file: e1000.rom
+memory_region_add_subregion_common name is piix-bmdma-container, subregion name is piix-bmdma
+memory_region_add_subregion_common name is piix-bmdma-container, subregion name is bmdma
+memory_region_add_subregion_common name is piix-bmdma-container, subregion name is piix-bmdma
+memory_region_add_subregion_common name is piix-bmdma-container, subregion name is bmdma
+memory_region_add_subregion_common name is io, subregion name is ide
+memory_region_add_subregion_common name is io, subregion name is ide
+memory_region_add_subregion_common name is io, subregion name is ide
+memory_region_add_subregion_common name is io, subregion name is ide
+memory_region_add_subregion_common name is io, subregion name is apm-io
+memory_region_add_subregion_common name is io, subregion name is pm-smbus
+memory_region_add_subregion_common name is io, subregion name is piix4-pm
+memory_region_add_subregion_common name is piix4-pm, subregion name is acpi-tmr
+memory_region_add_subregion_common name is piix4-pm, subregion name is acpi-evt
+memory_region_add_subregion_common name is piix4-pm, subregion name is acpi-cnt
+memory_region_add_subregion_common name is io, subregion name is acpi-gpe0
+memory_region_add_subregion_common name is io, subregion name is acpi-pci-hotplug
+memory_region_add_subregion_common name is io, subregion name is acpi-cpu-hotplug
+device init start
+add qdev isa-serial:none success
+memory_region_add_subregion_common name is io, subregion name is serial
+add qdev isa-serial:none success
+memory_region_add_subregion_common name is bus master container, subregion name is bus master
+memory_region_add_subregion_common name is bus master container, subregion name is bus master
+memory_region_add_subregion_common name is bus master container, subregion name is bus master
+memory_region_add_subregion_common name is bus master container, subregion name is bus master
+memory_region_add_subregion_common name is bus master container, subregion name is bus master
+memory_region_add_subregion_common name is mem-container-smram, subregion name is mem-smram
+memory_region_add_subregion_common name is mem-container-smram, subregion name is smram
+reset all devices
+qio_channel_socket_new Socket new ioc=0x55f0e02123f0
+qio_channel_socket_listen_sync Socket listen sync ioc=0x55f0e02123f0 addr=0x55f0df9d2020 num=1
+qio_channel_socket_listen_complete Socket listen complete ioc=0x55f0e02123f0 fd=28
+qemu enter main_loop
+qmp_cmd_name: qmp_capabilities, arguments: {"enable": ["oob"]}
+handle_qmp_command mon 0x55f0df643020 req: {"execute": "migrate-set-capabilities", "arguments": {"capabilities": [{"state": true, "capability": "multifd"}]}, "id": "__qmp#00000"}
+qmp_cmd_name: migrate-set-capabilities, arguments: {"capabilities": [{"state": true, "capability": "multifd"}]}
+handle_qmp_command mon 0x55f0df643020 req: {"execute": "migrate-set-parameters", "arguments": {"multifd-channels": 10}, "id": "__qmp#00001"}
+qmp_cmd_name: migrate-set-parameters, arguments: {"multifd-channels": 10}
+qio_channel_socket_new Socket new ioc=0x55f0df87edc0
+qio_channel_socket_accept Socket accept start ioc=0x55f0e02123f0
+qio_channel_socket_accept_complete Socket accept complete ioc=0x55f0e02123f0 cioc=0x55f0df87edc0 fd=29
+migration_socket_incoming_accepted 
+migration_set_incoming_channel ioc=0x55f0df87edc0 ioctype=qio-channel-socket
+qio_channel_socket_new Socket new ioc=0x55f0df9e1c00
+qio_channel_socket_accept Socket accept start ioc=0x55f0e02123f0
+qio_channel_socket_accept_complete Socket accept complete ioc=0x55f0e02123f0 cioc=0x55f0df9e1c00 fd=30
+migration_socket_incoming_accepted 
+migration_set_incoming_channel ioc=0x55f0df9e1c00 ioctype=qio-channel-socket
+qio_channel_socket_new Socket new ioc=0x55f0df98cec0
+qio_channel_socket_accept Socket accept start ioc=0x55f0e02123f0
+qio_channel_socket_accept_complete Socket accept complete ioc=0x55f0e02123f0 cioc=0x55f0df98cec0 fd=31
+migration_socket_incoming_accepted 
+migration_set_incoming_channel ioc=0x55f0df98cec0 ioctype=qio-channel-socket
+qio_channel_socket_new Socket new ioc=0x55f0e0213b70
+qio_channel_socket_accept Socket accept start ioc=0x55f0e02123f0
+qio_channel_socket_accept_complete Socket accept complete ioc=0x55f0e02123f0 cioc=0x55f0e0213b70 fd=32
+migration_socket_incoming_accepted 
+migration_set_incoming_channel ioc=0x55f0e0213b70 ioctype=qio-channel-socket
+qio_channel_socket_new Socket new ioc=0x55f0df9e12d0
+qio_channel_socket_accept Socket accept start ioc=0x55f0e02123f0
+qio_channel_socket_accept_complete Socket accept complete ioc=0x55f0e02123f0 cioc=0x55f0df9e12d0 fd=33
+migration_socket_incoming_accepted 
+migration_set_incoming_channel ioc=0x55f0df9e12d0 ioctype=qio-channel-socket
+qio_channel_socket_new Socket new ioc=0x55f0e0530210
+qio_channel_socket_accept Socket accept start ioc=0x55f0e02123f0
+qio_channel_socket_accept_complete Socket accept complete ioc=0x55f0e02123f0 cioc=0x55f0e0530210 fd=34
+migration_socket_incoming_accepted 
+migration_set_incoming_channel ioc=0x55f0e0530210 ioctype=qio-channel-socket
+qio_channel_socket_new Socket new ioc=0x55f0e04fdb80
+qio_channel_socket_accept Socket accept start ioc=0x55f0e02123f0
+qio_channel_socket_accept_complete Socket accept complete ioc=0x55f0e02123f0 cioc=0x55f0e04fdb80 fd=35
+migration_socket_incoming_accepted 
+migration_set_incoming_channel ioc=0x55f0e04fdb80 ioctype=qio-channel-socket
+qio_channel_socket_new Socket new ioc=0x55f0df86f340
+qio_channel_socket_accept Socket accept start ioc=0x55f0e02123f0
+qio_channel_socket_accept_complete Socket accept complete ioc=0x55f0e02123f0 cioc=0x55f0df86f340 fd=36
+migration_socket_incoming_accepted 
+migration_set_incoming_channel ioc=0x55f0df86f340 ioctype=qio-channel-socket
+qio_channel_socket_new Socket new ioc=0x55f0df86f7d0
+qio_channel_socket_accept Socket accept start ioc=0x55f0e02123f0
+qio_channel_socket_accept_complete Socket accept complete ioc=0x55f0e02123f0 cioc=0x55f0df86f7d0 fd=37
+migration_socket_incoming_accepted 
+migration_set_incoming_channel ioc=0x55f0df86f7d0 ioctype=qio-channel-socket
+handle_qmp_command mon 0x55f0df643020 req: {"execute": "quit"}
+qmp_cmd_name: quit, arguments: {}
+qemu_system_shutdown_request reason=2
+{"timestamp": {"seconds": 1733732201, "microseconds": 800627}, "event": "SHUTDOWN", "data": {"guest": false, "reason": "host-qmp-quit"}}
+main_loop_should_exit_quit guest system shutdown reason:2,(vmm shutdown) vmm will exit too
+migrate_fd_cancel 
+

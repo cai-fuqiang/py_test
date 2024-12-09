@@ -1,0 +1,8000 @@
+{
+    "hardware": {
+        "cpus": 16,
+        "mem": 320,
+        "src_mem_bind": [],
+        "dst_mem_bind": [],
+        "src_cpu_bind": [],
+        "dst_cpu_bind": [],
+        "prealloc_pages": false,
+        "huge_pages": false,
+        "locked_pages": false,
+        "dirty_ring_size": 65536
+    },
+    "scenario": {
+        "name": "perfreport",
+        "downtime": 300,
+        "bandwidth": 0,
+        "max_iters": 3000,
+        "max_time": 300,
+        "pause": false,
+        "pause_iters": 5,
+        "post_copy": false,
+        "post_copy_iters": 5,
+        "auto_converge": false,
+        "auto_converge_step": 10,
+        "compression_mt": false,
+        "compression_mt_threads": 1,
+        "compression_xbzrle": false,
+        "compression_xbzrle_cache": 10,
+        "multifd": true,
+        "multifd_channels": 10,
+        "dirty_limit": false,
+        "x_vcpu_dirty_limit_period": 500,
+        "vcpu_dirty_limit": 1
+    },
+    "progress_history": [
+        {
+            "status": "setup",
+            "ram": {
+                "transferred_bytes": 0,
+                "remaining_bytes": 0,
+                "total_bytes": 0,
+                "duplicate_pages": 0,
+                "skipped_pages": 0,
+                "normal_pages": 0,
+                "normal_bytes": 0,
+                "dirty_rate_pps": 0,
+                "transfer_rate_mbs": 0,
+                "iterations": 0
+            },
+            "now": 1733724037.2797189,
+            "duration": 0,
+            "downtime": 0,
+            "downtime_expected": 0,
+            "setup_time": 0,
+            "throttle_pcent": 0,
+            "dirty_limit_throttle_time_per_round": 0,
+            "dirty_limit_ring_full_time": 0
+        },
+        {
+            "status": "active",
+            "ram": {
+                "transferred_bytes": 28089203,
+                "remaining_bytes": 344007852032,
+                "total_bytes": 344135049216,
+                "duplicate_pages": 24142,
+                "skipped_pages": 0,
+                "normal_pages": 6911,
+                "normal_bytes": 28307456,
+                "dirty_rate_pps": 0,
+                "transfer_rate_mbs": 0,
+                "iterations": 1
+            },
+            "now": 1733724037.3303716,
+            "duration": 2145,
+            "downtime": 0,
+            "downtime_expected": 300,
+            "setup_time": 2131,
+            "throttle_pcent": 0,
+            "dirty_limit_throttle_time_per_round": 0,
+            "dirty_limit_ring_full_time": 0
+        },
+        {
+            "status": "active",
+            "ram": {
+                "transferred_bytes": 325200520442,
+                "remaining_bytes": 18913615872,
+                "total_bytes": 344135049216,
+                "duplicate_pages": 4034507,
+                "skipped_pages": 0,
+                "normal_pages": 79180875,
+                "normal_bytes": 324324864000,
+                "dirty_rate_pps": 131116,
+                "transfer_rate_mbs": 95485.93015384616,
+                "iterations": 2
+            },
+            "now": 1733724066.3799648,
+            "duration": 31195,
+            "downtime": 0,
+            "downtime_expected": 300,
+            "setup_time": 2131,
+            "throttle_pcent": 0,
+            "dirty_limit_throttle_time_per_round": 0,
+            "dirty_limit_ring_full_time": 0
+        },
+        {
+            "status": "active",
+            "ram": {
+                "transferred_bytes": 341324558269,
+                "remaining_bytes": 3355107328,
+                "total_bytes": 344135049216,
+                "duplicate_pages": 4034876,
+                "skipped_pages": 0,
+                "normal_pages": 83107333,
+                "normal_bytes": 340407635968,
+                "dirty_rate_pps": 96586,
+                "transfer_rate_mbs": 95251.33796226417,
+                "iterations": 3
+            },
+            "now": 1733724067.7439585,
+            "duration": 32559,
+            "downtime": 0,
+            "downtime_expected": 1588,
+            "setup_time": 2131,
+            "throttle_pcent": 0,
+            "dirty_limit_throttle_time_per_round": 0,
+            "dirty_limit_ring_full_time": 0
+        },
+        {
+            "status": "completed",
+            "ram": {
+                "transferred_bytes": 344688821061,
+                "remaining_bytes": 0,
+                "total_bytes": 344135049216,
+                "duplicate_pages": 4034876,
+                "skipped_pages": 0,
+                "normal_pages": 83926452,
+                "normal_bytes": 343762747392,
+                "dirty_rate_pps": 0,
+                "transfer_rate_mbs": 89695.73513814526,
+                "iterations": 5
+            },
+            "now": 1733724069.059882,
+            "duration": 32874,
+            "downtime": 289,
+            "downtime_expected": 0,
+            "setup_time": 2131,
+            "throttle_pcent": 0,
+            "dirty_limit_throttle_time_per_round": 0,
+            "dirty_limit_ring_full_time": 0
+        }
+    ],
+    "guest_timings": [
+        {
+            "tid": 321,
+            "timestamp": 1733724025.018,
+            "value": 4381
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724025.021,
+            "value": 4388
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724025.03,
+            "value": 4458
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724025.034,
+            "value": 4462
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724025.035,
+            "value": 4451
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724025.037,
+            "value": 4458
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724025.04,
+            "value": 4455
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724025.041,
+            "value": 4461
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724025.043,
+            "value": 4453
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724025.046,
+            "value": 4453
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724026.018,
+            "value": 0
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724026.021,
+            "value": 0
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724026.03,
+            "value": 1
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724026.034,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724026.035,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724026.037,
+            "value": 0
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724026.041,
+            "value": 0
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724026.041,
+            "value": 5
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724026.042,
+            "value": 1
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724026.045,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724027.018,
+            "value": 1
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724027.021,
+            "value": 1
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724027.03,
+            "value": 0
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724027.034,
+            "value": 0
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724027.035,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724027.037,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724027.041,
+            "value": 1
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724027.042,
+            "value": 0
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724027.043,
+            "value": 0
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724027.046,
+            "value": 0
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724028.018,
+            "value": 0
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724028.021,
+            "value": 0
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724028.03,
+            "value": 1
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724028.034,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724028.036,
+            "value": 0
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724028.037,
+            "value": 0
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724028.042,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724028.042,
+            "value": 0
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724028.042,
+            "value": 1
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724028.046,
+            "value": 1
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724029.018,
+            "value": 1
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724029.021,
+            "value": 1
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724029.03,
+            "value": 0
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724029.034,
+            "value": 0
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724029.036,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724029.037,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724029.041,
+            "value": 1
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724029.041,
+            "value": 1
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724029.043,
+            "value": 0
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724029.046,
+            "value": 1
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724030.018,
+            "value": 0
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724030.021,
+            "value": 0
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724030.03,
+            "value": 1
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724030.034,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724030.037,
+            "value": 0
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724030.037,
+            "value": 0
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724030.042,
+            "value": 0
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724030.042,
+            "value": 0
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724030.042,
+            "value": 1
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724030.046,
+            "value": 0
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724031.018,
+            "value": 1
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724031.021,
+            "value": 1
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724031.03,
+            "value": 0
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724031.034,
+            "value": 0
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724031.037,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724031.037,
+            "value": 1
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724031.042,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724031.042,
+            "value": 1
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724031.043,
+            "value": 0
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724031.046,
+            "value": 1
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724032.018,
+            "value": 0
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724032.021,
+            "value": 0
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724032.03,
+            "value": 1
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724032.033,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724032.037,
+            "value": 0
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724032.038,
+            "value": 0
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724032.042,
+            "value": 1
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724032.043,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724032.043,
+            "value": 0
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724032.046,
+            "value": 1
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724033.018,
+            "value": 1
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724033.021,
+            "value": 1
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724033.03,
+            "value": 0
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724033.034,
+            "value": 0
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724033.037,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724033.038,
+            "value": 0
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724033.042,
+            "value": 1
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724033.043,
+            "value": 0
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724033.043,
+            "value": 0
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724033.046,
+            "value": 0
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724034.018,
+            "value": 0
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724034.021,
+            "value": 0
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724034.03,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724034.037,
+            "value": 0
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724036.095,
+            "value": 2077
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724034.038,
+            "value": 1
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724034.043,
+            "value": 0
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724036.095,
+            "value": 2074
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724036.095,
+            "value": 2065
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724034.043,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724036.095,
+            "value": 2058
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724034.046,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724036.095,
+            "value": 2057
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724036.095,
+            "value": 2052
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724036.095,
+            "value": 2052
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724036.095,
+            "value": 2049
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724034.043,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724036.138,
+            "value": 2095
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724037.094,
+            "value": 8
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724037.094,
+            "value": 6
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724037.094,
+            "value": 6
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724037.095,
+            "value": 6
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724037.095,
+            "value": 8
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724037.095,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724037.095,
+            "value": 5
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724037.095,
+            "value": 6
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724037.095,
+            "value": 6
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724037.138,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724038.095,
+            "value": 7
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724038.095,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724038.095,
+            "value": 7
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724038.095,
+            "value": 5
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724038.095,
+            "value": 5
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724038.095,
+            "value": 6
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724038.096,
+            "value": 6
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724038.096,
+            "value": 6
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724038.138,
+            "value": 6
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724039.095,
+            "value": 6
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724039.095,
+            "value": 7
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724039.095,
+            "value": 6
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724039.095,
+            "value": 7
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724039.095,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724039.095,
+            "value": 5
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724039.095,
+            "value": 6
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724039.096,
+            "value": 5
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724039.096,
+            "value": 6
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724039.137,
+            "value": 6
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724040.094,
+            "value": 6
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724040.095,
+            "value": 6
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724040.095,
+            "value": 6
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724040.095,
+            "value": 5
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724040.095,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724040.095,
+            "value": 5
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724040.095,
+            "value": 6
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724040.096,
+            "value": 5
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724040.097,
+            "value": 5
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724040.138,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724041.095,
+            "value": 6
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724041.095,
+            "value": 6
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724041.095,
+            "value": 5
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724041.095,
+            "value": 6
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724041.095,
+            "value": 5
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724041.095,
+            "value": 6
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724041.096,
+            "value": 5
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724041.096,
+            "value": 5
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724041.097,
+            "value": 5
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724041.138,
+            "value": 6
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724042.094,
+            "value": 6
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724042.095,
+            "value": 5
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724042.095,
+            "value": 5
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724042.095,
+            "value": 5
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724042.096,
+            "value": 6
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724042.096,
+            "value": 5
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724042.096,
+            "value": 5
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724042.097,
+            "value": 8
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724042.097,
+            "value": 6
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724042.138,
+            "value": 5
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724043.094,
+            "value": 6
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724043.094,
+            "value": 6
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724043.095,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724043.095,
+            "value": 5
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724043.096,
+            "value": 5
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724043.096,
+            "value": 5
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724043.096,
+            "value": 5
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724043.097,
+            "value": 6
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724043.098,
+            "value": 5
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724043.138,
+            "value": 6
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724044.095,
+            "value": 5
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724044.095,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724044.095,
+            "value": 6
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724044.095,
+            "value": 5
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724044.095,
+            "value": 6
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724044.096,
+            "value": 6
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724044.096,
+            "value": 5
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724044.097,
+            "value": 6
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724044.098,
+            "value": 5
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724044.138,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724045.095,
+            "value": 6
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724045.095,
+            "value": 6
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724045.095,
+            "value": 5
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724045.095,
+            "value": 5
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724045.096,
+            "value": 6
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724045.096,
+            "value": 5
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724045.096,
+            "value": 6
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724045.097,
+            "value": 5
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724045.098,
+            "value": 6
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724045.138,
+            "value": 6
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724046.095,
+            "value": 6
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724046.095,
+            "value": 6
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724046.095,
+            "value": 5
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724046.095,
+            "value": 6
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724046.096,
+            "value": 5
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724046.096,
+            "value": 5
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724046.096,
+            "value": 6
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724046.097,
+            "value": 5
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724046.138,
+            "value": 8
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724047.095,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724047.095,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724047.095,
+            "value": 6
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724047.096,
+            "value": 7
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724047.096,
+            "value": 5
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724047.096,
+            "value": 5
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724047.096,
+            "value": 6
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724047.097,
+            "value": 6
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724047.099,
+            "value": 5
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724047.139,
+            "value": 6
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724048.095,
+            "value": 6
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724048.095,
+            "value": 6
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724048.096,
+            "value": 6
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724048.096,
+            "value": 5
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724048.096,
+            "value": 6
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724048.096,
+            "value": 5
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724048.097,
+            "value": 5
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724048.097,
+            "value": 5
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724048.099,
+            "value": 6
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724048.139,
+            "value": 6
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724049.095,
+            "value": 6
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724049.095,
+            "value": 6
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724049.096,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724049.096,
+            "value": 6
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724049.096,
+            "value": 5
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724049.096,
+            "value": 6
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724049.097,
+            "value": 5
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724049.097,
+            "value": 5
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724049.099,
+            "value": 7
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724049.139,
+            "value": 6
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724050.094,
+            "value": 7
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724050.096,
+            "value": 7
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724050.096,
+            "value": 5
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724050.096,
+            "value": 5
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724050.096,
+            "value": 6
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724050.097,
+            "value": 6
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724050.097,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724050.097,
+            "value": 7
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724050.1,
+            "value": 6
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724050.139,
+            "value": 6
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724051.095,
+            "value": 6
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724051.096,
+            "value": 6
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724051.096,
+            "value": 5
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724051.096,
+            "value": 5
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724051.097,
+            "value": 6
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724051.097,
+            "value": 5
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724051.097,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724051.098,
+            "value": 8
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724051.1,
+            "value": 6
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724051.139,
+            "value": 6
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724052.095,
+            "value": 5
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724052.096,
+            "value": 6
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724052.096,
+            "value": 6
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724052.096,
+            "value": 6
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724052.097,
+            "value": 5
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724052.097,
+            "value": 5
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724052.097,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724052.098,
+            "value": 6
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724052.1,
+            "value": 6
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724052.139,
+            "value": 5
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724053.095,
+            "value": 6
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724053.096,
+            "value": 7
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724053.096,
+            "value": 5
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724053.096,
+            "value": 6
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724053.097,
+            "value": 5
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724053.097,
+            "value": 5
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724053.097,
+            "value": 6
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724053.098,
+            "value": 6
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724053.1,
+            "value": 6
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724053.139,
+            "value": 5
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724054.095,
+            "value": 5
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724054.096,
+            "value": 6
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724054.096,
+            "value": 6
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724054.097,
+            "value": 6
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724054.097,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724054.097,
+            "value": 5
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724054.098,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724054.098,
+            "value": 6
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724054.099,
+            "value": 7
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724054.139,
+            "value": 5
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724055.095,
+            "value": 6
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724055.096,
+            "value": 5
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724055.096,
+            "value": 6
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724055.097,
+            "value": 5
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724055.097,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724055.097,
+            "value": 5
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724055.098,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724055.098,
+            "value": 7
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724055.1,
+            "value": 5
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724055.138,
+            "value": 6
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724056.094,
+            "value": 7
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724056.095,
+            "value": 7
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724056.096,
+            "value": 6
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724056.097,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724056.097,
+            "value": 6
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724056.097,
+            "value": 5
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724056.098,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724056.099,
+            "value": 5
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724056.099,
+            "value": 6
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724056.139,
+            "value": 5
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724057.095,
+            "value": 5
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724057.096,
+            "value": 6
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724057.097,
+            "value": 6
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724057.097,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724057.097,
+            "value": 6
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724057.097,
+            "value": 5
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724057.097,
+            "value": 6
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724057.099,
+            "value": 6
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724057.1,
+            "value": 5
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724057.139,
+            "value": 6
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724058.095,
+            "value": 5
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724058.096,
+            "value": 6
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724058.097,
+            "value": 6
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724058.097,
+            "value": 5
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724058.097,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724058.097,
+            "value": 7
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724058.098,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724058.099,
+            "value": 6
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724058.1,
+            "value": 6
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724058.139,
+            "value": 6
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724059.095,
+            "value": 6
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724059.095,
+            "value": 7
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724059.097,
+            "value": 6
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724059.097,
+            "value": 5
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724059.097,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724059.097,
+            "value": 6
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724059.098,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724059.099,
+            "value": 6
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724059.101,
+            "value": 5
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724059.139,
+            "value": 5
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724060.095,
+            "value": 6
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724060.096,
+            "value": 6
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724060.097,
+            "value": 5
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724060.097,
+            "value": 6
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724060.097,
+            "value": 6
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724060.098,
+            "value": 6
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724060.098,
+            "value": 6
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724060.099,
+            "value": 6
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724060.101,
+            "value": 5
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724060.138,
+            "value": 6
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724061.095,
+            "value": 6
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724061.096,
+            "value": 6
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724061.097,
+            "value": 6
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724061.098,
+            "value": 5
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724061.098,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724061.098,
+            "value": 6
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724061.099,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724061.099,
+            "value": 6
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724061.139,
+            "value": 5
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724062.096,
+            "value": 5
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724062.096,
+            "value": 7
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724062.098,
+            "value": 5
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724062.098,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724062.098,
+            "value": 6
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724062.098,
+            "value": 5
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724062.099,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724062.1,
+            "value": 7
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724062.101,
+            "value": 6
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724062.139,
+            "value": 6
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724063.096,
+            "value": 5
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724063.097,
+            "value": 6
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724063.097,
+            "value": 6
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724063.098,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724063.098,
+            "value": 6
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724063.098,
+            "value": 5
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724063.099,
+            "value": 6
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724063.1,
+            "value": 6
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724063.101,
+            "value": 5
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724063.139,
+            "value": 6
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724064.095,
+            "value": 6
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724064.098,
+            "value": 6
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724064.098,
+            "value": 6
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724064.098,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724064.098,
+            "value": 7
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724064.1,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724064.1,
+            "value": 6
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724064.101,
+            "value": 5
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724064.139,
+            "value": 6
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724065.096,
+            "value": 6
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724065.096,
+            "value": 7
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724065.098,
+            "value": 5
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724065.098,
+            "value": 5
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724065.098,
+            "value": 5
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724065.099,
+            "value": 6
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724065.1,
+            "value": 5
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724065.1,
+            "value": 7
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724065.101,
+            "value": 6
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724065.139,
+            "value": 7
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724066.096,
+            "value": 19
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724066.097,
+            "value": 18
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724066.098,
+            "value": 18
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724066.098,
+            "value": 18
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724066.098,
+            "value": 18
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724066.099,
+            "value": 17
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724066.1,
+            "value": 17
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724066.101,
+            "value": 17
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724066.101,
+            "value": 17
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724066.14,
+            "value": 14
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724067.096,
+            "value": 21
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724067.098,
+            "value": 17
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724067.098,
+            "value": 15
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724067.098,
+            "value": 20
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724067.098,
+            "value": 11
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724067.101,
+            "value": 23
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724067.14,
+            "value": 11
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724067.361,
+            "value": 276
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724067.362,
+            "value": 285
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724067.364,
+            "value": 278
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724068.096,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724068.098,
+            "value": 1
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724068.098,
+            "value": 1
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724068.098,
+            "value": 0
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724068.099,
+            "value": 0
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724068.101,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724068.14,
+            "value": 0
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724068.36,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724068.362,
+            "value": 1
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724068.364,
+            "value": 0
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724069.096,
+            "value": 0
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724069.098,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724069.098,
+            "value": 0
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724069.098,
+            "value": 1
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724069.099,
+            "value": 1
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724069.101,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724069.14,
+            "value": 1
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724069.361,
+            "value": 0
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724069.361,
+            "value": 1
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724069.364,
+            "value": 1
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724070.096,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724070.098,
+            "value": 1
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724070.098,
+            "value": 0
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724070.099,
+            "value": 0
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724070.099,
+            "value": 0
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724070.101,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724070.14,
+            "value": 1
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724070.361,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724070.362,
+            "value": 0
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724070.364,
+            "value": 0
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724071.096,
+            "value": 1
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724071.098,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724071.098,
+            "value": 0
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724071.098,
+            "value": 1
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724071.099,
+            "value": 1
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724071.101,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724071.141,
+            "value": 0
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724071.361,
+            "value": 0
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724071.362,
+            "value": 1
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724071.364,
+            "value": 1
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724072.097,
+            "value": 0
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724072.098,
+            "value": 1
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724072.098,
+            "value": 0
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724072.099,
+            "value": 0
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724072.099,
+            "value": 0
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724072.101,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724072.14,
+            "value": 1
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724072.361,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724072.362,
+            "value": 0
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724072.364,
+            "value": 1
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724073.096,
+            "value": 1
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724073.098,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724073.098,
+            "value": 1
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724073.099,
+            "value": 1
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724073.099,
+            "value": 1
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724073.101,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724073.141,
+            "value": 0
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724073.361,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724073.362,
+            "value": 1
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724073.365,
+            "value": 0
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724074.097,
+            "value": 0
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724074.098,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724074.099,
+            "value": 0
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724074.099,
+            "value": 0
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724074.099,
+            "value": 1
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724074.101,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724074.141,
+            "value": 1
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724074.362,
+            "value": 0
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724074.362,
+            "value": 0
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724074.365,
+            "value": 1
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724075.097,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724075.098,
+            "value": 1
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724075.099,
+            "value": 1
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724075.099,
+            "value": 0
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724075.1,
+            "value": 0
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724075.101,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724075.141,
+            "value": 0
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724075.361,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724075.362,
+            "value": 1
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724075.365,
+            "value": 0
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724076.097,
+            "value": 0
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724076.099,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724076.099,
+            "value": 0
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724076.099,
+            "value": 0
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724076.099,
+            "value": 1
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724076.101,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724076.141,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724076.361,
+            "value": 1
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724076.362,
+            "value": 0
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724076.365,
+            "value": 1
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724077.097,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724077.098,
+            "value": 1
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724077.099,
+            "value": 1
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724077.099,
+            "value": 0
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724077.1,
+            "value": 0
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724077.101,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724077.141,
+            "value": 0
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724077.362,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724077.362,
+            "value": 0
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724077.365,
+            "value": 0
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724078.097,
+            "value": 0
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724078.099,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724078.099,
+            "value": 0
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724078.099,
+            "value": 1
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724078.099,
+            "value": 1
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724078.101,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724078.141,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724078.361,
+            "value": 1
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724078.362,
+            "value": 0
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724078.365,
+            "value": 1
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724079.097,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724079.099,
+            "value": 1
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724079.099,
+            "value": 0
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724079.1,
+            "value": 0
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724079.1,
+            "value": 0
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724079.101,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724079.141,
+            "value": 0
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724079.362,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724079.362,
+            "value": 0
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724079.365,
+            "value": 0
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724080.097,
+            "value": 1
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724080.099,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724080.099,
+            "value": 0
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724080.1,
+            "value": 1
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724080.1,
+            "value": 1
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724080.101,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724080.141,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724080.362,
+            "value": 1
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724080.362,
+            "value": 0
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724080.365,
+            "value": 1
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724081.097,
+            "value": 0
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724081.099,
+            "value": 1
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724081.099,
+            "value": 0
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724081.1,
+            "value": 0
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724081.1,
+            "value": 0
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724081.101,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724081.141,
+            "value": 0
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724081.362,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724081.362,
+            "value": 0
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724081.365,
+            "value": 1
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724082.097,
+            "value": 1
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724082.099,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724082.099,
+            "value": 0
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724082.1,
+            "value": 1
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724082.1,
+            "value": 1
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724082.101,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724082.141,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724082.362,
+            "value": 1
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724082.362,
+            "value": 0
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724082.366,
+            "value": 0
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724083.097,
+            "value": 0
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724083.099,
+            "value": 1
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724083.099,
+            "value": 1
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724083.099,
+            "value": 1
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724083.1,
+            "value": 0
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724083.101,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724083.141,
+            "value": 1
+        },
+        {
+            "tid": 321,
+            "timestamp": 1733724083.362,
+            "value": 1
+        },
+        {
+            "tid": 319,
+            "timestamp": 1733724083.362,
+            "value": 0
+        },
+        {
+            "tid": 325,
+            "timestamp": 1733724083.365,
+            "value": 1
+        },
+        {
+            "tid": 1,
+            "timestamp": 1733724084.097,
+            "value": 1
+        },
+        {
+            "tid": 322,
+            "timestamp": 1733724084.099,
+            "value": 0
+        },
+        {
+            "tid": 286,
+            "timestamp": 1733724084.1,
+            "value": 1
+        },
+        {
+            "tid": 320,
+            "timestamp": 1733724084.1,
+            "value": 0
+        },
+        {
+            "tid": 323,
+            "timestamp": 1733724084.1,
+            "value": 0
+        },
+        {
+            "tid": 285,
+            "timestamp": 1733724084.101,
+            "value": 1
+        },
+        {
+            "tid": 324,
+            "timestamp": 1733724084.142,
+            "value": 0
+        }
+    ],
+    "qemu_timings": [
+        {
+            "tid": 379134,
+            "timestamp": 1733724021.176213,
+            "value": 390.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724022.1765983,
+            "value": 9130.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724023.1769638,
+            "value": 25090.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724024.177214,
+            "value": 41050.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724025.177472,
+            "value": 56990.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724026.1777687,
+            "value": 72970.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724027.1780155,
+            "value": 73690.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724028.1782691,
+            "value": 73700.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724029.178522,
+            "value": 73710.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724030.1787858,
+            "value": 73730.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724031.1790228,
+            "value": 73730.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724032.1792543,
+            "value": 73740.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724033.1794972,
+            "value": 73750.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724034.1797533,
+            "value": 73760.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724038.2402651,
+            "value": 80310.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724039.2515268,
+            "value": 83700.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724040.2617214,
+            "value": 87140.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724041.272073,
+            "value": 90550.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724042.2822223,
+            "value": 93990.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724043.2924228,
+            "value": 97450.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724044.3027136,
+            "value": 100870.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724045.3129308,
+            "value": 104270.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724046.324012,
+            "value": 107730.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724047.334153,
+            "value": 111210.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724048.3443277,
+            "value": 114670.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724049.3544898,
+            "value": 118130.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724050.364638,
+            "value": 121590.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724051.3748963,
+            "value": 125070.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724052.3852243,
+            "value": 128520.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724053.3954573,
+            "value": 131980.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724054.4056969,
+            "value": 135420.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724055.416422,
+            "value": 138870.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724056.4267173,
+            "value": 142350.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724057.4369314,
+            "value": 145800.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724058.4471653,
+            "value": 149290.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724059.4574802,
+            "value": 152770.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724060.467725,
+            "value": 156230.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724061.4779184,
+            "value": 159670.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724062.4878407,
+            "value": 162600.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724063.4977536,
+            "value": 165510.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724064.507819,
+            "value": 168340.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724065.5176005,
+            "value": 171170.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724066.5314343,
+            "value": 174260.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724067.541675,
+            "value": 177900.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724070.0599465,
+            "value": 179610.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724071.0602493,
+            "value": 179610.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724072.0604703,
+            "value": 179610.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724073.0607216,
+            "value": 179610.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724074.0609422,
+            "value": 179610.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724075.0611596,
+            "value": 179610.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724076.061381,
+            "value": 179610.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724077.0616174,
+            "value": 179610.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724078.06184,
+            "value": 179610.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724079.062054,
+            "value": 179610.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724080.0622833,
+            "value": 179610.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724081.0625162,
+            "value": 179610.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724082.0627546,
+            "value": 179610.0
+        },
+        {
+            "tid": 379134,
+            "timestamp": 1733724083.0629697,
+            "value": 179610.0
+        }
+    ],
+    "vcpu_timings": [
+        {
+            "tid": 379139,
+            "timestamp": 1733724021.176305,
+            "value": 200.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724021.176305,
+            "value": 0.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724021.176305,
+            "value": 0.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724021.176305,
+            "value": 0.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724021.176305,
+            "value": 0.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724021.176305,
+            "value": 0.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724021.176305,
+            "value": 0.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724021.176305,
+            "value": 0.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724021.176305,
+            "value": 0.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724021.176305,
+            "value": 0.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724021.176305,
+            "value": 0.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724021.176305,
+            "value": 0.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724021.176305,
+            "value": 0.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724021.176305,
+            "value": 0.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724021.176305,
+            "value": 0.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724021.176305,
+            "value": 0.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724022.176726,
+            "value": 660.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724022.176726,
+            "value": 160.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724022.176726,
+            "value": 170.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724022.176726,
+            "value": 220.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724022.176726,
+            "value": 210.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724022.176726,
+            "value": 170.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724022.176726,
+            "value": 160.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724022.176726,
+            "value": 150.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724022.176726,
+            "value": 150.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724022.176726,
+            "value": 200.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724022.176726,
+            "value": 150.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724022.176726,
+            "value": 170.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724022.176726,
+            "value": 180.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724022.176726,
+            "value": 150.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724022.176726,
+            "value": 150.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724022.176726,
+            "value": 180.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724023.176996,
+            "value": 950.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724023.176996,
+            "value": 460.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724023.176996,
+            "value": 450.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724023.176996,
+            "value": 530.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724023.176996,
+            "value": 520.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724023.176996,
+            "value": 470.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724023.176996,
+            "value": 430.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724023.176996,
+            "value": 430.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724023.176996,
+            "value": 430.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724023.176996,
+            "value": 510.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724023.176996,
+            "value": 430.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724023.176996,
+            "value": 490.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724023.176996,
+            "value": 450.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724023.176996,
+            "value": 430.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724023.176996,
+            "value": 440.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724023.176996,
+            "value": 540.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724024.1772413,
+            "value": 1360.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724024.1772413,
+            "value": 820.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724024.1772413,
+            "value": 850.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724024.1772413,
+            "value": 650.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724024.1772413,
+            "value": 590.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724024.1772413,
+            "value": 830.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724024.1772413,
+            "value": 780.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724024.1772413,
+            "value": 780.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724024.1772413,
+            "value": 770.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724024.1772413,
+            "value": 630.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724024.1772413,
+            "value": 770.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724024.1772413,
+            "value": 780.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724024.1772413,
+            "value": 680.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724024.1772413,
+            "value": 800.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724024.1772413,
+            "value": 780.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724024.1772413,
+            "value": 900.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724025.1775,
+            "value": 1760.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724025.1775,
+            "value": 1240.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724025.1775,
+            "value": 1220.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724025.1775,
+            "value": 1010.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724025.1775,
+            "value": 960.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724025.1775,
+            "value": 1210.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724025.1775,
+            "value": 1160.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724025.1775,
+            "value": 1160.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724025.1775,
+            "value": 1150.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724025.1775,
+            "value": 1000.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724025.1775,
+            "value": 1150.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724025.1775,
+            "value": 1150.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724025.1775,
+            "value": 1060.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724025.1775,
+            "value": 1180.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724025.1775,
+            "value": 1160.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724025.1775,
+            "value": 1250.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724026.1777954,
+            "value": 2170.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724026.1777954,
+            "value": 1640.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724026.1777954,
+            "value": 1630.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724026.1777954,
+            "value": 1320.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724026.1777954,
+            "value": 1290.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724026.1777954,
+            "value": 1550.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724026.1777954,
+            "value": 1500.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724026.1777954,
+            "value": 1490.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724026.1777954,
+            "value": 1500.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724026.1777954,
+            "value": 1330.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724026.1777954,
+            "value": 1490.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724026.1777954,
+            "value": 1500.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724026.1777954,
+            "value": 1410.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724026.1777954,
+            "value": 1510.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724026.1777954,
+            "value": 1510.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724026.1777954,
+            "value": 1670.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724027.1780381,
+            "value": 2190.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724027.1780381,
+            "value": 1660.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724027.1780381,
+            "value": 1660.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724027.1780381,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724027.1780381,
+            "value": 1310.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724027.1780381,
+            "value": 1570.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724027.1780381,
+            "value": 1520.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724027.1780381,
+            "value": 1510.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724027.1780381,
+            "value": 1510.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724027.1780381,
+            "value": 1350.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724027.1780381,
+            "value": 1500.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724027.1780381,
+            "value": 1510.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724027.1780381,
+            "value": 1420.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724027.1780381,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724027.1780381,
+            "value": 1530.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724027.1780381,
+            "value": 1680.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724028.178288,
+            "value": 2190.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724028.178288,
+            "value": 1660.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724028.178288,
+            "value": 1660.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724028.178288,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724028.178288,
+            "value": 1310.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724028.178288,
+            "value": 1570.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724028.178288,
+            "value": 1520.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724028.178288,
+            "value": 1510.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724028.178288,
+            "value": 1510.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724028.178288,
+            "value": 1350.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724028.178288,
+            "value": 1500.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724028.178288,
+            "value": 1510.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724028.178288,
+            "value": 1420.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724028.178288,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724028.178288,
+            "value": 1530.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724028.178288,
+            "value": 1680.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724029.1785414,
+            "value": 2190.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724029.1785414,
+            "value": 1660.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724029.1785414,
+            "value": 1660.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724029.1785414,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724029.1785414,
+            "value": 1310.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724029.1785414,
+            "value": 1570.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724029.1785414,
+            "value": 1520.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724029.1785414,
+            "value": 1510.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724029.1785414,
+            "value": 1510.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724029.1785414,
+            "value": 1350.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724029.1785414,
+            "value": 1500.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724029.1785414,
+            "value": 1510.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724029.1785414,
+            "value": 1420.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724029.1785414,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724029.1785414,
+            "value": 1530.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724029.1785414,
+            "value": 1680.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724030.1788042,
+            "value": 2200.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724030.1788042,
+            "value": 1660.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724030.1788042,
+            "value": 1660.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724030.1788042,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724030.1788042,
+            "value": 1310.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724030.1788042,
+            "value": 1570.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724030.1788042,
+            "value": 1520.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724030.1788042,
+            "value": 1510.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724030.1788042,
+            "value": 1510.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724030.1788042,
+            "value": 1350.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724030.1788042,
+            "value": 1500.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724030.1788042,
+            "value": 1510.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724030.1788042,
+            "value": 1420.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724030.1788042,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724030.1788042,
+            "value": 1530.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724030.1788042,
+            "value": 1680.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724031.179038,
+            "value": 2200.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724031.179038,
+            "value": 1660.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724031.179038,
+            "value": 1660.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724031.179038,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724031.179038,
+            "value": 1310.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724031.179038,
+            "value": 1570.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724031.179038,
+            "value": 1520.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724031.179038,
+            "value": 1510.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724031.179038,
+            "value": 1510.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724031.179038,
+            "value": 1350.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724031.179038,
+            "value": 1500.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724031.179038,
+            "value": 1510.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724031.179038,
+            "value": 1420.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724031.179038,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724031.179038,
+            "value": 1530.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724031.179038,
+            "value": 1680.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724032.1792717,
+            "value": 2200.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724032.1792717,
+            "value": 1660.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724032.1792717,
+            "value": 1660.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724032.1792717,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724032.1792717,
+            "value": 1310.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724032.1792717,
+            "value": 1570.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724032.1792717,
+            "value": 1520.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724032.1792717,
+            "value": 1510.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724032.1792717,
+            "value": 1520.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724032.1792717,
+            "value": 1350.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724032.1792717,
+            "value": 1500.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724032.1792717,
+            "value": 1510.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724032.1792717,
+            "value": 1420.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724032.1792717,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724032.1792717,
+            "value": 1530.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724032.1792717,
+            "value": 1680.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724033.1795142,
+            "value": 2200.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724033.1795142,
+            "value": 1660.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724033.1795142,
+            "value": 1660.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724033.1795142,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724033.1795142,
+            "value": 1310.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724033.1795142,
+            "value": 1570.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724033.1795142,
+            "value": 1520.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724033.1795142,
+            "value": 1510.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724033.1795142,
+            "value": 1520.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724033.1795142,
+            "value": 1350.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724033.1795142,
+            "value": 1500.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724033.1795142,
+            "value": 1510.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724033.1795142,
+            "value": 1420.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724033.1795142,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724033.1795142,
+            "value": 1530.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724033.1795142,
+            "value": 1690.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724034.17977,
+            "value": 2200.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724034.17977,
+            "value": 1660.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724034.17977,
+            "value": 1660.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724034.17977,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724034.17977,
+            "value": 1310.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724034.17977,
+            "value": 1570.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724034.17977,
+            "value": 1520.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724034.17977,
+            "value": 1510.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724034.17977,
+            "value": 1520.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724034.17977,
+            "value": 1350.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724034.17977,
+            "value": 1500.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724034.17977,
+            "value": 1510.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724034.17977,
+            "value": 1420.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724034.17977,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724034.17977,
+            "value": 1530.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724034.17977,
+            "value": 1690.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724038.2403696,
+            "value": 2210.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724038.2403696,
+            "value": 1660.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724038.2403696,
+            "value": 1670.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724038.2403696,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724038.2403696,
+            "value": 1320.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724038.2403696,
+            "value": 1580.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724038.2403696,
+            "value": 1530.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724038.2403696,
+            "value": 1510.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724038.2403696,
+            "value": 1520.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724038.2403696,
+            "value": 1350.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724038.2403696,
+            "value": 1500.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724038.2403696,
+            "value": 1510.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724038.2403696,
+            "value": 1430.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724038.2403696,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724038.2403696,
+            "value": 1990.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724038.2403696,
+            "value": 1700.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724039.2516406,
+            "value": 2220.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724039.2516406,
+            "value": 1670.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724039.2516406,
+            "value": 1680.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724039.2516406,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724039.2516406,
+            "value": 1320.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724039.2516406,
+            "value": 1590.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724039.2516406,
+            "value": 1530.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724039.2516406,
+            "value": 1510.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724039.2516406,
+            "value": 1530.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724039.2516406,
+            "value": 1360.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724039.2516406,
+            "value": 1500.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724039.2516406,
+            "value": 1510.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724039.2516406,
+            "value": 1440.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724039.2516406,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724039.2516406,
+            "value": 2000.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724039.2516406,
+            "value": 1700.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724040.261788,
+            "value": 2230.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724040.261788,
+            "value": 1670.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724040.261788,
+            "value": 1680.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724040.261788,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724040.261788,
+            "value": 1330.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724040.261788,
+            "value": 1590.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724040.261788,
+            "value": 1540.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724040.261788,
+            "value": 1510.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724040.261788,
+            "value": 1530.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724040.261788,
+            "value": 1360.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724040.261788,
+            "value": 1500.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724040.261788,
+            "value": 1510.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724040.261788,
+            "value": 1440.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724040.261788,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724040.261788,
+            "value": 2000.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724040.261788,
+            "value": 1710.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724041.2721426,
+            "value": 2240.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724041.2721426,
+            "value": 1670.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724041.2721426,
+            "value": 1690.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724041.2721426,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724041.2721426,
+            "value": 1330.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724041.2721426,
+            "value": 1600.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724041.2721426,
+            "value": 1540.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724041.2721426,
+            "value": 1510.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724041.2721426,
+            "value": 1530.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724041.2721426,
+            "value": 1370.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724041.2721426,
+            "value": 1500.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724041.2721426,
+            "value": 1510.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724041.2721426,
+            "value": 1450.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724041.2721426,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724041.2721426,
+            "value": 2010.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724041.2721426,
+            "value": 1710.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724042.2822967,
+            "value": 2240.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724042.2822967,
+            "value": 1670.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724042.2822967,
+            "value": 1700.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724042.2822967,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724042.2822967,
+            "value": 1340.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724042.2822967,
+            "value": 1600.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724042.2822967,
+            "value": 1550.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724042.2822967,
+            "value": 1520.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724042.2822967,
+            "value": 1530.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724042.2822967,
+            "value": 1370.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724042.2822967,
+            "value": 1500.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724042.2822967,
+            "value": 1520.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724042.2822967,
+            "value": 1460.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724042.2822967,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724042.2822967,
+            "value": 2010.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724042.2822967,
+            "value": 1720.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724043.292494,
+            "value": 2250.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724043.292494,
+            "value": 1670.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724043.292494,
+            "value": 1700.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724043.292494,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724043.292494,
+            "value": 1340.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724043.292494,
+            "value": 1610.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724043.292494,
+            "value": 1560.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724043.292494,
+            "value": 1530.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724043.292494,
+            "value": 1530.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724043.292494,
+            "value": 1380.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724043.292494,
+            "value": 1510.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724043.292494,
+            "value": 1520.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724043.292494,
+            "value": 1460.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724043.292494,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724043.292494,
+            "value": 2020.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724043.292494,
+            "value": 1730.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724044.3027828,
+            "value": 2250.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724044.3027828,
+            "value": 1670.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724044.3027828,
+            "value": 1700.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724044.3027828,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724044.3027828,
+            "value": 1340.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724044.3027828,
+            "value": 1610.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724044.3027828,
+            "value": 1560.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724044.3027828,
+            "value": 1530.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724044.3027828,
+            "value": 1540.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724044.3027828,
+            "value": 1390.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724044.3027828,
+            "value": 1520.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724044.3027828,
+            "value": 1530.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724044.3027828,
+            "value": 1470.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724044.3027828,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724044.3027828,
+            "value": 2030.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724044.3027828,
+            "value": 1730.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724045.3129995,
+            "value": 2250.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724045.3129995,
+            "value": 1670.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724045.3129995,
+            "value": 1700.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724045.3129995,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724045.3129995,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724045.3129995,
+            "value": 1610.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724045.3129995,
+            "value": 1570.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724045.3129995,
+            "value": 1540.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724045.3129995,
+            "value": 1540.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724045.3129995,
+            "value": 1390.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724045.3129995,
+            "value": 1520.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724045.3129995,
+            "value": 1530.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724045.3129995,
+            "value": 1470.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724045.3129995,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724045.3129995,
+            "value": 2030.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724045.3129995,
+            "value": 1740.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724046.3240755,
+            "value": 2260.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724046.3240755,
+            "value": 1670.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724046.3240755,
+            "value": 1700.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724046.3240755,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724046.3240755,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724046.3240755,
+            "value": 1610.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724046.3240755,
+            "value": 1570.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724046.3240755,
+            "value": 1540.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724046.3240755,
+            "value": 1550.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724046.3240755,
+            "value": 1400.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724046.3240755,
+            "value": 1530.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724046.3240755,
+            "value": 1540.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724046.3240755,
+            "value": 1480.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724046.3240755,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724046.3240755,
+            "value": 2040.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724046.3240755,
+            "value": 1750.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724047.334218,
+            "value": 2260.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724047.334218,
+            "value": 1680.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724047.334218,
+            "value": 1700.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724047.334218,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724047.334218,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724047.334218,
+            "value": 1610.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724047.334218,
+            "value": 1580.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724047.334218,
+            "value": 1550.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724047.334218,
+            "value": 1550.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724047.334218,
+            "value": 1400.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724047.334218,
+            "value": 1530.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724047.334218,
+            "value": 1540.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724047.334218,
+            "value": 1490.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724047.334218,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724047.334218,
+            "value": 2040.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724047.334218,
+            "value": 1750.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724048.3443978,
+            "value": 2260.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724048.3443978,
+            "value": 1690.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724048.3443978,
+            "value": 1700.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724048.3443978,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724048.3443978,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724048.3443978,
+            "value": 1610.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724048.3443978,
+            "value": 1580.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724048.3443978,
+            "value": 1550.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724048.3443978,
+            "value": 1560.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724048.3443978,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724048.3443978,
+            "value": 1540.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724048.3443978,
+            "value": 1550.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724048.3443978,
+            "value": 1490.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724048.3443978,
+            "value": 1530.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724048.3443978,
+            "value": 2050.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724048.3443978,
+            "value": 1760.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724049.3545592,
+            "value": 2260.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724049.3545592,
+            "value": 1690.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724049.3545592,
+            "value": 1710.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724049.3545592,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724049.3545592,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724049.3545592,
+            "value": 1610.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724049.3545592,
+            "value": 1580.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724049.3545592,
+            "value": 1560.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724049.3545592,
+            "value": 1570.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724049.3545592,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724049.3545592,
+            "value": 1540.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724049.3545592,
+            "value": 1550.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724049.3545592,
+            "value": 1500.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724049.3545592,
+            "value": 1540.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724049.3545592,
+            "value": 2050.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724049.3545592,
+            "value": 1770.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724050.364703,
+            "value": 2270.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724050.364703,
+            "value": 1700.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724050.364703,
+            "value": 1710.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724050.364703,
+            "value": 1330.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724050.364703,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724050.364703,
+            "value": 1610.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724050.364703,
+            "value": 1580.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724050.364703,
+            "value": 1560.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724050.364703,
+            "value": 1570.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724050.364703,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724050.364703,
+            "value": 1550.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724050.364703,
+            "value": 1560.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724050.364703,
+            "value": 1510.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724050.364703,
+            "value": 1540.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724050.364703,
+            "value": 2060.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724050.364703,
+            "value": 1770.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724051.3749595,
+            "value": 2270.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724051.3749595,
+            "value": 1700.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724051.3749595,
+            "value": 1710.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724051.3749595,
+            "value": 1340.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724051.3749595,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724051.3749595,
+            "value": 1620.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724051.3749595,
+            "value": 1590.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724051.3749595,
+            "value": 1570.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724051.3749595,
+            "value": 1570.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724051.3749595,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724051.3749595,
+            "value": 1550.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724051.3749595,
+            "value": 1560.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724051.3749595,
+            "value": 1510.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724051.3749595,
+            "value": 1550.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724051.3749595,
+            "value": 2060.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724051.3749595,
+            "value": 1780.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724052.3852944,
+            "value": 2280.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724052.3852944,
+            "value": 1710.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724052.3852944,
+            "value": 1710.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724052.3852944,
+            "value": 1340.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724052.3852944,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724052.3852944,
+            "value": 1630.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724052.3852944,
+            "value": 1590.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724052.3852944,
+            "value": 1570.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724052.3852944,
+            "value": 1570.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724052.3852944,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724052.3852944,
+            "value": 1560.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724052.3852944,
+            "value": 1570.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724052.3852944,
+            "value": 1520.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724052.3852944,
+            "value": 1550.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724052.3852944,
+            "value": 2060.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724052.3852944,
+            "value": 1780.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724053.3955266,
+            "value": 2290.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724053.3955266,
+            "value": 1710.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724053.3955266,
+            "value": 1720.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724053.3955266,
+            "value": 1350.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724053.3955266,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724053.3955266,
+            "value": 1630.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724053.3955266,
+            "value": 1590.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724053.3955266,
+            "value": 1580.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724053.3955266,
+            "value": 1570.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724053.3955266,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724053.3955266,
+            "value": 1570.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724053.3955266,
+            "value": 1570.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724053.3955266,
+            "value": 1520.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724053.3955266,
+            "value": 1560.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724053.3955266,
+            "value": 2060.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724053.3955266,
+            "value": 1790.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724054.4057605,
+            "value": 2300.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724054.4057605,
+            "value": 1710.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724054.4057605,
+            "value": 1720.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724054.4057605,
+            "value": 1350.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724054.4057605,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724054.4057605,
+            "value": 1640.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724054.4057605,
+            "value": 1590.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724054.4057605,
+            "value": 1580.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724054.4057605,
+            "value": 1570.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724054.4057605,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724054.4057605,
+            "value": 1570.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724054.4057605,
+            "value": 1580.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724054.4057605,
+            "value": 1530.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724054.4057605,
+            "value": 1560.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724054.4057605,
+            "value": 2060.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724054.4057605,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724055.4164834,
+            "value": 2310.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724055.4164834,
+            "value": 1710.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724055.4164834,
+            "value": 1720.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724055.4164834,
+            "value": 1360.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724055.4164834,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724055.4164834,
+            "value": 1640.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724055.4164834,
+            "value": 1600.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724055.4164834,
+            "value": 1590.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724055.4164834,
+            "value": 1570.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724055.4164834,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724055.4164834,
+            "value": 1580.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724055.4164834,
+            "value": 1580.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724055.4164834,
+            "value": 1530.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724055.4164834,
+            "value": 1570.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724055.4164834,
+            "value": 2060.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724055.4164834,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724056.4267812,
+            "value": 2310.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724056.4267812,
+            "value": 1710.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724056.4267812,
+            "value": 1720.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724056.4267812,
+            "value": 1360.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724056.4267812,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724056.4267812,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724056.4267812,
+            "value": 1600.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724056.4267812,
+            "value": 1590.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724056.4267812,
+            "value": 1570.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724056.4267812,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724056.4267812,
+            "value": 1580.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724056.4267812,
+            "value": 1590.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724056.4267812,
+            "value": 1540.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724056.4267812,
+            "value": 1570.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724056.4267812,
+            "value": 2070.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724056.4267812,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724057.4369998,
+            "value": 2320.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724057.4369998,
+            "value": 1710.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724057.4369998,
+            "value": 1730.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724057.4369998,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724057.4369998,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724057.4369998,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724057.4369998,
+            "value": 1610.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724057.4369998,
+            "value": 1600.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724057.4369998,
+            "value": 1570.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724057.4369998,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724057.4369998,
+            "value": 1590.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724057.4369998,
+            "value": 1600.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724057.4369998,
+            "value": 1550.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724057.4369998,
+            "value": 1580.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724057.4369998,
+            "value": 2070.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724057.4369998,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724058.4472287,
+            "value": 2330.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724058.4472287,
+            "value": 1720.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724058.4472287,
+            "value": 1730.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724058.4472287,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724058.4472287,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724058.4472287,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724058.4472287,
+            "value": 1610.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724058.4472287,
+            "value": 1600.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724058.4472287,
+            "value": 1570.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724058.4472287,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724058.4472287,
+            "value": 1590.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724058.4472287,
+            "value": 1600.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724058.4472287,
+            "value": 1550.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724058.4472287,
+            "value": 1580.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724058.4472287,
+            "value": 2080.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724058.4472287,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724059.4575448,
+            "value": 2340.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724059.4575448,
+            "value": 1720.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724059.4575448,
+            "value": 1740.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724059.4575448,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724059.4575448,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724059.4575448,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724059.4575448,
+            "value": 1620.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724059.4575448,
+            "value": 1610.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724059.4575448,
+            "value": 1570.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724059.4575448,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724059.4575448,
+            "value": 1600.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724059.4575448,
+            "value": 1610.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724059.4575448,
+            "value": 1560.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724059.4575448,
+            "value": 1590.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724059.4575448,
+            "value": 2080.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724059.4575448,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724060.4677906,
+            "value": 2350.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724060.4677906,
+            "value": 1720.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724060.4677906,
+            "value": 1740.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724060.4677906,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724060.4677906,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724060.4677906,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724060.4677906,
+            "value": 1630.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724060.4677906,
+            "value": 1620.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724060.4677906,
+            "value": 1570.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724060.4677906,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724060.4677906,
+            "value": 1600.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724060.4677906,
+            "value": 1610.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724060.4677906,
+            "value": 1560.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724060.4677906,
+            "value": 1590.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724060.4677906,
+            "value": 2090.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724060.4677906,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724061.4779859,
+            "value": 2350.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724061.4779859,
+            "value": 1720.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724061.4779859,
+            "value": 1740.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724061.4779859,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724061.4779859,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724061.4779859,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724061.4779859,
+            "value": 1640.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724061.4779859,
+            "value": 1620.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724061.4779859,
+            "value": 1570.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724061.4779859,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724061.4779859,
+            "value": 1610.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724061.4779859,
+            "value": 1620.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724061.4779859,
+            "value": 1570.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724061.4779859,
+            "value": 1600.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724061.4779859,
+            "value": 2090.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724061.4779859,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724062.4879086,
+            "value": 2360.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724062.4879086,
+            "value": 1730.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724062.4879086,
+            "value": 1740.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724062.4879086,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724062.4879086,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724062.4879086,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724062.4879086,
+            "value": 1650.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724062.4879086,
+            "value": 1630.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724062.4879086,
+            "value": 1570.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724062.4879086,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724062.4879086,
+            "value": 1610.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724062.4879086,
+            "value": 1630.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724062.4879086,
+            "value": 1580.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724062.4879086,
+            "value": 1600.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724062.4879086,
+            "value": 2100.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724062.4879086,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724063.497824,
+            "value": 2370.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724063.497824,
+            "value": 1730.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724063.497824,
+            "value": 1740.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724063.497824,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724063.497824,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724063.497824,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724063.497824,
+            "value": 1660.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724063.497824,
+            "value": 1630.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724063.497824,
+            "value": 1570.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724063.497824,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724063.497824,
+            "value": 1620.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724063.497824,
+            "value": 1630.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724063.497824,
+            "value": 1580.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724063.497824,
+            "value": 1610.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724063.497824,
+            "value": 2100.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724063.497824,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724064.5078876,
+            "value": 2380.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724064.5078876,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724064.5078876,
+            "value": 1740.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724064.5078876,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724064.5078876,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724064.5078876,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724064.5078876,
+            "value": 1680.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724064.5078876,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724064.5078876,
+            "value": 1570.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724064.5078876,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724064.5078876,
+            "value": 1620.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724064.5078876,
+            "value": 1640.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724064.5078876,
+            "value": 1590.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724064.5078876,
+            "value": 1620.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724064.5078876,
+            "value": 2110.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724064.5078876,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724065.5176868,
+            "value": 2380.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724065.5176868,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724065.5176868,
+            "value": 1740.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724065.5176868,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724065.5176868,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724065.5176868,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724065.5176868,
+            "value": 1690.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724065.5176868,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724065.5176868,
+            "value": 1570.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724065.5176868,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724065.5176868,
+            "value": 1630.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724065.5176868,
+            "value": 1640.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724065.5176868,
+            "value": 1590.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724065.5176868,
+            "value": 1620.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724065.5176868,
+            "value": 2110.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724065.5176868,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724066.5315008,
+            "value": 2400.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724066.5315008,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724066.5315008,
+            "value": 1750.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724066.5315008,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724066.5315008,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724066.5315008,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724066.5315008,
+            "value": 1710.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724066.5315008,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724066.5315008,
+            "value": 1580.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724066.5315008,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724066.5315008,
+            "value": 1640.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724066.5315008,
+            "value": 1660.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724066.5315008,
+            "value": 1600.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724066.5315008,
+            "value": 1630.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724066.5315008,
+            "value": 2130.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724066.5315008,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724067.5417423,
+            "value": 2420.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724067.5417423,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724067.5417423,
+            "value": 1760.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724067.5417423,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724067.5417423,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724067.5417423,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724067.5417423,
+            "value": 1730.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724067.5417423,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724067.5417423,
+            "value": 1590.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724067.5417423,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724067.5417423,
+            "value": 1660.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724067.5417423,
+            "value": 1670.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724067.5417423,
+            "value": 1620.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724067.5417423,
+            "value": 1650.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724067.5417423,
+            "value": 2140.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724067.5417423,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724070.0600069,
+            "value": 2420.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724070.0600069,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724070.0600069,
+            "value": 1760.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724070.0600069,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724070.0600069,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724070.0600069,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724070.0600069,
+            "value": 1730.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724070.0600069,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724070.0600069,
+            "value": 1590.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724070.0600069,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724070.0600069,
+            "value": 1660.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724070.0600069,
+            "value": 1670.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724070.0600069,
+            "value": 1620.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724070.0600069,
+            "value": 1650.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724070.0600069,
+            "value": 2140.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724070.0600069,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724071.060265,
+            "value": 2420.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724071.060265,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724071.060265,
+            "value": 1760.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724071.060265,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724071.060265,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724071.060265,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724071.060265,
+            "value": 1730.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724071.060265,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724071.060265,
+            "value": 1590.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724071.060265,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724071.060265,
+            "value": 1660.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724071.060265,
+            "value": 1670.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724071.060265,
+            "value": 1620.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724071.060265,
+            "value": 1650.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724071.060265,
+            "value": 2140.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724071.060265,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724072.0604913,
+            "value": 2420.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724072.0604913,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724072.0604913,
+            "value": 1760.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724072.0604913,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724072.0604913,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724072.0604913,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724072.0604913,
+            "value": 1730.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724072.0604913,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724072.0604913,
+            "value": 1590.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724072.0604913,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724072.0604913,
+            "value": 1660.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724072.0604913,
+            "value": 1670.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724072.0604913,
+            "value": 1620.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724072.0604913,
+            "value": 1650.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724072.0604913,
+            "value": 2140.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724072.0604913,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724073.0607374,
+            "value": 2420.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724073.0607374,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724073.0607374,
+            "value": 1760.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724073.0607374,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724073.0607374,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724073.0607374,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724073.0607374,
+            "value": 1730.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724073.0607374,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724073.0607374,
+            "value": 1590.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724073.0607374,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724073.0607374,
+            "value": 1660.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724073.0607374,
+            "value": 1670.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724073.0607374,
+            "value": 1620.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724073.0607374,
+            "value": 1650.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724073.0607374,
+            "value": 2140.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724073.0607374,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724074.060955,
+            "value": 2420.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724074.060955,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724074.060955,
+            "value": 1760.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724074.060955,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724074.060955,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724074.060955,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724074.060955,
+            "value": 1730.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724074.060955,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724074.060955,
+            "value": 1590.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724074.060955,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724074.060955,
+            "value": 1660.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724074.060955,
+            "value": 1670.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724074.060955,
+            "value": 1620.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724074.060955,
+            "value": 1650.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724074.060955,
+            "value": 2140.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724074.060955,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724075.0611746,
+            "value": 2420.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724075.0611746,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724075.0611746,
+            "value": 1760.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724075.0611746,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724075.0611746,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724075.0611746,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724075.0611746,
+            "value": 1730.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724075.0611746,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724075.0611746,
+            "value": 1590.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724075.0611746,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724075.0611746,
+            "value": 1660.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724075.0611746,
+            "value": 1670.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724075.0611746,
+            "value": 1620.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724075.0611746,
+            "value": 1650.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724075.0611746,
+            "value": 2140.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724075.0611746,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724076.061395,
+            "value": 2420.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724076.061395,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724076.061395,
+            "value": 1760.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724076.061395,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724076.061395,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724076.061395,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724076.061395,
+            "value": 1730.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724076.061395,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724076.061395,
+            "value": 1590.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724076.061395,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724076.061395,
+            "value": 1660.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724076.061395,
+            "value": 1670.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724076.061395,
+            "value": 1620.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724076.061395,
+            "value": 1650.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724076.061395,
+            "value": 2140.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724076.061395,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724077.0616314,
+            "value": 2420.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724077.0616314,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724077.0616314,
+            "value": 1760.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724077.0616314,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724077.0616314,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724077.0616314,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724077.0616314,
+            "value": 1730.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724077.0616314,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724077.0616314,
+            "value": 1590.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724077.0616314,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724077.0616314,
+            "value": 1660.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724077.0616314,
+            "value": 1670.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724077.0616314,
+            "value": 1620.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724077.0616314,
+            "value": 1650.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724077.0616314,
+            "value": 2140.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724077.0616314,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724078.061854,
+            "value": 2420.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724078.061854,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724078.061854,
+            "value": 1760.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724078.061854,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724078.061854,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724078.061854,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724078.061854,
+            "value": 1730.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724078.061854,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724078.061854,
+            "value": 1590.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724078.061854,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724078.061854,
+            "value": 1660.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724078.061854,
+            "value": 1670.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724078.061854,
+            "value": 1620.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724078.061854,
+            "value": 1650.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724078.061854,
+            "value": 2140.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724078.061854,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724079.062068,
+            "value": 2420.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724079.062068,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724079.062068,
+            "value": 1760.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724079.062068,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724079.062068,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724079.062068,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724079.062068,
+            "value": 1730.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724079.062068,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724079.062068,
+            "value": 1590.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724079.062068,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724079.062068,
+            "value": 1660.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724079.062068,
+            "value": 1670.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724079.062068,
+            "value": 1620.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724079.062068,
+            "value": 1650.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724079.062068,
+            "value": 2140.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724079.062068,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724080.0622983,
+            "value": 2420.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724080.0622983,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724080.0622983,
+            "value": 1760.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724080.0622983,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724080.0622983,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724080.0622983,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724080.0622983,
+            "value": 1730.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724080.0622983,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724080.0622983,
+            "value": 1590.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724080.0622983,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724080.0622983,
+            "value": 1660.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724080.0622983,
+            "value": 1670.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724080.0622983,
+            "value": 1620.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724080.0622983,
+            "value": 1650.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724080.0622983,
+            "value": 2140.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724080.0622983,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724081.0625298,
+            "value": 2420.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724081.0625298,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724081.0625298,
+            "value": 1760.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724081.0625298,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724081.0625298,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724081.0625298,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724081.0625298,
+            "value": 1730.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724081.0625298,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724081.0625298,
+            "value": 1590.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724081.0625298,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724081.0625298,
+            "value": 1660.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724081.0625298,
+            "value": 1670.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724081.0625298,
+            "value": 1620.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724081.0625298,
+            "value": 1650.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724081.0625298,
+            "value": 2140.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724081.0625298,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724082.0627685,
+            "value": 2420.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724082.0627685,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724082.0627685,
+            "value": 1760.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724082.0627685,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724082.0627685,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724082.0627685,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724082.0627685,
+            "value": 1730.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724082.0627685,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724082.0627685,
+            "value": 1590.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724082.0627685,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724082.0627685,
+            "value": 1660.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724082.0627685,
+            "value": 1670.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724082.0627685,
+            "value": 1620.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724082.0627685,
+            "value": 1650.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724082.0627685,
+            "value": 2140.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724082.0627685,
+            "value": 1800.0
+        },
+        {
+            "tid": 379139,
+            "timestamp": 1733724083.0629833,
+            "value": 2420.0
+        },
+        {
+            "tid": 379140,
+            "timestamp": 1733724083.0629833,
+            "value": 1740.0
+        },
+        {
+            "tid": 379141,
+            "timestamp": 1733724083.0629833,
+            "value": 1760.0
+        },
+        {
+            "tid": 379142,
+            "timestamp": 1733724083.0629833,
+            "value": 1370.0
+        },
+        {
+            "tid": 379143,
+            "timestamp": 1733724083.0629833,
+            "value": 1350.0
+        },
+        {
+            "tid": 379144,
+            "timestamp": 1733724083.0629833,
+            "value": 1650.0
+        },
+        {
+            "tid": 379145,
+            "timestamp": 1733724083.0629833,
+            "value": 1730.0
+        },
+        {
+            "tid": 379146,
+            "timestamp": 1733724083.0629833,
+            "value": 1640.0
+        },
+        {
+            "tid": 379147,
+            "timestamp": 1733724083.0629833,
+            "value": 1590.0
+        },
+        {
+            "tid": 379148,
+            "timestamp": 1733724083.0629833,
+            "value": 1410.0
+        },
+        {
+            "tid": 379149,
+            "timestamp": 1733724083.0629833,
+            "value": 1660.0
+        },
+        {
+            "tid": 379150,
+            "timestamp": 1733724083.0629833,
+            "value": 1670.0
+        },
+        {
+            "tid": 379151,
+            "timestamp": 1733724083.0629833,
+            "value": 1620.0
+        },
+        {
+            "tid": 379152,
+            "timestamp": 1733724083.0629833,
+            "value": 1650.0
+        },
+        {
+            "tid": 379153,
+            "timestamp": 1733724083.0629833,
+            "value": 2140.0
+        },
+        {
+            "tid": 379154,
+            "timestamp": 1733724083.0629833,
+            "value": 1800.0
+        }
+    ],
+    "binary": "qemu-system-x86_64",
+    "dst_host": "11.180.118.13",
+    "kernel": "./vmlinuz",
+    "initrd": "build/tests/migration/initrd-stress.img",
+    "transport": "tcp",
+    "sleep": 15
+}

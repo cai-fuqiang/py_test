@@ -1,0 +1,387 @@
+27074@1733470206.430256:migration_bitmap_sync_end dirty_pages 0
+27074@1733470206.430331:migrate_pending_estimate estimate pending size 68720271360 (pre = 68720271360 post=0)
+27074@1733470206.430337:savevm_state_iterate
+27074@1733470206.430344:migration_bitmap_clear_dirty rb pc.ram start 0x0 size 0x40000000 page 0x0
+27074@1733470206.481383:migrate_transferred transferred 28633153 time_spent 333 bandwidth 85985 switchover_bw 0 max_size 25795633
+27074@1733470206.481404:migrate_pending_estimate estimate pending size 68569010176 (pre = 68569010176 post=0)
+27074@1733470206.481408:savevm_state_iterate
+27074@1733470206.532433:migrate_pending_estimate estimate pending size 68320493568 (pre = 68320493568 post=0)
+27074@1733470206.532441:savevm_state_iterate
+27074@1733470206.583501:migrate_transferred transferred 1092726 time_spent 103 bandwidth 10608 switchover_bw 0 max_size 3182697
+27074@1733470206.583509:migrate_pending_estimate estimate pending size 68071714816 (pre = 68071714816 post=0)
+27074@1733470206.583512:savevm_state_iterate
+27074@1733470206.634569:migrate_pending_estimate estimate pending size 67822936064 (pre = 67822936064 post=0)
+27074@1733470206.634576:savevm_state_iterate
+27074@1733470206.670762:migration_bitmap_clear_dirty rb pc.ram start 0x40000000 size 0x40000000 page 0x40000
+27074@1733470206.685632:migrate_transferred transferred 1093302 time_spent 102 bandwidth 10718 switchover_bw 0 max_size 3215594
+27074@1733470206.685639:migrate_pending_estimate estimate pending size 67574157312 (pre = 67574157312 post=0)
+27074@1733470206.685642:savevm_state_iterate
+init (00001): INFO: 1733470206360ms copied 1 GB in 00008ms
+27074@1733470206.736702:migrate_pending_estimate estimate pending size 67325378560 (pre = 67325378560 post=0)
+27074@1733470206.736709:savevm_state_iterate
+27074@1733470206.787753:migrate_transferred transferred 1092726 time_spent 102 bandwidth 10713 switchover_bw 0 max_size 3213900
+27074@1733470206.787761:migrate_pending_estimate estimate pending size 67076861952 (pre = 67076861952 post=0)
+27074@1733470206.787764:savevm_state_iterate
+27074@1733470206.838816:migrate_pending_estimate estimate pending size 66828345344 (pre = 66828345344 post=0)
+27074@1733470206.838823:savevm_state_iterate
+27074@1733470206.889844:migrate_transferred transferred 1091574 time_spent 102 bandwidth 10701 switchover_bw 0 max_size 3210511
+27074@1733470206.889852:migrate_pending_estimate estimate pending size 66580090880 (pre = 66580090880 post=0)
+27074@1733470206.889855:savevm_state_iterate
+27074@1733470206.891358:migration_bitmap_clear_dirty rb pc.ram start 0x80000000 size 0x40000000 page 0x80000
+27074@1733470206.940908:migrate_pending_estimate estimate pending size 66331836416 (pre = 66331836416 post=0)
+27074@1733470206.940915:savevm_state_iterate
+27074@1733470206.991956:migrate_transferred transferred 1090998 time_spent 102 bandwidth 10696 switchover_bw 0 max_size 3208817
+27074@1733470206.991964:migrate_pending_estimate estimate pending size 66083581952 (pre = 66083581952 post=0)
+27074@1733470206.991966:savevm_state_iterate
+27074@1733470207.043004:migrate_pending_estimate estimate pending size 65835327488 (pre = 65835327488 post=0)
+27074@1733470207.043012:savevm_state_iterate
+27074@1733470207.094056:migrate_transferred transferred 1090998 time_spent 102 bandwidth 10696 switchover_bw 0 max_size 3208817
+27074@1733470207.094063:migrate_pending_estimate estimate pending size 65587073024 (pre = 65587073024 post=0)
+27074@1733470207.094066:savevm_state_iterate
+27074@1733470207.116028:migration_bitmap_clear_dirty rb pc.ram start 0xc0000000 size 0x40000000 page 0xc0000
+27074@1733470207.145322:migrate_pending_estimate estimate pending size 65452851200 (pre = 65452851200 post=0)
+27074@1733470207.145340:savevm_state_iterate
+27074@1733470207.196448:migrate_transferred transferred 85220307 time_spent 102 bandwidth 835493 switchover_bw 0 max_size 250647961
+27074@1733470207.196473:migrate_pending_estimate estimate pending size 65393602560 (pre = 65393602560 post=0)
+27074@1733470207.196477:savevm_state_iterate
+27074@1733470207.247527:migrate_pending_estimate estimate pending size 65338286080 (pre = 65338286080 post=0)
+27074@1733470207.247546:savevm_state_iterate
+27074@1733470207.298940:migrate_transferred transferred 108747828 time_spent 103 bandwidth 1055804 switchover_bw 0 max_size 316741246
+27074@1733470207.298985:migrate_pending_estimate estimate pending size 65285066752 (pre = 65285066752 post=0)
+27074@1733470207.298990:savevm_state_iterate
+27074@1733470207.350061:migrate_pending_estimate estimate pending size 65230536704 (pre = 65230536704 post=0)
+27074@1733470207.350080:savevm_state_iterate
+27074@1733470207.401150:migrate_transferred transferred 110323764 time_spent 102 bandwidth 1081605 switchover_bw 0 max_size 324481658
+27074@1733470207.401182:migrate_pending_estimate estimate pending size 65174958080 (pre = 65174958080 post=0)
+27074@1733470207.401187:savevm_state_iterate
+27074@1733470207.453025:migrate_pending_estimate estimate pending size 65117282304 (pre = 65117282304 post=0)
+27074@1733470207.453044:savevm_state_iterate
+27074@1733470207.504104:migrate_transferred transferred 116627508 time_spent 103 bandwidth 1132305 switchover_bw 0 max_size 339691770
+27074@1733470207.504127:migrate_pending_estimate estimate pending size 65058557952 (pre = 65058557952 post=0)
+27074@1733470207.504130:savevm_state_iterate
+27074@1733470207.555230:migrate_pending_estimate estimate pending size 64999833600 (pre = 64999833600 post=0)
+27074@1733470207.555263:savevm_state_iterate
+27074@1733470207.607386:migrate_transferred transferred 117940788 time_spent 103 bandwidth 1145056 switchover_bw 0 max_size 343516858
+27074@1733470207.607407:migrate_pending_estimate estimate pending size 64940847104 (pre = 64940847104 post=0)
+27074@1733470207.607410:savevm_state_iterate
+27074@1733470207.659523:migrate_pending_estimate estimate pending size 64880287744 (pre = 64880287744 post=0)
+27074@1733470207.659545:savevm_state_iterate
+init (00001): INFO: 1733470207360ms copied 1 GB in 00520ms
+27074@1733470207.710642:migrate_transferred transferred 118466100 time_spent 104 bandwidth 1139097 switchover_bw 0 max_size 341729134
+27074@1733470207.710658:migrate_pending_estimate estimate pending size 64822611968 (pre = 64822611968 post=0)
+27074@1733470207.710662:savevm_state_iterate
+27074@1733470207.762390:migrate_pending_estimate estimate pending size 64762839040 (pre = 64762839040 post=0)
+27074@1733470207.762426:savevm_state_iterate
+27074@1733470207.813861:migrate_transferred transferred 120830004 time_spent 103 bandwidth 1173106 switchover_bw 0 max_size 351932050
+27074@1733470207.813882:migrate_pending_estimate estimate pending size 64702017536 (pre = 64702017536 post=0)
+27074@1733470207.813886:savevm_state_iterate
+27074@1733470207.864912:migrate_pending_estimate estimate pending size 64643031040 (pre = 64643031040 post=0)
+27074@1733470207.864932:savevm_state_iterate
+27074@1733470207.916253:migrate_transferred transferred 119779380 time_spent 102 bandwidth 1174307 switchover_bw 0 max_size 352292294
+27074@1733470207.916273:migrate_pending_estimate estimate pending size 64582471680 (pre = 64582471680 post=0)
+27074@1733470207.916281:savevm_state_iterate
+27074@1733470207.967661:migrate_pending_estimate estimate pending size 64521650176 (pre = 64521650176 post=0)
+27074@1733470207.967680:savevm_state_iterate
+27074@1733470208.018766:migrate_transferred transferred 120304692 time_spent 103 bandwidth 1168006 switchover_bw 0 max_size 350402015
+27074@1733470208.018788:migrate_pending_estimate estimate pending size 64462401536 (pre = 64462401536 post=0)
+27074@1733470208.018792:savevm_state_iterate
+27074@1733470208.051787:migration_bitmap_clear_dirty rb pc.ram start 0x100000000 size 0x40000000 page 0x100000
+27074@1733470208.069850:migrate_pending_estimate estimate pending size 64404201472 (pre = 64404201472 post=0)
+27074@1733470208.069880:savevm_state_iterate
+27074@1733470208.120949:migrate_transferred transferred 116102196 time_spent 102 bandwidth 1138256 switchover_bw 0 max_size 341477047
+27074@1733470208.120969:migrate_pending_estimate estimate pending size 64346525696 (pre = 64346525696 post=0)
+27074@1733470208.120973:savevm_state_iterate
+27074@1733470208.172688:migrate_pending_estimate estimate pending size 64286752768 (pre = 64286752768 post=0)
+27074@1733470208.172706:savevm_state_iterate
+27074@1733470208.223788:migrate_transferred transferred 120304692 time_spent 103 bandwidth 1168006 switchover_bw 0 max_size 350402015
+27074@1733470208.223810:migrate_pending_estimate estimate pending size 64226455552 (pre = 64226455552 post=0)
+27074@1733470208.223815:savevm_state_iterate
+27074@1733470208.275576:migrate_pending_estimate estimate pending size 64166944768 (pre = 64166944768 post=0)
+27074@1733470208.275595:savevm_state_iterate
+27074@1733470208.326892:migrate_transferred transferred 120304692 time_spent 103 bandwidth 1168006 switchover_bw 0 max_size 350402015
+27074@1733470208.326913:migrate_pending_estimate estimate pending size 64106385408 (pre = 64106385408 post=0)
+27074@1733470208.326917:savevm_state_iterate
+27074@1733470208.377990:migrate_pending_estimate estimate pending size 64046350336 (pre = 64046350336 post=0)
+27074@1733470208.378007:savevm_state_iterate
+27074@1733470208.429888:migrate_transferred transferred 121880628 time_spent 103 bandwidth 1183307 switchover_bw 0 max_size 354992120
+27074@1733470208.429969:migrate_pending_estimate estimate pending size 63984742400 (pre = 63984742400 post=0)
+27074@1733470208.429979:savevm_state_iterate
+27074@1733470208.482097:migrate_pending_estimate estimate pending size 63923658752 (pre = 63923658752 post=0)
+27074@1733470208.482117:savevm_state_iterate
+27074@1733470208.533764:migrate_transferred transferred 121880628 time_spent 104 bandwidth 1171929 switchover_bw 0 max_size 351578734
+27074@1733470208.533791:migrate_pending_estimate estimate pending size 63863099392 (pre = 63863099392 post=0)
+27074@1733470208.533796:savevm_state_iterate
+27074@1733470208.585490:migrate_pending_estimate estimate pending size 63802277888 (pre = 63802277888 post=0)
+27074@1733470208.585513:savevm_state_iterate
+27074@1733470208.636691:migrate_transferred transferred 121880628 time_spent 103 bandwidth 1183307 switchover_bw 0 max_size 354992120
+27074@1733470208.636718:migrate_pending_estimate estimate pending size 63741456384 (pre = 63741456384 post=0)
+27074@1733470208.636725:savevm_state_iterate
+27074@1733470208.687780:migrate_pending_estimate estimate pending size 63680634880 (pre = 63680634880 post=0)
+27074@1733470208.687799:savevm_state_iterate
+init (00001): INFO: 1733470208361ms copied 1 GB in 00519ms
+27074@1733470208.739708:migrate_transferred transferred 119779380 time_spent 103 bandwidth 1162906 switchover_bw 0 max_size 348871980
+27074@1733470208.739729:migrate_pending_estimate estimate pending size 63621910528 (pre = 63621910528 post=0)
+27074@1733470208.739735:savevm_state_iterate
+27074@1733470208.790863:migrate_pending_estimate estimate pending size 63563186176 (pre = 63563186176 post=0)
+27074@1733470208.790882:savevm_state_iterate
+27074@1733470208.842316:migrate_transferred transferred 119779380 time_spent 102 bandwidth 1174307 switchover_bw 0 max_size 352292294
+27074@1733470208.842354:migrate_pending_estimate estimate pending size 63502364672 (pre = 63502364672 post=0)
+27074@1733470208.842358:savevm_state_iterate
+27074@1733470208.893735:migrate_pending_estimate estimate pending size 63441543168 (pre = 63441543168 post=0)
+27074@1733470208.893761:savevm_state_iterate
+27074@1733470208.944792:migrate_transferred transferred 121617972 time_spent 103 bandwidth 1180757 switchover_bw 0 max_size 354227102
+27074@1733470208.944814:migrate_pending_estimate estimate pending size 63380983808 (pre = 63380983808 post=0)
+27074@1733470208.944818:savevm_state_iterate
+27074@1733470208.969658:migration_bitmap_clear_dirty rb pc.ram start 0x140000000 size 0x40000000 page 0x140000
+27074@1733470208.996266:migrate_pending_estimate estimate pending size 63323832320 (pre = 63323832320 post=0)
+27074@1733470208.996284:savevm_state_iterate
+27074@1733470209.047384:migrate_transferred transferred 116364852 time_spent 102 bandwidth 1140831 switchover_bw 0 max_size 342249564
+27074@1733470209.047404:migrate_pending_estimate estimate pending size 63264845824 (pre = 63264845824 post=0)
+27074@1733470209.047433:savevm_state_iterate
+27074@1733470209.098514:migrate_pending_estimate estimate pending size 63204548608 (pre = 63204548608 post=0)
+27074@1733470209.098553:savevm_state_iterate
+27074@1733470209.149831:migrate_transferred transferred 119254068 time_spent 103 bandwidth 1157806 switchover_bw 0 max_size 347341945
+27074@1733470209.149853:migrate_pending_estimate estimate pending size 63145824256 (pre = 63145824256 post=0)
+27074@1733470209.149857:savevm_state_iterate
+27074@1733470209.201535:migrate_pending_estimate estimate pending size 63087099904 (pre = 63087099904 post=0)
+27074@1733470209.201562:savevm_state_iterate
+27074@1733470209.252657:migrate_transferred transferred 117152820 time_spent 103 bandwidth 1137406 switchover_bw 0 max_size 341221805
+27074@1733470209.252678:migrate_pending_estimate estimate pending size 63028899840 (pre = 63028899840 post=0)
+27074@1733470209.252682:savevm_state_iterate
+27074@1733470209.305128:migrate_pending_estimate estimate pending size 62973845504 (pre = 62973845504 post=0)
+27074@1733470209.305157:savevm_state_iterate
+27074@1733470209.356251:migrate_transferred transferred 113738292 time_spent 103 bandwidth 1104255 switchover_bw 0 max_size 331276578
+27074@1733470209.356272:migrate_pending_estimate estimate pending size 62915383296 (pre = 62915383296 post=0)
+27074@1733470209.356277:savevm_state_iterate
+27074@1733470209.408172:migrate_pending_estimate estimate pending size 62854299648 (pre = 62854299648 post=0)
+27074@1733470209.408192:savevm_state_iterate
+27074@1733470209.460181:migrate_transferred transferred 117940788 time_spent 104 bandwidth 1134046 switchover_bw 0 max_size 340213811
+27074@1733470209.460204:migrate_pending_estimate estimate pending size 62797672448 (pre = 62797672448 post=0)
+27074@1733470209.460207:savevm_state_iterate
+27074@1733470209.511911:migrate_pending_estimate estimate pending size 62736850944 (pre = 62736850944 post=0)
+27074@1733470209.511936:savevm_state_iterate
+27074@1733470209.564083:migrate_transferred transferred 122143284 time_spent 104 bandwidth 1174454 switchover_bw 0 max_size 352336396
+27074@1733470209.564148:migrate_pending_estimate estimate pending size 62675767296 (pre = 62675767296 post=0)
+27074@1733470209.564157:savevm_state_iterate
+27074@1733470209.615719:migrate_pending_estimate estimate pending size 62614945792 (pre = 62614945792 post=0)
+27074@1733470209.615737:savevm_state_iterate
+27074@1733470209.667023:migrate_transferred transferred 121617972 time_spent 103 bandwidth 1180757 switchover_bw 0 max_size 354227102
+27074@1733470209.667045:migrate_pending_estimate estimate pending size 62554386432 (pre = 62554386432 post=0)
+27074@1733470209.667049:savevm_state_iterate
+init (00001): INFO: 1733470209361ms copied 1 GB in 00521ms
+27074@1733470209.718982:migrate_pending_estimate estimate pending size 62493564928 (pre = 62493564928 post=0)
+27074@1733470209.719000:savevm_state_iterate
+27074@1733470209.770691:migrate_transferred transferred 121880628 time_spent 104 bandwidth 1171929 switchover_bw 0 max_size 351578734
+27074@1733470209.770719:migrate_pending_estimate estimate pending size 62432743424 (pre = 62432743424 post=0)
+27074@1733470209.770725:savevm_state_iterate
+27074@1733470209.822213:migrate_pending_estimate estimate pending size 62376378368 (pre = 62376378368 post=0)
+27074@1733470209.822230:savevm_state_iterate
+27074@1733470209.874111:migrate_transferred transferred 115314228 time_spent 103 bandwidth 1119555 switchover_bw 0 max_size 335866683
+27074@1733470209.874134:migrate_pending_estimate estimate pending size 62317654016 (pre = 62317654016 post=0)
+27074@1733470209.874137:savevm_state_iterate
+27074@1733470209.906911:migration_bitmap_clear_dirty rb pc.ram start 0x180000000 size 0x40000000 page 0x180000
+27074@1733470209.925177:migrate_pending_estimate estimate pending size 62256832512 (pre = 62256832512 post=0)
+27074@1733470209.925195:savevm_state_iterate
+27074@1733470209.976263:migrate_transferred transferred 118728756 time_spent 102 bandwidth 1164007 switchover_bw 0 max_size 349202223
+27074@1733470209.976290:migrate_pending_estimate estimate pending size 62199156736 (pre = 62199156736 post=0)
+27074@1733470209.976294:savevm_state_iterate
+27074@1733470210.027457:migrate_pending_estimate estimate pending size 62139383808 (pre = 62139383808 post=0)
+27074@1733470210.027476:savevm_state_iterate
+27074@1733470210.078550:migrate_transferred transferred 119516724 time_spent 103 bandwidth 1160356 switchover_bw 0 max_size 348106963
+27074@1733470210.078574:migrate_pending_estimate estimate pending size 62079873024 (pre = 62079873024 post=0)
+27074@1733470210.078579:savevm_state_iterate
+27074@1733470210.130652:migrate_pending_estimate estimate pending size 62019837952 (pre = 62019837952 post=0)
+27074@1733470210.130671:savevm_state_iterate
+27074@1733470210.181769:migrate_transferred transferred 121092660 time_spent 103 bandwidth 1175656 switchover_bw 0 max_size 352697067
+27074@1733470210.181791:migrate_pending_estimate estimate pending size 61959016448 (pre = 61959016448 post=0)
+27074@1733470210.181795:savevm_state_iterate
+27074@1733470210.233439:migrate_pending_estimate estimate pending size 61902127104 (pre = 61902127104 post=0)
+27074@1733470210.233491:savevm_state_iterate
+27074@1733470210.284521:migrate_transferred transferred 117152820 time_spent 103 bandwidth 1137406 switchover_bw 0 max_size 341221805
+27074@1733470210.284543:migrate_pending_estimate estimate pending size 61842092032 (pre = 61842092032 post=0)
+27074@1733470210.284547:savevm_state_iterate
+27074@1733470210.335597:migrate_pending_estimate estimate pending size 61782843392 (pre = 61782843392 post=0)
+27074@1733470210.335619:savevm_state_iterate
+27074@1733470210.387143:migrate_transferred transferred 118203444 time_spent 102 bandwidth 1158857 switchover_bw 0 max_size 347657188
+27074@1733470210.387207:migrate_pending_estimate estimate pending size 61724119040 (pre = 61724119040 post=0)
+27074@1733470210.387215:savevm_state_iterate
+27074@1733470210.438268:migrate_pending_estimate estimate pending size 61664083968 (pre = 61664083968 post=0)
+27074@1733470210.438290:savevm_state_iterate
+27074@1733470210.490163:migrate_transferred transferred 119779380 time_spent 103 bandwidth 1162906 switchover_bw 0 max_size 348871980
+27074@1733470210.490184:migrate_pending_estimate estimate pending size 61604573184 (pre = 61604573184 post=0)
+27074@1733470210.490188:savevm_state_iterate
+27074@1733470210.541213:migrate_pending_estimate estimate pending size 61544275968 (pre = 61544275968 post=0)
+27074@1733470210.541233:savevm_state_iterate
+27074@1733470210.592285:migrate_transferred transferred 120304692 time_spent 102 bandwidth 1179457 switchover_bw 0 max_size 353837329
+27074@1733470210.592309:migrate_pending_estimate estimate pending size 61484503040 (pre = 61484503040 post=0)
+27074@1733470210.592313:savevm_state_iterate
+27074@1733470210.643630:migrate_pending_estimate estimate pending size 61423943680 (pre = 61423943680 post=0)
+27074@1733470210.643648:savevm_state_iterate
+27074@1733470210.694792:migrate_transferred transferred 121355316 time_spent 103 bandwidth 1178206 switchover_bw 0 max_size 353462085
+27074@1733470210.694813:migrate_pending_estimate estimate pending size 61363384320 (pre = 61363384320 post=0)
+27074@1733470210.694816:savevm_state_iterate
+init (00001): INFO: 1733470210361ms copied 1 GB in 00524ms
+27074@1733470210.746987:migrate_pending_estimate estimate pending size 61304397824 (pre = 61304397824 post=0)
+27074@1733470210.747032:savevm_state_iterate
+27074@1733470210.798439:migrate_transferred transferred 120042036 time_spent 103 bandwidth 1165456 switchover_bw 0 max_size 349636998
+27074@1733470210.798486:migrate_pending_estimate estimate pending size 61243576320 (pre = 61243576320 post=0)
+27074@1733470210.798492:savevm_state_iterate
+27074@1733470210.830845:migration_bitmap_clear_dirty rb pc.ram start 0x1c0000000 size 0x40000000 page 0x1c0000
+27074@1733470210.849791:migrate_pending_estimate estimate pending size 61183016960 (pre = 61183016960 post=0)
+27074@1733470210.849806:savevm_state_iterate
+27074@1733470210.901221:migrate_transferred transferred 121617972 time_spent 103 bandwidth 1180757 switchover_bw 0 max_size 354227102
+27074@1733470210.901244:migrate_pending_estimate estimate pending size 61122195456 (pre = 61122195456 post=0)
+27074@1733470210.901248:savevm_state_iterate
+27074@1733470210.953121:migrate_pending_estimate estimate pending size 61061373952 (pre = 61061373952 post=0)
+27074@1733470210.953140:savevm_state_iterate
+27074@1733470211.004835:migrate_transferred transferred 121880628 time_spent 104 bandwidth 1171929 switchover_bw 0 max_size 351578734
+27074@1733470211.004857:migrate_pending_estimate estimate pending size 61000552448 (pre = 61000552448 post=0)
+27074@1733470211.004862:savevm_state_iterate
+27074@1733470211.056164:migrate_pending_estimate estimate pending size 60939730944 (pre = 60939730944 post=0)
+27074@1733470211.056183:savevm_state_iterate
+27074@1733470211.108291:migrate_transferred transferred 121880628 time_spent 103 bandwidth 1183307 switchover_bw 0 max_size 354992120
+27074@1733470211.108313:migrate_pending_estimate estimate pending size 60878909440 (pre = 60878909440 post=0)
+27074@1733470211.108318:savevm_state_iterate
+27074@1733470211.160491:migrate_pending_estimate estimate pending size 60819922944 (pre = 60819922944 post=0)
+27074@1733470211.160527:savevm_state_iterate
+27074@1733470211.211771:migrate_transferred transferred 119779380 time_spent 104 bandwidth 1151724 switchover_bw 0 max_size 345517442
+27074@1733470211.211792:migrate_pending_estimate estimate pending size 60759363584 (pre = 60759363584 post=0)
+27074@1733470211.211797:savevm_state_iterate
+27074@1733470211.263732:migrate_pending_estimate estimate pending size 60698542080 (pre = 60698542080 post=0)
+27074@1733470211.263751:savevm_state_iterate
+27074@1733470211.315119:migrate_transferred transferred 120059442 time_spent 103 bandwidth 1165625 switchover_bw 0 max_size 349687695
+27074@1733470211.315153:migrate_pending_estimate estimate pending size 60635361280 (pre = 60635361280 post=0)
+27074@1733470211.315158:savevm_state_iterate
+27074@1733470211.366806:migrate_pending_estimate estimate pending size 60578734080 (pre = 60578734080 post=0)
+27074@1733470211.366865:savevm_state_iterate
+27074@1733470211.417909:migrate_transferred transferred 116627508 time_spent 103 bandwidth 1132305 switchover_bw 0 max_size 339691770
+27074@1733470211.417932:migrate_pending_estimate estimate pending size 60518961152 (pre = 60518961152 post=0)
+27074@1733470211.417951:savevm_state_iterate
+27074@1733470211.469029:migrate_pending_estimate estimate pending size 60459712512 (pre = 60459712512 post=0)
+27074@1733470211.469048:savevm_state_iterate
+27074@1733470211.520131:migrate_transferred transferred 118728756 time_spent 102 bandwidth 1164007 switchover_bw 0 max_size 349202223
+27074@1733470211.520153:migrate_pending_estimate estimate pending size 60400463872 (pre = 60400463872 post=0)
+27074@1733470211.520157:savevm_state_iterate
+27074@1733470211.572110:migrate_pending_estimate estimate pending size 60339904512 (pre = 60339904512 post=0)
+27074@1733470211.572134:savevm_state_iterate
+27074@1733470211.623834:migrate_transferred transferred 121617972 time_spent 104 bandwidth 1169403 switchover_bw 0 max_size 350821073
+27074@1733470211.623861:migrate_pending_estimate estimate pending size 60279083008 (pre = 60279083008 post=0)
+27074@1733470211.623866:savevm_state_iterate
+27074@1733470211.675227:migrate_pending_estimate estimate pending size 60218261504 (pre = 60218261504 post=0)
+27074@1733470211.675255:savevm_state_iterate
+init (00001): INFO: 1733470211362ms copied 1 GB in 00539ms
+27074@1733470211.726573:migrate_transferred transferred 121880628 time_spent 103 bandwidth 1183307 switchover_bw 0 max_size 354992120
+27074@1733470211.726592:migrate_pending_estimate estimate pending size 60157440000 (pre = 60157440000 post=0)
+27074@1733470211.726597:savevm_state_iterate
+27074@1733470211.755196:migration_bitmap_clear_dirty rb pc.ram start 0x200000000 size 0x40000000 page 0x200000
+27074@1733470211.777642:migrate_pending_estimate estimate pending size 60107104256 (pre = 60107104256 post=0)
+27074@1733470211.777680:savevm_state_iterate
+27074@1733470211.829607:migrate_transferred transferred 111374388 time_spent 103 bandwidth 1081304 switchover_bw 0 max_size 324391421
+27074@1733470211.829644:migrate_pending_estimate estimate pending size 60046282752 (pre = 60046282752 post=0)
+27074@1733470211.829648:savevm_state_iterate
+27074@1733470211.880742:migrate_pending_estimate estimate pending size 59989393408 (pre = 59989393408 post=0)
+27074@1733470211.880762:savevm_state_iterate
+27074@1733470211.932430:migrate_transferred transferred 117678132 time_spent 102 bandwidth 1153707 switchover_bw 0 max_size 346112152
+27074@1733470211.932464:migrate_pending_estimate estimate pending size 59928834048 (pre = 59928834048 post=0)
+27074@1733470211.932469:savevm_state_iterate
+27074@1733470211.983552:migrate_pending_estimate estimate pending size 59868274688 (pre = 59868274688 post=0)
+27074@1733470211.983571:savevm_state_iterate
+27074@1733470212.035092:migrate_transferred transferred 113475636 time_spent 103 bandwidth 1101705 switchover_bw 0 max_size 330511561
+27074@1733470212.035117:migrate_pending_estimate estimate pending size 59815579648 (pre = 59815579648 post=0)
+27074@1733470212.035121:savevm_state_iterate
+27074@1733470212.087212:migrate_pending_estimate estimate pending size 59754496000 (pre = 59754496000 post=0)
+27074@1733470212.087231:savevm_state_iterate
+27074@1733470212.138646:migrate_transferred transferred 118203444 time_spent 104 bandwidth 1136571 switchover_bw 0 max_size 340971473
+27074@1733470212.138669:migrate_pending_estimate estimate pending size 59697606656 (pre = 59697606656 post=0)
+27074@1733470212.138673:savevm_state_iterate
+27074@1733470212.189762:migrate_pending_estimate estimate pending size 59638095872 (pre = 59638095872 post=0)
+27074@1733470212.189796:savevm_state_iterate
+27074@1733470212.240929:migrate_transferred transferred 117170226 time_spent 102 bandwidth 1148727 switchover_bw 0 max_size 344618311
+27074@1733470212.240978:migrate_pending_estimate estimate pending size 59576487936 (pre = 59576487936 post=0)
+27074@1733470212.240983:savevm_state_iterate
+27074@1733470212.292052:migrate_pending_estimate estimate pending size 59516190720 (pre = 59516190720 post=0)
+27074@1733470212.292074:savevm_state_iterate
+27074@1733470212.343113:migrate_transferred transferred 119254068 time_spent 102 bandwidth 1169157 switchover_bw 0 max_size 350747258
+27074@1733470212.343135:migrate_pending_estimate estimate pending size 59457466368 (pre = 59457466368 post=0)
+27074@1733470212.343140:savevm_state_iterate
+27074@1733470212.394609:migrate_pending_estimate estimate pending size 59400314880 (pre = 59400314880 post=0)
+27074@1733470212.394635:savevm_state_iterate
+27074@1733470212.445719:migrate_transferred transferred 117940788 time_spent 103 bandwidth 1145056 switchover_bw 0 max_size 343516858
+27074@1733470212.445779:migrate_pending_estimate estimate pending size 59339755520 (pre = 59339755520 post=0)
+27074@1733470212.445783:savevm_state_iterate
+27074@1733470212.496895:migrate_pending_estimate estimate pending size 59282341888 (pre = 59282341888 post=0)
+27074@1733470212.496915:savevm_state_iterate
+27074@1733470212.548506:migrate_transferred transferred 116364852 time_spent 103 bandwidth 1129755 switchover_bw 0 max_size 338926753
+27074@1733470212.548527:migrate_pending_estimate estimate pending size 59223617536 (pre = 59223617536 post=0)
+27074@1733470212.548531:savevm_state_iterate
+27074@1733470212.599897:migrate_pending_estimate estimate pending size 59167514624 (pre = 59167514624 post=0)
+27074@1733470212.599921:savevm_state_iterate
+27074@1733470212.651653:migrate_transferred transferred 112950324 time_spent 103 bandwidth 1096605 switchover_bw 0 max_size 328981526
+27074@1733470212.651689:migrate_pending_estimate estimate pending size 59110887424 (pre = 59110887424 post=0)
+27074@1733470212.651693:savevm_state_iterate
+27074@1733470212.700927:migration_bitmap_clear_dirty rb pc.ram start 0x240000000 size 0x40000000 page 0x240000
+27074@1733470212.704157:migrate_pending_estimate estimate pending size 59054260224 (pre = 59054260224 post=0)
+27074@1733470212.704164:savevm_state_iterate
+init (00001): INFO: 1733470212362ms copied 1 GB in 00592ms
+27074@1733470212.755797:migrate_transferred transferred 111374388 time_spent 104 bandwidth 1070907 switchover_bw 0 max_size 321272273
+27074@1733470212.755817:migrate_pending_estimate estimate pending size 58999730176 (pre = 58999730176 post=0)
+27074@1733470212.755821:savevm_state_iterate
+27074@1733470212.807245:migrate_pending_estimate estimate pending size 58941005824 (pre = 58941005824 post=0)
+27074@1733470212.807266:savevm_state_iterate
+27074@1733470212.858342:migrate_transferred transferred 118728756 time_spent 102 bandwidth 1164007 switchover_bw 0 max_size 349202223
+27074@1733470212.858364:migrate_pending_estimate estimate pending size 58881232896 (pre = 58881232896 post=0)
+27074@1733470212.858368:savevm_state_iterate
+27074@1733470212.910402:migrate_pending_estimate estimate pending size 58821197824 (pre = 58821197824 post=0)
+27074@1733470212.910436:savevm_state_iterate
+27074@1733470212.961524:migrate_transferred transferred 119254068 time_spent 104 bandwidth 1146673 switchover_bw 0 max_size 344002119
+27074@1733470212.961559:migrate_pending_estimate estimate pending size 58762211328 (pre = 58762211328 post=0)
+27074@1733470212.961563:savevm_state_iterate
+27074@1733470213.012786:migrate_pending_estimate estimate pending size 58701914112 (pre = 58701914112 post=0)
+27074@1733470213.012805:savevm_state_iterate
+27074@1733470213.064069:migrate_transferred transferred 121092660 time_spent 102 bandwidth 1187182 switchover_bw 0 max_size 356154882
+27074@1733470213.064091:migrate_pending_estimate estimate pending size 58641354752 (pre = 58641354752 post=0)
+27074@1733470213.064095:savevm_state_iterate
+27074@1733470213.115210:migrate_pending_estimate estimate pending size 58582106112 (pre = 58582106112 post=0)
+27074@1733470213.115229:savevm_state_iterate
+27074@1733470213.167201:migrate_transferred transferred 115839540 time_spent 103 bandwidth 1124655 switchover_bw 0 max_size 337396718
+27074@1733470213.167239:migrate_pending_estimate estimate pending size 58525741056 (pre = 58525741056 post=0)
+27074@1733470213.167242:savevm_state_iterate
+27074@1733470213.218337:migrate_pending_estimate estimate pending size 58465443840 (pre = 58465443840 post=0)
+27074@1733470213.218357:savevm_state_iterate
+27074@1733470213.269554:migrate_transferred transferred 117678132 time_spent 103 bandwidth 1142506 switchover_bw 0 max_size 342751840
+27074@1733470213.269575:migrate_pending_estimate estimate pending size 58408292352 (pre = 58408292352 post=0)
+27074@1733470213.269580:savevm_state_iterate
+27074@1733470213.320793:migrate_pending_estimate estimate pending size 58349568000 (pre = 58349568000 post=0)
+27074@1733470213.320850:savevm_state_iterate
+27074@1733470213.371902:migrate_transferred transferred 118466100 time_spent 102 bandwidth 1161432 switchover_bw 0 max_size 348429705
+27074@1733470213.371924:migrate_pending_estimate estimate pending size 58290057216 (pre = 58290057216 post=0)
+27074@1733470213.371928:savevm_state_iterate
+27074@1733470213.423049:migrate_pending_estimate estimate pending size 58231595008 (pre = 58231595008 post=0)
+27074@1733470213.423070:savevm_state_iterate
+27074@1733470213.475066:migrate_transferred transferred 118991412 time_spent 103 bandwidth 1155256 switchover_bw 0 max_size 346576928
+27074@1733470213.475088:migrate_pending_estimate estimate pending size 58171297792 (pre = 58171297792 post=0)
+27074@1733470213.475092:savevm_state_iterate
+27074@1733470213.526211:migrate_pending_estimate estimate pending size 58112049152 (pre = 58112049152 post=0)
+27074@1733470213.526230:savevm_state_iterate
+27074@1733470213.577374:migrate_transferred transferred 111374388 time_spent 102 bandwidth 1091905 switchover_bw 0 max_size 327571729
+27074@1733470213.577395:migrate_pending_estimate estimate pending size 58060140544 (pre = 58060140544 post=0)
+27074@1733470213.577399:savevm_state_iterate
+27074@1733470213.629295:migrate_pending_estimate estimate pending size 57999319040 (pre = 57999319040 post=0)
+27074@1733470213.629326:savevm_state_iterate
+27074@1733470213.642197:migration_bitmap_clear_dirty rb pc.ram start 0x280000000 size 0x40000000 page 0x280000
+27074@1733470213.680758:migrate_transferred transferred 121617972 time_spent 104 bandwidth 1169403 switchover_bw 0 max_size 350821073
+27074@1733470213.680800:migrate_pending_estimate estimate pending size 57938759680 (pre = 57938759680 post=0)
+27074@1733470213.680813:savevm_state_iterate
+init (00001): INFO: 1733470213363ms copied 1 GB in 00517ms
+27074@1733470213.732595:migrate_pending_estimate estimate pending size 57879773184 (pre = 57879773184 post=0)
+27074@1733470213.732630:savevm_state_iterate
+27074@1733470213.784119:migrate_transferred transferred 119779380 time_spent 103 bandwidth 1162906 switchover_bw 0 max_size 348871980
+27074@1733470213.784140:migrate_pending_estimate estimate pending size 57819213824 (pre = 57819213824 post=0)
+27074@1733470213.784145:savevm_state_iterate
+27074@1733470213.836132:migrate_pending_estimate estimate pending size 57765470208 (pre = 57765470208 post=0)
+27074@1733470213.836150:savevm_state_iterate
+27074@1733470213.887762:migrate_transferred transferred 113475636 time_spent 104 bandwidth 1091111 switchover_bw 0 max_size 327333565
+27074@1733470213.887784:migrate_pending_estimate estimate pending size 57705959424 (pre = 57705959424 post=0)
+27074@1733470213.887788:savevm_state_iterate
+27074@1733470213.939174:migrate_pending_estimate estimate pending size 57645137920 (pre = 57645137920 post=0)
+27074@1733470213.939194:savevm_state_iterate
